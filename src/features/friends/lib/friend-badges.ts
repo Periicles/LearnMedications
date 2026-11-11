@@ -2,8 +2,7 @@ import "server-only";
 import { ACHIEVEMENTS } from "@/features/achievements/catalog";
 import { createAdminSupabase } from "@/lib/supabase/admin";
 
-/** Grants the friendship achievements both users may have reached after a request is accepted. */
-export async function grantFriendBadges(userIds: string[]): Promise<void> {
+async function grantBadgesTo(userIds: string[]): Promise<void> {
   const admin = createAdminSupabase();
   for (const userId of userIds) {
     const { count } = await admin
@@ -18,5 +17,17 @@ export async function grantFriendBadges(userIds: string[]): Promise<void> {
     if (earned.length > 0) {
       await admin.from("user_achievements").upsert(earned, { ignoreDuplicates: true });
     }
+  }
+}
+
+/**
+ * Grants the friendship achievements both users may have reached after a request is accepted.
+ * A failure here must not undo or hide the accepted friendship, so it is only logged.
+ */
+export async function grantFriendBadges(userIds: string[]): Promise<void> {
+  try {
+    await grantBadgesTo(userIds);
+  } catch (error) {
+    console.error("Could not grant friendship achievements", error);
   }
 }
