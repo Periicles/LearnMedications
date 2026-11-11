@@ -59,4 +59,14 @@ describe("getSiteUrl", () => {
     vi.stubEnv("VERCEL_URL", "");
     expect(getSiteUrl()).toBe("http://localhost:3000");
   });
+
+  it("uses the stable production domain for production deployments", () => {
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "");
+    vi.stubEnv("VERCEL_URL", "app-abc123.vercel.app");
+    vi.stubEnv("VERCEL_PROJECT_PRODUCTION_URL", "app.vercel.app");
+    vi.stubEnv("VERCEL_ENV", "preview");
+    expect(getSiteUrl()).toBe("https://app-abc123.vercel.app");
+    vi.stubEnv("VERCEL_ENV", "production");
+    expect(getSiteUrl()).toBe("https://app.vercel.app");
+  });
 });

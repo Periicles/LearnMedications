@@ -3,3 +3,6 @@ coverage
 node_modules
 package-lock.json
 next-env.d.ts
+e2e/.auth
+e2e/.results
+playwright-report
