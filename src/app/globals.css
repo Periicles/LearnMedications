@@ -1,5 +1,120 @@
 @import "tailwindcss";
 
+:root {
+  --canvas: #f6f8f7;
+  --surface: #ffffff;
+  --surface-muted: #edf2f0;
+  --line: #dbe4e0;
+  --ink: #16302b;
+  --ink-soft: #5c726c;
+  --brand: #0f9d8a;
+  --brand-strong: #0a7566;
+  --brand-soft: #d6f3ee;
+  --accent: #f5a524;
+  --accent-strong: #c47f0c;
+  --accent-soft: #fdefd3;
+  --danger: #e5484d;
+  --danger-strong: #b4292e;
+  --danger-soft: #fde3e4;
+  --info: #3b82f6;
+  --info-soft: #dbeafe;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0e1716;
+    --surface: #16221f;
+    --surface-muted: #1e2d2a;
+    --line: #2b3e3a;
+    --ink: #e8f1ee;
+    --ink-soft: #9db1ab;
+    --brand: #2cc4ae;
+    --brand-strong: #17907f;
+    --brand-soft: #143a35;
+    --accent: #f7b548;
+    --accent-strong: #b97a12;
+    --accent-soft: #3d2f12;
+    --danger: #f2686c;
+    --danger-strong: #b93a3f;
+    --danger-soft: #40191b;
+    --info: #6ea8ff;
+    --info-soft: #172b4a;
+  }
+}
+
 @theme inline {
-  --font-sans: var(--font-nunito);
+  --font-sans: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-danger-strong: var(--danger-strong);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --animate-pop: pop 0.25s ease-out;
+  --animate-shake: shake 0.3s ease-in-out;
+  --animate-rise: rise 0.3s ease-out;
+
+  @keyframes pop {
+    0% {
+      transform: scale(0.92);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-6px);
+    }
+    75% {
+      transform: translateX(6px);
+    }
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--info);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
