@@ -5,6 +5,7 @@ import { AchievementCard } from "@/features/achievements/components/achievement-
 import { buildAchievementViews } from "@/features/achievements/lib/evaluate";
 import { loadAchievementStats } from "@/features/achievements/lib/overview";
 import { getUnlockedAchievements } from "@/features/achievements/lib/queries";
+import { getFriendCount } from "@/features/friends/lib/queries";
 import { requireUser } from "@/features/auth/lib/session";
 
 export const metadata: Metadata = { title: "Succès" };
@@ -12,7 +13,7 @@ export const metadata: Metadata = { title: "Succès" };
 export default async function AchievementsPage() {
   const user = await requireUser();
   const [stats, unlocked] = await Promise.all([
-    loadAchievementStats(user.id, 0),
+    loadAchievementStats(user.id, await getFriendCount()),
     getUnlockedAchievements(user.id),
   ]);
   if (!stats) return null;
