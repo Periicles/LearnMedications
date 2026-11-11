@@ -11,6 +11,8 @@ export interface FormState {
   status: FormStatus;
   message?: string;
   fieldErrors?: Record<string, string>;
+  /** Submitted values echoed back so fields keep their content after an error. Never passwords. */
+  values?: Record<string, string>;
 }
 
 export type FormAction = (state: FormState, formData: FormData) => Promise<FormState>;
