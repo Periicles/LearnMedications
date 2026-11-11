@@ -1,0 +1,406 @@
+{
+  "area": {
+    "slug": "hemostasis",
+    "name": "Hémostase et sang",
+    "icon": "🩸"
+  },
+  "classes": [
+    {
+      "slug": "vitamin-k-antagonists",
+      "name": "Antivitamines K (AVK)",
+      "atc": "B01AA",
+      "summary": "Anticoagulants oraux surveillés par l'INR : valves mécaniques, fibrillation atriale, thromboses veineuses."
+    },
+    {
+      "slug": "unfractionated-heparin",
+      "name": "Héparine non fractionnée (HNF)",
+      "atc": "B01AB",
+      "summary": "Anticoagulant injectable surveillé par TCA ou anti-Xa, utilisable en insuffisance rénale sévère. Antidote : protamine."
+    },
+    {
+      "slug": "lmwh",
+      "name": "Héparines de bas poids moléculaire (HBPM)",
+      "atc": "B01AB",
+      "summary": "Anticoagulants sous-cutanés : prévention et traitement des thromboses. Surveiller plaquettes et fonction rénale."
+    },
+    {
+      "slug": "other-parenteral-anticoagulants",
+      "name": "Autres anticoagulants injectables",
+      "atc": "B01AX",
+      "summary": "Alternatives aux héparines, notamment en cas de thrombopénie induite par l'héparine (TIH)."
+    },
+    {
+      "slug": "doac",
+      "name": "Anticoagulants oraux directs (AOD)",
+      "atc": "B01AF",
+      "summary": "Anticoagulants oraux sans surveillance de l'INR : fibrillation atriale, thromboses veineuses. Attention au rein."
+    },
+    {
+      "slug": "antiplatelets",
+      "name": "Antiagrégants plaquettaires",
+      "atc": "B01AC",
+      "summary": "Empêchent l'agrégation des plaquettes : prévention après infarctus, stent coronaire ou AVC ischémique."
+    },
+    {
+      "slug": "thrombolytics",
+      "name": "Thrombolytiques (fibrinolytiques)",
+      "atc": "B01AD",
+      "summary": "Dissolvent un caillot déjà formé : AVC ischémique, infarctus, embolie pulmonaire grave. Risque hémorragique majeur."
+    },
+    {
+      "slug": "antifibrinolytics",
+      "name": "Antifibrinolytiques",
+      "atc": "B02AA",
+      "summary": "Empêchent la dégradation du caillot : hémorragies, traumatisés graves, chirurgie hémorragique."
+    },
+    {
+      "slug": "anticoagulant-antidotes",
+      "name": "Antidotes des anticoagulants",
+      "atc": "",
+      "summary": "Neutralisent rapidement l'effet d'un anticoagulant en cas d'hémorragie grave ou de geste urgent."
+    },
+    {
+      "slug": "iron",
+      "name": "Fer (antianémiques martiaux)",
+      "atc": "B03A",
+      "summary": "Corrigent la carence en fer et l'anémie ferriprive, par voie orale ou intraveineuse."
+    },
+    {
+      "slug": "vitamin-b12-folates",
+      "name": "Vitamine B12 et folates",
+      "atc": "B03B",
+      "summary": "Corrigent les anémies macrocytaires par carence ; acide folique aussi en prévention pendant la grossesse."
+    },
+    {
+      "slug": "erythropoietins",
+      "name": "Érythropoïétines (ASE)",
+      "atc": "B03XA",
+      "summary": "Stimulent la production de globules rouges : anémie de l'insuffisance rénale chronique, chimiothérapie."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "warfarin",
+      "name": "Warfarine",
+      "brands": ["Coumadine"],
+      "classSlug": "vitamin-k-antagonists",
+      "hint": "Valve mécanique, fibrillation atriale, thrombose veineuse",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "fluindione",
+      "name": "Fluindione",
+      "brands": ["Préviscan"],
+      "classSlug": "vitamin-k-antagonists",
+      "hint": "Thrombose veineuse, fibrillation atriale (plus initié en 1re intention)",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "acenocoumarol",
+      "name": "Acénocoumarol",
+      "brands": ["Sintrom", "Mini-Sintrom"],
+      "classSlug": "vitamin-k-antagonists",
+      "hint": "Thrombose veineuse, fibrillation atriale",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "heparin-sodium",
+      "name": "Héparine sodique",
+      "brands": [],
+      "classSlug": "unfractionated-heparin",
+      "hint": "Anticoagulation curative IV (PSE), circulation extracorporelle",
+      "tier": 1,
+      "services": ["intensive-care", "anesthesia", "emergency"]
+    },
+    {
+      "slug": "heparin-calcium",
+      "name": "Héparine calcique",
+      "brands": ["Calciparine"],
+      "classSlug": "unfractionated-heparin",
+      "hint": "Thrombose veineuse, prévention si insuffisance rénale sévère",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "enoxaparin",
+      "name": "Énoxaparine",
+      "brands": ["Lovenox"],
+      "classSlug": "lmwh",
+      "hint": "Prévention et traitement des thromboses veineuses, SCA",
+      "tier": 1,
+      "services": [
+        "orthopedic-surgery",
+        "intensive-care",
+        "neuro-icu",
+        "emergency",
+        "geriatrics",
+        "oncology",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "tinzaparin",
+      "name": "Tinzaparine",
+      "brands": ["Innohep"],
+      "classSlug": "lmwh",
+      "hint": "Traitement des thromboses veineuses, thrombose et cancer",
+      "tier": 2,
+      "services": ["oncology", "orthopedic-surgery"]
+    },
+    {
+      "slug": "dalteparin",
+      "name": "Daltéparine",
+      "brands": ["Fragmine"],
+      "classSlug": "lmwh",
+      "hint": "Prévention et traitement des thromboses veineuses",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "nadroparin",
+      "name": "Nadroparine",
+      "brands": ["Fraxiparine", "Fraxodi"],
+      "classSlug": "lmwh",
+      "hint": "Prévention et traitement des thromboses veineuses",
+      "tier": 2,
+      "services": ["orthopedic-surgery"]
+    },
+    {
+      "slug": "fondaparinux",
+      "name": "Fondaparinux",
+      "brands": ["Arixtra"],
+      "classSlug": "other-parenteral-anticoagulants",
+      "hint": "Prévention et traitement des thromboses veineuses, SCA",
+      "tier": 2,
+      "services": ["orthopedic-surgery"]
+    },
+    {
+      "slug": "danaparoid",
+      "name": "Danaparoïde",
+      "brands": ["Orgaran"],
+      "classSlug": "other-parenteral-anticoagulants",
+      "hint": "Thrombopénie induite par l'héparine (TIH)",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "argatroban",
+      "name": "Argatroban",
+      "brands": ["Arganova"],
+      "classSlug": "other-parenteral-anticoagulants",
+      "hint": "Thrombopénie induite par l'héparine (TIH), IV",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "apixaban",
+      "name": "Apixaban",
+      "brands": ["Eliquis"],
+      "classSlug": "doac",
+      "hint": "Fibrillation atriale, thrombose veineuse, prévention post-prothèse",
+      "tier": 1,
+      "services": ["geriatrics", "orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "rivaroxaban",
+      "name": "Rivaroxaban",
+      "brands": ["Xarelto"],
+      "classSlug": "doac",
+      "hint": "Fibrillation atriale, thrombose veineuse, prévention post-prothèse",
+      "tier": 1,
+      "services": ["geriatrics", "orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "dabigatran",
+      "name": "Dabigatran",
+      "brands": ["Pradaxa"],
+      "classSlug": "doac",
+      "hint": "Fibrillation atriale, thrombose veineuse (antithrombine direct)",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "aspirin-antiplatelet",
+      "name": "Acide acétylsalicylique",
+      "brands": ["Kardégic", "Resitune"],
+      "classSlug": "antiplatelets",
+      "hint": "Antiagrégant à faible dose : post-infarctus, stent, AVC ischémique",
+      "tier": 1,
+      "services": ["emergency", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "clopidogrel",
+      "name": "Clopidogrel",
+      "brands": ["Plavix"],
+      "classSlug": "antiplatelets",
+      "hint": "Post-infarctus, stent coronaire, AVC, artériopathie",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "ticagrelor",
+      "name": "Ticagrélor",
+      "brands": ["Brilique"],
+      "classSlug": "antiplatelets",
+      "hint": "Syndrome coronarien aigu (avec l'aspirine)",
+      "tier": 2,
+      "services": ["emergency"]
+    },
+    {
+      "slug": "prasugrel",
+      "name": "Prasugrel",
+      "brands": ["Efient"],
+      "classSlug": "antiplatelets",
+      "hint": "Syndrome coronarien aigu avec angioplastie",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "tirofiban",
+      "name": "Tirofiban",
+      "brands": ["Agrastat"],
+      "classSlug": "antiplatelets",
+      "hint": "Syndrome coronarien aigu, angioplastie (anti-GPIIb/IIIa IV)",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "alteplase",
+      "name": "Altéplase",
+      "brands": ["Actilyse"],
+      "classSlug": "thrombolytics",
+      "hint": "AVC ischémique aigu, embolie pulmonaire grave",
+      "tier": 3,
+      "services": ["emergency", "neuro-icu", "intensive-care"]
+    },
+    {
+      "slug": "tenecteplase",
+      "name": "Ténectéplase",
+      "brands": ["Metalyse"],
+      "classSlug": "thrombolytics",
+      "hint": "Infarctus du myocarde (SMUR), AVC ischémique aigu",
+      "tier": 3,
+      "services": ["emergency", "neuro-icu"]
+    },
+    {
+      "slug": "tranexamic-acid",
+      "name": "Acide tranexamique",
+      "brands": ["Exacyl", "Spotof"],
+      "classSlug": "antifibrinolytics",
+      "hint": "Hémorragies, traumatisé grave, chirurgie hémorragique",
+      "tier": 2,
+      "services": ["emergency", "intensive-care", "anesthesia", "orthopedic-surgery", "neuro-icu"]
+    },
+    {
+      "slug": "protamine",
+      "name": "Protamine",
+      "brands": [],
+      "classSlug": "anticoagulant-antidotes",
+      "hint": "Neutralisation de l'héparine (HNF, partiellement HBPM)",
+      "tier": 3,
+      "services": ["anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "phytomenadione",
+      "name": "Phytoménadione (vitamine K1)",
+      "brands": [],
+      "classSlug": "anticoagulant-antidotes",
+      "hint": "Surdosage en AVK, prévention de l'hémorragie du nouveau-né",
+      "tier": 2,
+      "services": ["emergency", "intensive-care", "pediatrics", "geriatrics"]
+    },
+    {
+      "slug": "prothrombin-complex-concentrate",
+      "name": "Complexe prothrombinique humain (CCP)",
+      "brands": ["Kanokad", "Octaplex", "Confidex"],
+      "classSlug": "anticoagulant-antidotes",
+      "hint": "Hémorragie grave sous AVK (ou AOD anti-Xa)",
+      "tier": 3,
+      "services": ["emergency", "intensive-care", "neuro-icu"]
+    },
+    {
+      "slug": "idarucizumab",
+      "name": "Idarucizumab",
+      "brands": ["Praxbind"],
+      "classSlug": "anticoagulant-antidotes",
+      "hint": "Antidote spécifique du dabigatran",
+      "tier": 3,
+      "services": ["emergency", "intensive-care"]
+    },
+    {
+      "slug": "ferrous-sulfate",
+      "name": "Sulfate ferreux",
+      "brands": ["Tardyferon", "Timoferol"],
+      "classSlug": "iron",
+      "hint": "Anémie par carence en fer, prévention pendant la grossesse",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "ferrous-fumarate",
+      "name": "Fumarate ferreux",
+      "brands": ["Fumafer"],
+      "classSlug": "iron",
+      "hint": "Anémie par carence en fer",
+      "tier": 2,
+      "services": ["community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "ferric-carboxymaltose",
+      "name": "Carboxymaltose ferrique",
+      "brands": ["Ferinject"],
+      "classSlug": "iron",
+      "hint": "Carence martiale (fer IV), insuffisance cardiaque, péri-opératoire",
+      "tier": 2,
+      "services": ["orthopedic-surgery", "oncology", "geriatrics"]
+    },
+    {
+      "slug": "iron-sucrose",
+      "name": "Fer saccharose",
+      "brands": ["Venofer"],
+      "classSlug": "iron",
+      "hint": "Carence martiale (fer IV), insuffisance rénale chronique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "cyanocobalamin",
+      "name": "Cyanocobalamine (vitamine B12)",
+      "brands": [],
+      "classSlug": "vitamin-b12-folates",
+      "hint": "Carence en vitamine B12, maladie de Biermer",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "folic-acid",
+      "name": "Acide folique",
+      "brands": ["Speciafoldine"],
+      "classSlug": "vitamin-b12-folates",
+      "hint": "Carence en folates, prévention des anomalies du tube neural",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "epoetin-alfa",
+      "name": "Époétine alfa",
+      "brands": ["Eprex", "Binocrit"],
+      "classSlug": "erythropoietins",
+      "hint": "Anémie de l'insuffisance rénale chronique ou de la chimiothérapie",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "darbepoetin-alfa",
+      "name": "Darbépoétine alfa",
+      "brands": ["Aranesp"],
+      "classSlug": "erythropoietins",
+      "hint": "Anémie de l'insuffisance rénale chronique ou de la chimiothérapie",
+      "tier": 3,
+      "services": ["oncology"]
+    }
+  ]
+}

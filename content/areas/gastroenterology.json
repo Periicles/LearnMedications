@@ -1,0 +1,374 @@
+{
+  "area": {
+    "slug": "gastroenterology",
+    "name": "Gastro-entérologie",
+    "icon": "🍽️"
+  },
+  "classes": [
+    {
+      "slug": "proton-pump-inhibitors",
+      "name": "Inhibiteurs de la pompe à protons (IPP)",
+      "atc": "A02BC",
+      "summary": "Bloquent la sécrétion acide gastrique : RGO, ulcère, prévention des lésions sous AINS, hémorragie digestive."
+    },
+    {
+      "slug": "antacids-alginates",
+      "name": "Antiacides et alginates",
+      "atc": "A02",
+      "summary": "Neutralisent l'acidité ou forment une barrière sur le contenu gastrique : soulagement rapide du reflux."
+    },
+    {
+      "slug": "antidopaminergic-antiemetics",
+      "name": "Antiémétiques antidopaminergiques",
+      "atc": "A03FA",
+      "summary": "Bloquent les récepteurs dopaminergiques contre nausées et vomissements ; risque neurologique ou cardiaque."
+    },
+    {
+      "slug": "setrons",
+      "name": "Sétrons (antagonistes 5-HT3)",
+      "atc": "A04AA",
+      "summary": "Antiémétiques puissants des nausées et vomissements induits par la chimiothérapie."
+    },
+    {
+      "slug": "nk1-antagonists",
+      "name": "Antagonistes NK1",
+      "atc": "A04AD",
+      "summary": "Antiémétiques associés aux sétrons et corticoïdes pour les chimiothérapies très émétisantes."
+    },
+    {
+      "slug": "osmotic-laxatives",
+      "name": "Laxatifs osmotiques",
+      "atc": "A06AD",
+      "summary": "Attirent l'eau dans l'intestin pour ramollir les selles : laxatifs de première intention."
+    },
+    {
+      "slug": "stimulant-laxatives",
+      "name": "Laxatifs stimulants",
+      "atc": "A06AB",
+      "summary": "Stimulent la motricité colique ; usage ponctuel, ou en préparation colique."
+    },
+    {
+      "slug": "bulk-lubricant-laxatives",
+      "name": "Laxatifs de lest et lubrifiants",
+      "atc": "A06A",
+      "summary": "Augmentent le volume des selles (fibres) ou les lubrifient (paraffine) ; boire suffisamment."
+    },
+    {
+      "slug": "antidiarrheals",
+      "name": "Antidiarrhéiques",
+      "atc": "A07",
+      "summary": "Ralentissent le transit, réduisent la sécrétion intestinale ou protègent la muqueuse dans les diarrhées."
+    },
+    {
+      "slug": "antispasmodics",
+      "name": "Antispasmodiques",
+      "atc": "A03",
+      "summary": "Soulagent les douleurs digestives, biliaires, urinaires ou gynécologiques d'origine spasmodique."
+    },
+    {
+      "slug": "aminosalicylates",
+      "name": "Aminosalicylés",
+      "atc": "A07EC",
+      "summary": "Anti-inflammatoires intestinaux des maladies inflammatoires chroniques de l'intestin (surtout RCH)."
+    },
+    {
+      "slug": "other-hepato-digestive",
+      "name": "Autres médicaments hépato-digestifs",
+      "atc": "",
+      "summary": "Traitements spécifiques du foie, des voies biliaires et du pancréas (encéphalopathie, cholestase, insuffisance pancréatique)."
+    },
+    {
+      "slug": "variceal-bleeding-vasoactives",
+      "name": "Vasoactifs de l'hémorragie digestive",
+      "atc": "H01",
+      "summary": "Réduisent la pression portale lors des hémorragies par rupture de varices œsophagiennes."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "omeprazole",
+      "name": "Oméprazole",
+      "brands": ["Mopral"],
+      "classSlug": "proton-pump-inhibitors",
+      "hint": "Reflux gastro-œsophagien, ulcère, protection gastrique",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "esomeprazole",
+      "name": "Ésoméprazole",
+      "brands": ["Inexium"],
+      "classSlug": "proton-pump-inhibitors",
+      "hint": "Reflux, ulcère, hémorragie digestive haute (IV)",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "neuro-icu", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "pantoprazole",
+      "name": "Pantoprazole",
+      "brands": ["Eupantol", "Inipomp"],
+      "classSlug": "proton-pump-inhibitors",
+      "hint": "Reflux, ulcère, prévention de l'ulcère de stress (IV)",
+      "tier": 1,
+      "services": ["intensive-care", "neuro-icu", "anesthesia", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "lansoprazole",
+      "name": "Lansoprazole",
+      "brands": ["Lanzor", "Ogast"],
+      "classSlug": "proton-pump-inhibitors",
+      "hint": "Reflux gastro-œsophagien, ulcère",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "sodium-alginate-bicarbonate",
+      "name": "Alginate de sodium + bicarbonate de sodium",
+      "brands": ["Gaviscon"],
+      "classSlug": "antacids-alginates",
+      "hint": "Brûlures d'estomac, reflux (y compris pendant la grossesse)",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "aluminium-magnesium-hydroxide",
+      "name": "Hydroxyde d'aluminium + hydroxyde de magnésium",
+      "brands": ["Maalox"],
+      "classSlug": "antacids-alginates",
+      "hint": "Brûlures d'estomac, douleurs gastriques",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "metoclopramide",
+      "name": "Métoclopramide",
+      "brands": ["Primpéran"],
+      "classSlug": "antidopaminergic-antiemetics",
+      "hint": "Nausées et vomissements (postopératoires, chimiothérapie, migraine)",
+      "tier": 1,
+      "services": ["emergency", "anesthesia", "oncology"]
+    },
+    {
+      "slug": "domperidone",
+      "name": "Dompéridone",
+      "brands": ["Motilium"],
+      "classSlug": "antidopaminergic-antiemetics",
+      "hint": "Nausées et vomissements (adulte)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "metopimazine",
+      "name": "Métopimazine",
+      "brands": ["Vogalène"],
+      "classSlug": "antidopaminergic-antiemetics",
+      "hint": "Nausées et vomissements, dont chimio-induits",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "granisetron",
+      "name": "Granisétron",
+      "brands": ["Kytril"],
+      "classSlug": "setrons",
+      "hint": "Nausées et vomissements chimio-induits",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "palonosetron",
+      "name": "Palonosétron",
+      "brands": ["Aloxi"],
+      "classSlug": "setrons",
+      "hint": "Nausées et vomissements chimio-induits (aigus et retardés)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "aprepitant",
+      "name": "Aprépitant",
+      "brands": ["Emend"],
+      "classSlug": "nk1-antagonists",
+      "hint": "Prévention des vomissements des chimiothérapies émétisantes",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "macrogol",
+      "name": "Macrogol",
+      "brands": ["Forlax", "Movicol", "Transipeg"],
+      "classSlug": "osmotic-laxatives",
+      "hint": "Constipation, fécalome, constipation sous opioïdes",
+      "tier": 1,
+      "services": [
+        "geriatrics",
+        "pediatrics",
+        "oncology",
+        "orthopedic-surgery",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "lactulose",
+      "name": "Lactulose",
+      "brands": ["Duphalac"],
+      "classSlug": "osmotic-laxatives",
+      "hint": "Constipation, encéphalopathie hépatique",
+      "tier": 1,
+      "services": ["geriatrics", "intensive-care", "community-pharmacy"]
+    },
+    {
+      "slug": "bisacodyl",
+      "name": "Bisacodyl",
+      "brands": ["Dulcolax"],
+      "classSlug": "stimulant-laxatives",
+      "hint": "Constipation occasionnelle",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "sodium-picosulfate",
+      "name": "Picosulfate de sodium",
+      "brands": ["Fructines"],
+      "classSlug": "stimulant-laxatives",
+      "hint": "Constipation occasionnelle, préparation colique",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "ispaghula",
+      "name": "Ispaghul",
+      "brands": ["Spagulax"],
+      "classSlug": "bulk-lubricant-laxatives",
+      "hint": "Constipation chronique, troubles fonctionnels intestinaux",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "liquid-paraffin",
+      "name": "Paraffine liquide",
+      "brands": ["Lansoÿl"],
+      "classSlug": "bulk-lubricant-laxatives",
+      "hint": "Constipation",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "loperamide",
+      "name": "Lopéramide",
+      "brands": ["Imodium"],
+      "classSlug": "antidiarrheals",
+      "hint": "Diarrhée aiguë de l'adulte (sans fièvre ni sang)",
+      "tier": 1,
+      "services": ["community-pharmacy", "oncology"]
+    },
+    {
+      "slug": "racecadotril",
+      "name": "Racécadotril",
+      "brands": ["Tiorfan"],
+      "classSlug": "antidiarrheals",
+      "hint": "Diarrhée aiguë de l'adulte et de l'enfant",
+      "tier": 2,
+      "services": ["pediatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "diosmectite",
+      "name": "Diosmectite",
+      "brands": ["Smecta"],
+      "classSlug": "antidiarrheals",
+      "hint": "Diarrhée aiguë, douleurs digestives",
+      "tier": 1,
+      "services": ["pediatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "phloroglucinol",
+      "name": "Phloroglucinol",
+      "brands": ["Spasfon"],
+      "classSlug": "antispasmodics",
+      "hint": "Douleurs spasmodiques digestives, biliaires, urinaires, règles",
+      "tier": 1,
+      "services": ["emergency", "community-pharmacy"]
+    },
+    {
+      "slug": "trimebutine",
+      "name": "Trimébutine",
+      "brands": ["Débridat"],
+      "classSlug": "antispasmodics",
+      "hint": "Douleurs et troubles du transit (côlon irritable)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "pinaverium",
+      "name": "Pinavérium",
+      "brands": ["Dicetel"],
+      "classSlug": "antispasmodics",
+      "hint": "Douleurs du syndrome de l'intestin irritable",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "mesalazine",
+      "name": "Mésalazine",
+      "brands": ["Pentasa", "Rowasa", "Fivasa"],
+      "classSlug": "aminosalicylates",
+      "hint": "Rectocolite hémorragique, maladie de Crohn",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "sulfasalazine",
+      "name": "Sulfasalazine",
+      "brands": ["Salazopyrine"],
+      "classSlug": "aminosalicylates",
+      "hint": "Rectocolite hémorragique, polyarthrite rhumatoïde",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "rifaximin",
+      "name": "Rifaximine",
+      "brands": ["Tixtar"],
+      "classSlug": "other-hepato-digestive",
+      "hint": "Prévention des récidives d'encéphalopathie hépatique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "ursodeoxycholic-acid",
+      "name": "Acide ursodésoxycholique",
+      "brands": ["Delursan", "Ursolvan"],
+      "classSlug": "other-hepato-digestive",
+      "hint": "Cholangite biliaire primitive, lithiase biliaire",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "pancreatin",
+      "name": "Pancréatine",
+      "brands": ["Créon"],
+      "classSlug": "other-hepato-digestive",
+      "hint": "Insuffisance pancréatique exocrine, mucoviscidose",
+      "tier": 2,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "terlipressin",
+      "name": "Terlipressine",
+      "brands": ["Glypressine"],
+      "classSlug": "variceal-bleeding-vasoactives",
+      "hint": "Rupture de varices œsophagiennes, syndrome hépatorénal",
+      "tier": 3,
+      "services": ["intensive-care", "emergency"]
+    },
+    {
+      "slug": "octreotide",
+      "name": "Octréotide",
+      "brands": ["Sandostatine"],
+      "classSlug": "variceal-bleeding-vasoactives",
+      "hint": "Rupture de varices œsophagiennes, tumeurs neuroendocrines, acromégalie",
+      "tier": 3,
+      "services": ["intensive-care", "emergency"]
+    }
+  ]
+}

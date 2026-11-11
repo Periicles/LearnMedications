@@ -1,0 +1,534 @@
+{
+  "area": {
+    "slug": "endocrinology",
+    "name": "Endocrinologie et diabète",
+    "icon": "🧪"
+  },
+  "classes": [
+    {
+      "slug": "rapid-acting-insulins",
+      "name": "Insulines rapides et ultrarapides",
+      "atc": "A10AB",
+      "summary": "Insulines des repas ou de correction ; l'insuline humaine rapide s'utilise aussi en IV (PSE) en réanimation."
+    },
+    {
+      "slug": "intermediate-insulins",
+      "name": "Insulines intermédiaires (NPH) et prémélangées",
+      "atc": "A10AC",
+      "summary": "Insulines d'action intermédiaire, seules ou mélangées à une rapide : une à deux injections par jour."
+    },
+    {
+      "slug": "long-acting-insulins",
+      "name": "Insulines lentes (basales)",
+      "atc": "A10AE",
+      "summary": "Couvrent les besoins de base sur 24 h ou plus, avec une injection par jour : schéma basal ou basal-bolus."
+    },
+    {
+      "slug": "biguanides",
+      "name": "Biguanides",
+      "atc": "A10BA",
+      "summary": "Traitement de 1re intention du diabète de type 2, sans hypoglycémie. Arrêt avant injection d'iode (risque d'acidose)."
+    },
+    {
+      "slug": "sulfonylureas",
+      "name": "Sulfamides hypoglycémiants",
+      "atc": "A10BB",
+      "summary": "Stimulent la sécrétion d'insuline : diabète de type 2. Risque d'hypoglycémie, surtout chez le sujet âgé."
+    },
+    {
+      "slug": "glinides",
+      "name": "Glinides",
+      "atc": "A10BX",
+      "summary": "Stimulent brièvement la sécrétion d'insuline au moment des repas : diabète de type 2. Risque d'hypoglycémie."
+    },
+    {
+      "slug": "dpp4-inhibitors",
+      "name": "Inhibiteurs de la DPP-4 (gliptines)",
+      "atc": "A10BH",
+      "summary": "Renforcent l'effet des incrétines : diabète de type 2, sans prise de poids ni hypoglycémie en monothérapie."
+    },
+    {
+      "slug": "glp1-agonists",
+      "name": "Agonistes du récepteur du GLP-1",
+      "atc": "A10BJ",
+      "summary": "Injections (ou comprimé) qui baissent la glycémie et le poids : diabète de type 2, obésité. Nausées fréquentes."
+    },
+    {
+      "slug": "sglt2-inhibitors",
+      "name": "Inhibiteurs du SGLT2 (gliflozines)",
+      "atc": "A10BK",
+      "summary": "Éliminent le glucose dans les urines : diabète de type 2, insuffisance cardiaque et rénale. Risque d'infection génitale."
+    },
+    {
+      "slug": "thyroid-hormones",
+      "name": "Hormones thyroïdiennes",
+      "atc": "H03AA",
+      "summary": "Remplacent les hormones thyroïdiennes manquantes : hypothyroïdie, après thyroïdectomie. Prise à jeun."
+    },
+    {
+      "slug": "antithyroid-drugs",
+      "name": "Antithyroïdiens de synthèse (ATS)",
+      "atc": "H03B",
+      "summary": "Bloquent la synthèse des hormones thyroïdiennes : hyperthyroïdie, maladie de Basedow. Risque d'agranulocytose."
+    },
+    {
+      "slug": "systemic-corticosteroids",
+      "name": "Corticoïdes systémiques (glucocorticoïdes)",
+      "atc": "H02AB",
+      "summary": "Anti-inflammatoires et immunosuppresseurs puissants : asthme, maladies inflammatoires, allergie, œdème cérébral."
+    },
+    {
+      "slug": "mineralocorticoids",
+      "name": "Minéralocorticoïdes",
+      "atc": "H02AA",
+      "summary": "Remplacent l'aldostérone : insuffisance surrénale primaire (maladie d'Addison), hypotension orthostatique."
+    },
+    {
+      "slug": "hypoglycemia-treatments",
+      "name": "Traitements de l'hypoglycémie",
+      "atc": "",
+      "summary": "Corrigent rapidement une hypoglycémie sévère quand le patient ne peut pas se resucrer par la bouche."
+    },
+    {
+      "slug": "electrolyte-supplements",
+      "name": "Suppléments électrolytiques (potassium, calcium, magnésium)",
+      "atc": "A12",
+      "summary": "Corrigent ou préviennent les carences en potassium, calcium ou magnésium, par voie orale ou IV."
+    },
+    {
+      "slug": "potassium-binders",
+      "name": "Chélateurs du potassium",
+      "atc": "V03AE",
+      "summary": "Fixent le potassium dans l'intestin pour l'éliminer dans les selles : traitement de l'hyperkaliémie."
+    },
+    {
+      "slug": "vitamin-d",
+      "name": "Vitamine D et dérivés",
+      "atc": "A11CC",
+      "summary": "Préviennent et traitent la carence en vitamine D : rachitisme, ostéoporose, nourrissons, sujets âgés."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "insulin-aspart",
+      "name": "Insuline asparte",
+      "brands": ["NovoRapid", "Fiasp"],
+      "classSlug": "rapid-acting-insulins",
+      "hint": "Diabète : insuline des repas et de correction, pompe à insuline",
+      "tier": 1,
+      "services": ["community-pharmacy", "pediatrics", "geriatrics"]
+    },
+    {
+      "slug": "insulin-lispro",
+      "name": "Insuline lispro",
+      "brands": ["Humalog", "Lyumjev"],
+      "classSlug": "rapid-acting-insulins",
+      "hint": "Diabète : insuline des repas et de correction, pompe à insuline",
+      "tier": 1,
+      "services": ["community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "insulin-glulisine",
+      "name": "Insuline glulisine",
+      "brands": ["Apidra"],
+      "classSlug": "rapid-acting-insulins",
+      "hint": "Diabète : insuline des repas",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "human-insulin-regular",
+      "name": "Insuline humaine rapide",
+      "brands": ["Actrapid", "Umuline Rapide"],
+      "classSlug": "rapid-acting-insulins",
+      "hint": "Insuline IV au PSE, acidocétose, hyperkaliémie (avec glucose)",
+      "tier": 1,
+      "services": ["intensive-care", "emergency", "neuro-icu", "anesthesia"]
+    },
+    {
+      "slug": "insulin-isophane",
+      "name": "Insuline isophane (NPH)",
+      "brands": ["Insulatard", "Umuline NPH"],
+      "classSlug": "intermediate-insulins",
+      "hint": "Diabète, diabète gestationnel, hyperglycémie cortico-induite",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "biphasic-insulin-aspart",
+      "name": "Insuline asparte biphasique",
+      "brands": ["NovoMix"],
+      "classSlug": "intermediate-insulins",
+      "hint": "Diabète : schéma à 2 injections de mélange",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "biphasic-insulin-lispro",
+      "name": "Insuline lispro biphasique",
+      "brands": ["Humalog Mix"],
+      "classSlug": "intermediate-insulins",
+      "hint": "Diabète : schéma à 2 ou 3 injections de mélange",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "insulin-glargine",
+      "name": "Insuline glargine",
+      "brands": ["Lantus", "Toujeo", "Abasaglar"],
+      "classSlug": "long-acting-insulins",
+      "hint": "Diabète : insuline basale, 1 injection par jour",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics", "pediatrics"]
+    },
+    {
+      "slug": "insulin-degludec",
+      "name": "Insuline dégludec",
+      "brands": ["Tresiba"],
+      "classSlug": "long-acting-insulins",
+      "hint": "Diabète : insuline basale ultra-lente",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "metformin",
+      "name": "Metformine",
+      "brands": ["Glucophage", "Stagid"],
+      "classSlug": "biguanides",
+      "hint": "Diabète de type 2 (1re intention)",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "gliclazide",
+      "name": "Gliclazide",
+      "brands": ["Diamicron"],
+      "classSlug": "sulfonylureas",
+      "hint": "Diabète de type 2",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "glimepiride",
+      "name": "Glimépiride",
+      "brands": ["Amarel"],
+      "classSlug": "sulfonylureas",
+      "hint": "Diabète de type 2",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "glibenclamide",
+      "name": "Glibenclamide",
+      "brands": ["Daonil", "Hémi-Daonil"],
+      "classSlug": "sulfonylureas",
+      "hint": "Diabète de type 2",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "repaglinide",
+      "name": "Répaglinide",
+      "brands": ["Novonorm"],
+      "classSlug": "glinides",
+      "hint": "Diabète de type 2 (prise avant les repas)",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "sitagliptin",
+      "name": "Sitagliptine",
+      "brands": ["Januvia", "Xelevia"],
+      "classSlug": "dpp4-inhibitors",
+      "hint": "Diabète de type 2",
+      "tier": 2,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "vildagliptin",
+      "name": "Vildagliptine",
+      "brands": ["Galvus"],
+      "classSlug": "dpp4-inhibitors",
+      "hint": "Diabète de type 2",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "saxagliptin",
+      "name": "Saxagliptine",
+      "brands": ["Onglyza"],
+      "classSlug": "dpp4-inhibitors",
+      "hint": "Diabète de type 2",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "semaglutide",
+      "name": "Sémaglutide",
+      "brands": ["Ozempic", "Wegovy"],
+      "classSlug": "glp1-agonists",
+      "hint": "Diabète de type 2, obésité",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "dulaglutide",
+      "name": "Dulaglutide",
+      "brands": ["Trulicity"],
+      "classSlug": "glp1-agonists",
+      "hint": "Diabète de type 2 (1 injection par semaine)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "liraglutide",
+      "name": "Liraglutide",
+      "brands": ["Victoza", "Saxenda"],
+      "classSlug": "glp1-agonists",
+      "hint": "Diabète de type 2, obésité",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "tirzepatide",
+      "name": "Tirzépatide",
+      "brands": ["Mounjaro"],
+      "classSlug": "glp1-agonists",
+      "hint": "Diabète de type 2, obésité (double agoniste GIP/GLP-1)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "dapagliflozin",
+      "name": "Dapagliflozine",
+      "brands": ["Forxiga"],
+      "classSlug": "sglt2-inhibitors",
+      "hint": "Diabète de type 2, insuffisance cardiaque, maladie rénale chronique",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "empagliflozin",
+      "name": "Empagliflozine",
+      "brands": ["Jardiance"],
+      "classSlug": "sglt2-inhibitors",
+      "hint": "Diabète de type 2, insuffisance cardiaque, maladie rénale chronique",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "levothyroxine",
+      "name": "Lévothyroxine",
+      "brands": ["Levothyrox", "L-Thyroxin Henning", "Tcaps"],
+      "classSlug": "thyroid-hormones",
+      "hint": "Hypothyroïdie, après thyroïdectomie",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics", "oncology"]
+    },
+    {
+      "slug": "liothyronine",
+      "name": "Liothyronine",
+      "brands": ["Cynomel"],
+      "classSlug": "thyroid-hormones",
+      "hint": "Hypothyroïdie (situations particulières), préparation à l'iode radioactif",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "carbimazole",
+      "name": "Carbimazole",
+      "brands": ["Néo-Mercazole"],
+      "classSlug": "antithyroid-drugs",
+      "hint": "Hyperthyroïdie, maladie de Basedow",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "thiamazole",
+      "name": "Thiamazole",
+      "brands": ["Thyrozol"],
+      "classSlug": "antithyroid-drugs",
+      "hint": "Hyperthyroïdie, maladie de Basedow",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "propylthiouracil",
+      "name": "Propylthiouracile",
+      "brands": ["Propylex"],
+      "classSlug": "antithyroid-drugs",
+      "hint": "Hyperthyroïdie au 1er trimestre de grossesse, crise thyrotoxique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "prednisone",
+      "name": "Prednisone",
+      "brands": ["Cortancyl"],
+      "classSlug": "systemic-corticosteroids",
+      "hint": "Maladies inflammatoires et auto-immunes, asthme, allergie",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics", "oncology"]
+    },
+    {
+      "slug": "prednisolone",
+      "name": "Prednisolone",
+      "brands": ["Solupred"],
+      "classSlug": "systemic-corticosteroids",
+      "hint": "Asthme, laryngite, maladies inflammatoires (forme orodispersible)",
+      "tier": 1,
+      "services": ["community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "methylprednisolone",
+      "name": "Méthylprednisolone",
+      "brands": ["Solumédrol", "Médrol"],
+      "classSlug": "systemic-corticosteroids",
+      "hint": "Asthme aigu grave, choc anaphylactique (relais), bolus en poussée",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "oncology"]
+    },
+    {
+      "slug": "dexamethasone",
+      "name": "Dexaméthasone",
+      "brands": ["Dectancyl"],
+      "classSlug": "systemic-corticosteroids",
+      "hint": "Œdème cérébral, nausées de chimiothérapie, méningite, laryngite",
+      "tier": 1,
+      "services": [
+        "neuro-icu",
+        "oncology",
+        "anesthesia",
+        "emergency",
+        "intensive-care",
+        "pediatrics"
+      ]
+    },
+    {
+      "slug": "hydrocortisone",
+      "name": "Hydrocortisone",
+      "brands": [],
+      "classSlug": "systemic-corticosteroids",
+      "hint": "Insuffisance surrénale, choc septique, insuffisance surrénale aiguë",
+      "tier": 2,
+      "services": ["intensive-care", "emergency"]
+    },
+    {
+      "slug": "betamethasone",
+      "name": "Bétaméthasone",
+      "brands": ["Célestène", "Diprostène"],
+      "classSlug": "systemic-corticosteroids",
+      "hint": "Maturation pulmonaire fœtale, laryngite de l'enfant, infiltrations",
+      "tier": 2,
+      "services": ["pediatrics", "orthopedic-surgery"]
+    },
+    {
+      "slug": "fludrocortisone",
+      "name": "Fludrocortisone",
+      "brands": ["Flucortac"],
+      "classSlug": "mineralocorticoids",
+      "hint": "Insuffisance surrénale primaire, choc septique (avec hydrocortisone)",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "glucagon",
+      "name": "Glucagon",
+      "brands": ["GlucaGen", "Baqsimi"],
+      "classSlug": "hypoglycemia-treatments",
+      "hint": "Hypoglycémie sévère chez le diabétique insulinotraité",
+      "tier": 2,
+      "services": ["emergency", "pediatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "glucose-hypertonic",
+      "name": "Glucose hypertonique (G30 %)",
+      "brands": [],
+      "classSlug": "hypoglycemia-treatments",
+      "hint": "Hypoglycémie sévère (IV), avec insuline dans l'hyperkaliémie",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "neuro-icu", "pediatrics"]
+    },
+    {
+      "slug": "potassium-chloride",
+      "name": "Chlorure de potassium",
+      "brands": ["Diffu-K", "Kaleorid"],
+      "classSlug": "electrolyte-supplements",
+      "hint": "Hypokaliémie (orale ou IV lente, jamais en bolus)",
+      "tier": 1,
+      "services": ["intensive-care", "neuro-icu", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "calcium-gluconate",
+      "name": "Gluconate de calcium",
+      "brands": [],
+      "classSlug": "electrolyte-supplements",
+      "hint": "Hypocalcémie, hyperkaliémie menaçante (protection cardiaque)",
+      "tier": 2,
+      "services": ["emergency", "intensive-care", "anesthesia"]
+    },
+    {
+      "slug": "calcium-carbonate",
+      "name": "Carbonate de calcium",
+      "brands": ["Cacit", "Orocal", "Calciprat"],
+      "classSlug": "electrolyte-supplements",
+      "hint": "Carence en calcium, ostéoporose (souvent avec vitamine D)",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "magnesium-sulfate",
+      "name": "Sulfate de magnésium",
+      "brands": [],
+      "classSlug": "electrolyte-supplements",
+      "hint": "Hypomagnésémie, éclampsie, torsades de pointes, asthme grave",
+      "tier": 2,
+      "services": ["emergency", "intensive-care", "anesthesia"]
+    },
+    {
+      "slug": "sodium-polystyrene-sulfonate",
+      "name": "Polystyrène sulfonate de sodium",
+      "brands": ["Kayexalate"],
+      "classSlug": "potassium-binders",
+      "hint": "Hyperkaliémie",
+      "tier": 2,
+      "services": ["geriatrics", "intensive-care"]
+    },
+    {
+      "slug": "patiromer",
+      "name": "Patiromère",
+      "brands": ["Veltassa"],
+      "classSlug": "potassium-binders",
+      "hint": "Hyperkaliémie chronique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "cholecalciferol",
+      "name": "Cholécalciférol (vitamine D3)",
+      "brands": ["ZymaD", "Uvedose", "Adrigyl"],
+      "classSlug": "vitamin-d",
+      "hint": "Carence en vitamine D, prévention chez le nourrisson et le sujet âgé",
+      "tier": 1,
+      "services": ["pediatrics", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "calcifediol",
+      "name": "Calcifédiol",
+      "brands": ["Dédrogyl"],
+      "classSlug": "vitamin-d",
+      "hint": "Carence en vitamine D",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "alfacalcidol",
+      "name": "Alfacalcidol",
+      "brands": ["Un-Alfa"],
+      "classSlug": "vitamin-d",
+      "hint": "Hypocalcémie de l'insuffisance rénale, hypoparathyroïdie",
+      "tier": 3,
+      "services": []
+    }
+  ]
+}
