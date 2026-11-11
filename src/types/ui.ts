@@ -104,3 +104,7 @@ export interface AppShellProps {
   children: ReactNode;
   topBar?: ReactNode;
 }
+
+export interface LogoProps {
+  compact?: boolean;
+}
