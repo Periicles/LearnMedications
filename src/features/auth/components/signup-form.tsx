@@ -20,6 +20,7 @@ export function SignupForm() {
         autoComplete="username"
         autoCapitalize="none"
         required
+        defaultValue={state.values?.username}
         hint="Visible par vos amis. 3 à 20 caractères."
         error={state.fieldErrors?.username}
       />
@@ -30,6 +31,7 @@ export function SignupForm() {
         autoComplete="email"
         inputMode="email"
         required
+        defaultValue={state.values?.email}
         error={state.fieldErrors?.email}
       />
       <TextField

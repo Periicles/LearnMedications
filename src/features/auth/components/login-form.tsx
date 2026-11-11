@@ -22,6 +22,7 @@ export function LoginForm() {
         autoComplete="email"
         inputMode="email"
         required
+        defaultValue={state.values?.email}
         error={state.fieldErrors?.email}
       />
       <TextField

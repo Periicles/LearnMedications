@@ -32,7 +32,7 @@ export function Leaderboard({ entries }: LeaderboardProps) {
               <p className="text-ink-soft text-xs font-bold">
                 Niveau {entry.level}
                 <Flame className="ml-2 inline size-3.5" aria-hidden="true" /> {entry.streak}
-                <span className="sr-only"> jours de série</span>
+                <span className="sr-only"> {entry.streak > 1 ? "jours" : "jour"} de série</span>
               </p>
             </div>
             <span className="shrink-0 font-black tabular-nums">{entry.weeklyXp} XP</span>
