@@ -46,6 +46,12 @@ E2E_MOBILE_ENGINE=chromium npm run test:e2e
 npm run test:e2e -- --project="iPhone 16 Pro"   # a single device
 ```
 
+To test a deployed site instead of a local build, set its address:
+
+```bash
+E2E_BASE_URL=https://learn-medications.vercel.app npm run test:e2e
+```
+
 Emulation checks layout and behaviour; it does not replace a final check on a real phone.
 
 ### Backend and test data

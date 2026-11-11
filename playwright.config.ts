@@ -1,5 +1,5 @@
 import { defineConfig, devices } from "@playwright/test";
-import { BASE_URL, E2E_PORT, loadTestEnv, storageFile } from "./e2e/support/env";
+import { BASE_URL, E2E_PORT, loadTestEnv, REMOTE_URL, storageFile } from "./e2e/support/env";
 
 loadTestEnv();
 
@@ -35,12 +35,14 @@ export default defineConfig({
   expect: { timeout: 15_000 },
   reporter: process.env.CI ? [["github"], ["html", { open: "never" }]] : [["list"]],
   use: { baseURL: BASE_URL, trace: "retain-on-failure", screenshot: "only-on-failure" },
-  webServer: {
-    command: `npm run build && npm run start -- --port ${E2E_PORT}`,
-    url: BASE_URL,
-    timeout: 240_000,
-    reuseExistingServer: !process.env.CI,
-  },
+  webServer: REMOTE_URL
+    ? undefined
+    : {
+        command: `npm run build && npm run start -- --port ${E2E_PORT}`,
+        url: BASE_URL,
+        timeout: 240_000,
+        reuseExistingServer: !process.env.CI,
+      },
   projects: [
     { name: "setup", testMatch: /users\.setup\.ts/, teardown: "cleanup" },
     { name: "cleanup", testMatch: /users\.teardown\.ts/ },
