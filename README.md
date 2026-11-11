@@ -50,6 +50,8 @@ login needs the environment variables and the database migrations.
 | `npm run lint`               | ESLint, no warnings allowed                         |
 | `npm run typecheck`          | Generate route types and run the TypeScript checker |
 | `npm run test`               | Unit tests and database migration tests             |
+| `npm run test:coverage`      | Same, with the enforced 80% coverage threshold      |
+| `npm run test:e2e`           | End-to-end tests on phone, tablet and desktop       |
 | `npm run format`             | Format the code base with Prettier                  |
 | `npm run content:check-bdpm` | Cross-check the content against the public BDPM     |
 
@@ -58,6 +60,7 @@ login needs the environment variables and the database migrations.
 - [Architecture](docs/architecture.md) — folders, data flow and coding rules
 - [Content](docs/content.md) — the medication dataset, its sources and how to extend it
 - [Gamification](docs/gamification.md) — XP, levels, streaks, mastery and achievements
+- [Testing](docs/testing.md) — unit, database and end-to-end tests, devices covered
 - [Database](docs/database.md) — schema, security model and migrations
 - [Deployment](docs/deployment.md) — Supabase, Vercel and the custom domain
 - [Contributing](docs/contributing.md) — branches, commits, pull requests and releases
