@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { loadAchievementStats } from "@/features/achievements/lib/overview";
 import { getSessionStats } from "@/features/achievements/lib/queries";
+import { getFriendCount } from "@/features/friends/lib/queries";
 import { requireUser } from "@/features/auth/lib/session";
 import { getCatalog } from "@/features/content/lib/catalog";
 import { AreaMasteryList } from "@/features/profile/components/area-mastery-list";
@@ -24,7 +25,7 @@ export default async function ProfilePage() {
   const user = await requireUser();
   const [profile, stats, sessions, mastery, dailyXp] = await Promise.all([
     getProfile(user.id),
-    loadAchievementStats(user.id, 0),
+    loadAchievementStats(user.id, await getFriendCount()),
     getSessionStats(),
     getMasteryRows(user.id),
     getDailyXp(CHART_DAYS),

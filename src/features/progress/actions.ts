@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { getSessionStats, getUnlockedAchievements } from "@/features/achievements/lib/queries";
 import { findSessionBadges } from "@/features/achievements/lib/session-badges";
+import { getFriendCount } from "@/features/friends/lib/queries";
 import { requireUser } from "@/features/auth/lib/session";
 import { outcomeFromRecords } from "@/features/quiz/lib/session";
 import { sessionInputSchema } from "@/schemas/progress";
@@ -22,12 +23,13 @@ export async function completeSession(rawInput: SessionInput): Promise<SessionRe
   const parsed = sessionInputSchema.safeParse(rawInput);
   if (!parsed.success) return null;
 
-  const [profile, masteryRows, completions, sessions, unlocked] = await Promise.all([
+  const [profile, masteryRows, completions, sessions, unlocked, friendCount] = await Promise.all([
     getProfile(user.id),
     getMasteryRows(user.id),
     getCompletions(user.id),
     getSessionStats(),
     getUnlockedAchievements(user.id),
+    getFriendCount(),
   ]);
   const records = acceptRecords(parsed.data, completions);
   if (!profile || records.length === 0) return null;
@@ -48,7 +50,7 @@ export async function completeSession(rawInput: SessionInput): Promise<SessionRe
     knownMastery: masteryRows,
     updatedMastery,
     sessions,
-    friendCount: 0,
+    friendCount,
     ownedKeys: [...unlocked.keys()],
   });
 
