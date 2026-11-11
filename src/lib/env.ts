@@ -23,7 +23,15 @@ export function getSecretKey(): string {
   return secretKey;
 }
 
+function getVercelHost(): string | undefined {
+  const isProduction = process.env.VERCEL_ENV === "production";
+  const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  return (isProduction && productionHost) || process.env.VERCEL_URL || undefined;
+}
+
+/** Public origin used in e-mail links: explicit setting, then the Vercel domain, then localhost. */
 export function getSiteUrl(): string {
-  const vercelUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined;
-  return (process.env.NEXT_PUBLIC_SITE_URL ?? vercelUrl ?? DEFAULT_SITE_URL).replace(/\/$/, "");
+  const vercelHost = getVercelHost();
+  const vercelUrl = vercelHost ? `https://${vercelHost}` : undefined;
+  return (process.env.NEXT_PUBLIC_SITE_URL || vercelUrl || DEFAULT_SITE_URL).replace(/\/$/, "");
 }
