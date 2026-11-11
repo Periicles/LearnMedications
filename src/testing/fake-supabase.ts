@@ -1,7 +1,7 @@
-import type { FakeCall, FakeSupabase, QueryResult } from "@/types/testing";
+import type { FakeAuth, FakeAuthName, FakeCall, FakeSupabase, QueryResult } from "@/types/testing";
 
 const EMPTY_RESULT: QueryResult = { data: null, error: null, count: null };
-const AUTH_METHODS = [
+const AUTH_METHODS: FakeAuthName[] = [
   "getClaims",
   "signInWithPassword",
   "signUp",
@@ -47,7 +47,10 @@ export function createFakeSupabase(): FakeSupabase {
       calls.push({ target: "auth", method, args });
       return Promise.resolve(nextResult(`auth.${method}`));
     };
-  const auth = Object.fromEntries(AUTH_METHODS.map((method) => [method, makeAuthMethod(method)]));
+  const auth = Object.fromEntries(
+    AUTH_METHODS.map((method) => [method, makeAuthMethod(method)]),
+  ) as Record<FakeAuthName, ReturnType<typeof makeAuthMethod>>;
+  const fakeAuth: FakeAuth = { ...auth, admin: { deleteUser: makeAuthMethod("admin.deleteUser") } };
 
   return {
     calls,
@@ -58,7 +61,7 @@ export function createFakeSupabase(): FakeSupabase {
         calls.push({ target: name, method: "rpc", args: [args] });
         return makeBuilder(name);
       },
-      auth: { ...auth, admin: { deleteUser: makeAuthMethod("admin.deleteUser") } },
+      auth: fakeAuth,
     },
   };
 }

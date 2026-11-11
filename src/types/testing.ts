@@ -4,6 +4,22 @@ export interface QueryResult {
   count?: number | null;
 }
 
+export type FakeAuthMethod = (...args: unknown[]) => Promise<QueryResult>;
+
+export type FakeAuthName =
+  | "getClaims"
+  | "signInWithPassword"
+  | "signUp"
+  | "signOut"
+  | "resetPasswordForEmail"
+  | "updateUser"
+  | "exchangeCodeForSession"
+  | "verifyOtp";
+
+export type FakeAuth = Record<FakeAuthName, FakeAuthMethod> & {
+  admin: Record<"deleteUser", FakeAuthMethod>;
+};
+
 export interface FakeCall {
   target: string;
   method: string;
@@ -18,8 +34,6 @@ export interface FakeSupabase {
   client: {
     from: (table: string) => unknown;
     rpc: (name: string, args?: unknown) => unknown;
-    auth: Record<string, (...args: unknown[]) => Promise<QueryResult>> & {
-      admin: Record<string, (...args: unknown[]) => Promise<QueryResult>>;
-    };
+    auth: FakeAuth;
   };
 }
