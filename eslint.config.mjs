@@ -36,10 +36,28 @@ const eslintConfig = defineConfig([
     rules: { "max-lines-per-function": "off" },
   },
   {
+    // Playwright fixtures receive a callback named `use` and may take an empty first argument.
+    files: ["e2e/**/*.ts"],
+    rules: {
+      "id-length": ["error", { min: 4, max: 28, properties: "never", exceptions: ["use"] }],
+      "no-empty-pattern": "off",
+      "react-hooks/rules-of-hooks": "off",
+      "max-lines-per-function": "off",
+    },
+  },
+  {
     files: ["scripts/**/*.ts"],
     rules: { "no-console": "off" },
   },
-  globalIgnores([".next/**", "out/**", "build/**", "coverage/**", "next-env.d.ts"]),
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "coverage/**",
+    "e2e/.results/**",
+    "playwright-report/**",
+    "next-env.d.ts",
+  ]),
 ]);
 
 export default eslintConfig;
