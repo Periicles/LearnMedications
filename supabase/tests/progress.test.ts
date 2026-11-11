@@ -72,6 +72,23 @@ describe("progress migration", () => {
     expect(await testDb.runAsUser(bobId, "select 1 from public.user_achievements")).toHaveLength(1);
   });
 
+  it("aggregates the caller's own session statistics", async () => {
+    const stats = await testDb.runAsUser(aliceId, "select * from public.get_session_stats()");
+    expect(stats).toEqual([
+      { session_count: 2, perfect_count: 0, review_count: 0, answer_count: 20, correct_count: 18 },
+    ]);
+    const daily = await testDb.runAsUser<Record<"xp", number>>(
+      aliceId,
+      "select xp from public.get_daily_xp('Europe/Paris', 30)",
+    );
+    expect(daily).toEqual([{ xp: 45 }]);
+    const others = await testDb.runAsUser<Record<"session_count", number>>(
+      bobId,
+      "select session_count from public.get_session_stats()",
+    );
+    expect(others).toEqual([{ session_count: 0 }]);
+  });
+
   it("forbids users from writing progress or calling the function directly", async () => {
     await expect(
       testDb.runAsUser(
