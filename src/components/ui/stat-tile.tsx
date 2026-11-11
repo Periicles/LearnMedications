@@ -15,7 +15,7 @@ export function StatTile({ label, value, icon: Icon, tone = "brand" }: StatTileP
       </span>
       <div className="min-w-0">
         <p className="truncate text-lg leading-tight font-extrabold">{value}</p>
-        <p className="text-ink-soft truncate text-xs font-bold">{label}</p>
+        <p className="text-ink-soft text-xs leading-tight font-bold">{label}</p>
       </div>
     </div>
   );
