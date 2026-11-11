@@ -29,7 +29,7 @@ export function buildCollections(
   );
   const serviceCollections = SERVICES.map((service) =>
     makeCollection(
-      { ...service, kind: "service" },
+      { ...service, slug: `service-${service.slug}`, kind: "service" },
       substances.filter((substance) => substance.services.includes(service.slug)),
       areas,
       classes,

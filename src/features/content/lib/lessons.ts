@@ -31,6 +31,15 @@ export function splitEvenly<Item>(items: Item[]): Item[][] {
   return chunks;
 }
 
+/** Names a lesson mixing several small families after the first families it contains. */
+export function mixedTitle(substances: Substance[], classes: Map<string, DrugClass>): string {
+  const names = [...new Set(substances.map((substance) => substance.classSlug))].map((slug) =>
+    (classes.get(slug)?.name ?? slug).replace(/\s*\(.*\)$/, ""),
+  );
+  if (names.length <= 2) return names.join(" · ");
+  return `${names.slice(0, 2).join(" · ")}…`;
+}
+
 function buildAreaLessons(
   area: Area,
   groups: SubstanceGroup[],
@@ -58,13 +67,7 @@ function buildAreaLessons(
     );
   }
 
-  const mixedChunks = splitEvenly(leftovers);
-  mixedChunks.forEach((chunk, index) =>
-    pushLesson(
-      mixedChunks.length > 1 ? `${area.name} : mélange (${index + 1})` : `${area.name} : mélange`,
-      chunk,
-    ),
-  );
+  splitEvenly(leftovers).forEach((chunk) => pushLesson(mixedTitle(chunk, classes), chunk));
   return lessons;
 }
 

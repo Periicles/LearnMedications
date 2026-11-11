@@ -50,6 +50,6 @@ describe("buildLessons", () => {
     const substances = [makeSubstance("nefopam", "others"), makeSubstance("naloxone", "antidotes")];
     const lessons = buildLessons(substances, [area], classes);
     expect(lessons).toHaveLength(1);
-    expect(lessons[0].title).toBe("Douleur : mélange");
+    expect(lessons[0].title).toBe("others · antidotes");
   });
 });

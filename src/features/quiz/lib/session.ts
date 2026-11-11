@@ -1,4 +1,10 @@
-import type { LessonPlan, SessionAction, SessionOutcome, SessionState } from "@/types/quiz";
+import type {
+  AnswerRecord,
+  LessonPlan,
+  SessionAction,
+  SessionOutcome,
+  SessionState,
+} from "@/types/quiz";
 
 export function initSession(plan: LessonPlan): SessionState {
   return {
@@ -50,14 +56,18 @@ export function sessionProgress(state: SessionState): number {
   return Math.min(answered / state.queue.length, 1);
 }
 
-export function summarize(state: SessionState): SessionOutcome {
-  const totalCount = state.records.length;
-  const correctCount = state.records.filter((record) => record.correct).length;
+export function outcomeFromRecords(records: AnswerRecord[]): SessionOutcome {
+  const totalCount = records.length;
+  const correctCount = records.filter((record) => record.correct).length;
   return {
-    records: state.records,
+    records,
     correctCount,
     totalCount,
     accuracy: totalCount > 0 ? correctCount / totalCount : 0,
     perfect: totalCount > 0 && correctCount === totalCount,
   };
+}
+
+export function summarize(state: SessionState): SessionOutcome {
+  return outcomeFromRecords(state.records);
 }
