@@ -10,7 +10,9 @@ export function Sidebar() {
       <nav aria-label="Navigation principale" className="flex flex-col gap-1.5">
         <Suspense>
           {NAV_ITEMS.map((item) => (
-            <NavLink key={item.href} item={item} layout="sidebar" />
+            <NavLink key={item.href} href={item.href} label={item.label} layout="sidebar">
+              <item.icon className="size-6" aria-hidden="true" />
+            </NavLink>
           ))}
         </Suspense>
       </nav>

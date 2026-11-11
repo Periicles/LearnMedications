@@ -10,7 +10,9 @@ export function TabBar() {
     >
       <Suspense>
         {NAV_ITEMS.map((item) => (
-          <NavLink key={item.href} item={item} layout="tabbar" />
+          <NavLink key={item.href} href={item.href} label={item.label} layout="tabbar">
+            <item.icon className="size-5" aria-hidden="true" />
+          </NavLink>
         ))}
       </Suspense>
     </nav>
