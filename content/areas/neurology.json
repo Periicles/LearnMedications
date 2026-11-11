@@ -1,0 +1,648 @@
+{
+  "area": {
+    "slug": "neurology",
+    "name": "Neurologie",
+    "icon": "🧠"
+  },
+  "classes": [
+    {
+      "slug": "antiepileptics-classic",
+      "name": "Antiépileptiques de 1re génération",
+      "atc": "N03A",
+      "summary": "Anciens antiépileptiques, efficaces mais riches en interactions et effets indésirables ; dosages sanguins parfois utiles."
+    },
+    {
+      "slug": "antiepileptics-new",
+      "name": "Antiépileptiques de nouvelle génération",
+      "atc": "N03A",
+      "summary": "Antiépileptiques plus récents, mieux tolérés et avec moins d'interactions, utilisés en 1re intention ou en association."
+    },
+    {
+      "slug": "levodopa-combinations",
+      "name": "Lévodopa et associations",
+      "atc": "N04BA",
+      "summary": "Précurseur de la dopamine associé à un inhibiteur de la décarboxylase : traitement de référence de la maladie de Parkinson."
+    },
+    {
+      "slug": "dopamine-agonists",
+      "name": "Agonistes dopaminergiques",
+      "atc": "N04BC",
+      "summary": "Stimulent directement les récepteurs dopaminergiques : Parkinson, syndrome des jambes sans repos."
+    },
+    {
+      "slug": "mao-b-inhibitors",
+      "name": "Inhibiteurs de la MAO-B",
+      "atc": "N04BD",
+      "summary": "Freinent la dégradation de la dopamine cérébrale ; utilisés seuls ou avec la lévodopa dans la maladie de Parkinson."
+    },
+    {
+      "slug": "comt-inhibitors",
+      "name": "Inhibiteurs de la COMT",
+      "atc": "N04BX",
+      "summary": "Prolongent l'effet de chaque prise de lévodopa en limitant sa dégradation ; toujours associés à la lévodopa."
+    },
+    {
+      "slug": "other-antiparkinsonians",
+      "name": "Anticholinergiques et autres antiparkinsoniens",
+      "atc": "N04",
+      "summary": "Anticholinergiques et amantadine : tremblements, dyskinésies, syndromes extrapyramidaux induits par les neuroleptiques."
+    },
+    {
+      "slug": "triptans",
+      "name": "Triptans",
+      "atc": "N02CC",
+      "summary": "Agonistes sérotoninergiques 5-HT1B/1D qui traitent la crise de migraine, à prendre dès le début de la céphalée."
+    },
+    {
+      "slug": "anti-cgrp-antibodies",
+      "name": "Anticorps anti-CGRP",
+      "atc": "N02CD",
+      "summary": "Anticorps monoclonaux injectables mensuels pour la prévention de la migraine sévère et fréquente."
+    },
+    {
+      "slug": "anti-alzheimer",
+      "name": "Anti-Alzheimer",
+      "atc": "N06D",
+      "summary": "Anticholinestérasiques et mémantine : traitement symptomatique des troubles cognitifs de la maladie d'Alzheimer."
+    },
+    {
+      "slug": "osmotherapy",
+      "name": "Osmothérapie",
+      "atc": "B05BC",
+      "summary": "Solutés hyperosmolaires qui réduisent l'œdème cérébral et l'hypertension intracrânienne."
+    },
+    {
+      "slug": "cerebral-calcium-channel-blockers",
+      "name": "Inhibiteurs calciques à tropisme cérébral",
+      "atc": "C08CA",
+      "summary": "Prévention du vasospasme cérébral après hémorragie méningée par rupture d'anévrisme."
+    },
+    {
+      "slug": "anticholinesterases-myasthenia",
+      "name": "Anticholinestérasiques de la myasthénie",
+      "atc": "N07AA",
+      "summary": "Augmentent l'acétylcholine à la jonction neuromusculaire pour améliorer la force musculaire dans la myasthénie."
+    },
+    {
+      "slug": "antivertigo",
+      "name": "Antivertigineux",
+      "atc": "N07C",
+      "summary": "Traitement symptomatique des vertiges et du mal des transports."
+    },
+    {
+      "slug": "ms-disease-modifying",
+      "name": "Traitements de fond de la sclérose en plaques",
+      "atc": "L04A",
+      "summary": "Immunomodulateurs et immunosuppresseurs qui réduisent les poussées et la progression de la sclérose en plaques."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "valproic-acid",
+      "name": "Acide valproïque",
+      "brands": ["Dépakine", "Dépakote"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "Épilepsies généralisées et focales, trouble bipolaire (dérivés)",
+      "tier": 1,
+      "services": ["neuro-icu", "emergency", "pediatrics", "psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "carbamazepine",
+      "name": "Carbamazépine",
+      "brands": ["Tégrétol"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "Épilepsies focales, névralgie du trijumeau",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "phenytoin",
+      "name": "Phénytoïne",
+      "brands": ["Di-Hydan"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "Épilepsies, état de mal épileptique",
+      "tier": 3,
+      "services": ["neuro-icu"]
+    },
+    {
+      "slug": "fosphenytoin",
+      "name": "Fosphénytoïne",
+      "brands": ["Prodilantin"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "État de mal épileptique (IV)",
+      "tier": 3,
+      "services": ["neuro-icu", "emergency", "intensive-care"]
+    },
+    {
+      "slug": "phenobarbital",
+      "name": "Phénobarbital",
+      "brands": ["Gardénal"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "Épilepsies, état de mal épileptique réfractaire",
+      "tier": 3,
+      "services": ["neuro-icu", "emergency", "pediatrics"]
+    },
+    {
+      "slug": "clonazepam",
+      "name": "Clonazépam",
+      "brands": ["Rivotril"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "État de mal épileptique, épilepsies",
+      "tier": 2,
+      "services": ["emergency", "neuro-icu", "intensive-care", "pediatrics"]
+    },
+    {
+      "slug": "clobazam",
+      "name": "Clobazam",
+      "brands": ["Urbanyl", "Likozam"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "Épilepsies en association, anxiété",
+      "tier": 2,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "ethosuximide",
+      "name": "Éthosuximide",
+      "brands": ["Zarontin"],
+      "classSlug": "antiepileptics-classic",
+      "hint": "Épilepsie-absences de l'enfant",
+      "tier": 3,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "levetiracetam",
+      "name": "Lévétiracétam",
+      "brands": ["Keppra"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales et généralisées, état de mal épileptique",
+      "tier": 1,
+      "services": [
+        "neuro-icu",
+        "emergency",
+        "intensive-care",
+        "pediatrics",
+        "geriatrics",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "lamotrigine",
+      "name": "Lamotrigine",
+      "brands": ["Lamictal"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies, prévention des épisodes dépressifs bipolaires",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "oxcarbazepine",
+      "name": "Oxcarbazépine",
+      "brands": ["Trileptal"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "eslicarbazepine",
+      "name": "Eslicarbazépine",
+      "brands": ["Zebinix"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "topiramate",
+      "name": "Topiramate",
+      "brands": ["Epitomax"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies, prévention de la migraine",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "lacosamide",
+      "name": "Lacosamide",
+      "brands": ["Vimpat"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales, état de mal épileptique (IV)",
+      "tier": 2,
+      "services": ["neuro-icu"]
+    },
+    {
+      "slug": "zonisamide",
+      "name": "Zonisamide",
+      "brands": ["Zonegran"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "perampanel",
+      "name": "Pérampanel",
+      "brands": ["Fycompa"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales en association",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "brivaracetam",
+      "name": "Brivaracétam",
+      "brands": ["Briviact"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Épilepsies focales en association",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "vigabatrin",
+      "name": "Vigabatrin",
+      "brands": ["Sabril"],
+      "classSlug": "antiepileptics-new",
+      "hint": "Spasmes infantiles (syndrome de West), épilepsies focales",
+      "tier": 3,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "levodopa-benserazide",
+      "name": "Lévodopa + bensérazide",
+      "brands": ["Modopar"],
+      "classSlug": "levodopa-combinations",
+      "hint": "Maladie de Parkinson",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "levodopa-carbidopa",
+      "name": "Lévodopa + carbidopa",
+      "brands": ["Sinemet", "Duodopa"],
+      "classSlug": "levodopa-combinations",
+      "hint": "Maladie de Parkinson",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "pramipexole",
+      "name": "Pramipexole",
+      "brands": ["Sifrol"],
+      "classSlug": "dopamine-agonists",
+      "hint": "Maladie de Parkinson, syndrome des jambes sans repos",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "ropinirole",
+      "name": "Ropinirole",
+      "brands": ["Requip"],
+      "classSlug": "dopamine-agonists",
+      "hint": "Maladie de Parkinson, syndrome des jambes sans repos",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "rotigotine",
+      "name": "Rotigotine",
+      "brands": ["Neupro"],
+      "classSlug": "dopamine-agonists",
+      "hint": "Maladie de Parkinson (patch transdermique)",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "piribedil",
+      "name": "Piribédil",
+      "brands": ["Trivastal"],
+      "classSlug": "dopamine-agonists",
+      "hint": "Maladie de Parkinson",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "apomorphine",
+      "name": "Apomorphine",
+      "brands": ["Apokinon"],
+      "classSlug": "dopamine-agonists",
+      "hint": "Fluctuations motrices sévères de la maladie de Parkinson (SC)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "rasagiline",
+      "name": "Rasagiline",
+      "brands": ["Azilect"],
+      "classSlug": "mao-b-inhibitors",
+      "hint": "Maladie de Parkinson",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "safinamide",
+      "name": "Safinamide",
+      "brands": ["Xadago"],
+      "classSlug": "mao-b-inhibitors",
+      "hint": "Fluctuations motrices de la maladie de Parkinson",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "selegiline",
+      "name": "Sélégiline",
+      "brands": [],
+      "classSlug": "mao-b-inhibitors",
+      "hint": "Maladie de Parkinson",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "entacapone",
+      "name": "Entacapone",
+      "brands": ["Comtan"],
+      "classSlug": "comt-inhibitors",
+      "hint": "Fluctuations de fin de dose sous lévodopa",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "opicapone",
+      "name": "Opicapone",
+      "brands": ["Ongentys"],
+      "classSlug": "comt-inhibitors",
+      "hint": "Fluctuations de fin de dose sous lévodopa",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "tolcapone",
+      "name": "Tolcapone",
+      "brands": ["Tasmar"],
+      "classSlug": "comt-inhibitors",
+      "hint": "Fluctuations sous lévodopa en 2e intention (hépatotoxique)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "trihexyphenidyl",
+      "name": "Trihexyphénidyle",
+      "brands": ["Artane", "Parkinane"],
+      "classSlug": "other-antiparkinsonians",
+      "hint": "Parkinson (tremblement), syndromes extrapyramidaux",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "tropatepine",
+      "name": "Tropatépine",
+      "brands": ["Lepticur"],
+      "classSlug": "other-antiparkinsonians",
+      "hint": "Syndromes extrapyramidaux induits par les neuroleptiques",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "amantadine",
+      "name": "Amantadine",
+      "brands": ["Mantadix"],
+      "classSlug": "other-antiparkinsonians",
+      "hint": "Maladie de Parkinson, dyskinésies induites par la lévodopa",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "sumatriptan",
+      "name": "Sumatriptan",
+      "brands": ["Imigrane", "Imiject"],
+      "classSlug": "triptans",
+      "hint": "Crise de migraine, algie vasculaire de la face (SC)",
+      "tier": 1,
+      "services": ["community-pharmacy", "emergency"]
+    },
+    {
+      "slug": "zolmitriptan",
+      "name": "Zolmitriptan",
+      "brands": ["Zomig"],
+      "classSlug": "triptans",
+      "hint": "Crise de migraine",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "eletriptan",
+      "name": "Élétriptan",
+      "brands": ["Relpax"],
+      "classSlug": "triptans",
+      "hint": "Crise de migraine",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "rizatriptan",
+      "name": "Rizatriptan",
+      "brands": ["Maxalt"],
+      "classSlug": "triptans",
+      "hint": "Crise de migraine",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "naratriptan",
+      "name": "Naratriptan",
+      "brands": ["Naramig"],
+      "classSlug": "triptans",
+      "hint": "Crise de migraine",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "almotriptan",
+      "name": "Almotriptan",
+      "brands": ["Almogran"],
+      "classSlug": "triptans",
+      "hint": "Crise de migraine",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "erenumab",
+      "name": "Érénumab",
+      "brands": ["Aimovig"],
+      "classSlug": "anti-cgrp-antibodies",
+      "hint": "Prévention de la migraine sévère",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "galcanezumab",
+      "name": "Galcanézumab",
+      "brands": ["Emgality"],
+      "classSlug": "anti-cgrp-antibodies",
+      "hint": "Prévention de la migraine sévère",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "fremanezumab",
+      "name": "Frémanézumab",
+      "brands": ["Ajovy"],
+      "classSlug": "anti-cgrp-antibodies",
+      "hint": "Prévention de la migraine sévère",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "donepezil",
+      "name": "Donépézil",
+      "brands": ["Aricept"],
+      "classSlug": "anti-alzheimer",
+      "hint": "Maladie d'Alzheimer légère à modérément sévère",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "rivastigmine",
+      "name": "Rivastigmine",
+      "brands": ["Exelon"],
+      "classSlug": "anti-alzheimer",
+      "hint": "Maladie d'Alzheimer, démence parkinsonienne",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "galantamine",
+      "name": "Galantamine",
+      "brands": ["Reminyl"],
+      "classSlug": "anti-alzheimer",
+      "hint": "Maladie d'Alzheimer légère à modérément sévère",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "memantine",
+      "name": "Mémantine",
+      "brands": ["Ebixa"],
+      "classSlug": "anti-alzheimer",
+      "hint": "Maladie d'Alzheimer modérée à sévère",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "mannitol",
+      "name": "Mannitol",
+      "brands": [],
+      "classSlug": "osmotherapy",
+      "hint": "Hypertension intracrânienne, œdème cérébral",
+      "tier": 2,
+      "services": ["neuro-icu", "intensive-care", "emergency"]
+    },
+    {
+      "slug": "hypertonic-saline",
+      "name": "Chlorure de sodium hypertonique",
+      "brands": [],
+      "classSlug": "osmotherapy",
+      "hint": "Hypertension intracrânienne, hyponatrémie sévère symptomatique",
+      "tier": 2,
+      "services": ["neuro-icu", "intensive-care", "emergency"]
+    },
+    {
+      "slug": "nimodipine",
+      "name": "Nimodipine",
+      "brands": ["Nimotop"],
+      "classSlug": "cerebral-calcium-channel-blockers",
+      "hint": "Prévention du vasospasme après hémorragie sous-arachnoïdienne",
+      "tier": 3,
+      "services": ["neuro-icu"]
+    },
+    {
+      "slug": "pyridostigmine",
+      "name": "Pyridostigmine",
+      "brands": ["Mestinon"],
+      "classSlug": "anticholinesterases-myasthenia",
+      "hint": "Myasthénie",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "ambenonium",
+      "name": "Ambénonium",
+      "brands": ["Mytélase"],
+      "classSlug": "anticholinesterases-myasthenia",
+      "hint": "Myasthénie",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "acetylleucine",
+      "name": "Acétylleucine",
+      "brands": ["Tanganil"],
+      "classSlug": "antivertigo",
+      "hint": "Crise vertigineuse",
+      "tier": 2,
+      "services": ["emergency", "community-pharmacy"]
+    },
+    {
+      "slug": "betahistine",
+      "name": "Bétahistine",
+      "brands": ["Serc", "Lectil"],
+      "classSlug": "antivertigo",
+      "hint": "Vertiges de la maladie de Ménière",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "meclozine",
+      "name": "Méclozine",
+      "brands": ["Agyrax"],
+      "classSlug": "antivertigo",
+      "hint": "Vertiges, mal des transports",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "interferon-beta-1a",
+      "name": "Interféron bêta-1a",
+      "brands": ["Avonex", "Rebif"],
+      "classSlug": "ms-disease-modifying",
+      "hint": "Sclérose en plaques rémittente",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "dimethyl-fumarate",
+      "name": "Diméthyl fumarate",
+      "brands": ["Tecfidera"],
+      "classSlug": "ms-disease-modifying",
+      "hint": "Sclérose en plaques rémittente",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "teriflunomide",
+      "name": "Tériflunomide",
+      "brands": ["Aubagio"],
+      "classSlug": "ms-disease-modifying",
+      "hint": "Sclérose en plaques rémittente",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "natalizumab",
+      "name": "Natalizumab",
+      "brands": ["Tysabri"],
+      "classSlug": "ms-disease-modifying",
+      "hint": "Sclérose en plaques rémittente très active",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "ocrelizumab",
+      "name": "Ocrélizumab",
+      "brands": ["Ocrevus"],
+      "classSlug": "ms-disease-modifying",
+      "hint": "Sclérose en plaques rémittente et primaire progressive",
+      "tier": 3,
+      "services": []
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "area": {
+    "slug": "pain",
+    "name": "Douleur et inflammation",
+    "icon": "💊"
+  },
+  "classes": [
+    {
+      "slug": "non-opioid-analgesics",
+      "name": "Antalgiques non opioïdes",
+      "atc": "N02B",
+      "summary": "Antalgiques de palier 1 sans effet anti-inflammatoire : douleurs légères à modérées, fièvre."
+    },
+    {
+      "slug": "nsaids",
+      "name": "Anti-inflammatoires non stéroïdiens (AINS)",
+      "atc": "M01A",
+      "summary": "Antalgiques, antipyrétiques et anti-inflammatoires ; attention aux risques digestif, rénal et cardiovasculaire."
+    },
+    {
+      "slug": "weak-opioids",
+      "name": "Opioïdes faibles (palier 2)",
+      "atc": "N02A",
+      "summary": "Antalgiques de palier 2 pour douleurs modérées ou résistantes au palier 1, souvent associés au paracétamol."
+    },
+    {
+      "slug": "strong-opioids",
+      "name": "Opioïdes forts (palier 3)",
+      "atc": "N02A",
+      "summary": "Antalgiques puissants des douleurs intenses ; stupéfiants, surveillance de la sédation et de la respiration."
+    },
+    {
+      "slug": "opioid-antagonists",
+      "name": "Antagonistes des opioïdes",
+      "atc": "V03AB",
+      "summary": "Antidotes qui renversent les effets des opioïdes, notamment la dépression respiratoire."
+    },
+    {
+      "slug": "gabapentinoids",
+      "name": "Gabapentinoïdes",
+      "atc": "N03AX",
+      "summary": "Antiépileptiques utilisés surtout contre les douleurs neuropathiques ; risque de mésusage."
+    },
+    {
+      "slug": "topical-neuropathic",
+      "name": "Traitements locaux de la douleur neuropathique",
+      "atc": "N01BX",
+      "summary": "Patchs appliqués sur la zone douloureuse pour traiter une douleur neuropathique localisée."
+    },
+    {
+      "slug": "muscle-relaxants",
+      "name": "Myorelaxants",
+      "atc": "M03",
+      "summary": "Diminuent la contracture ou la spasticité musculaire."
+    },
+    {
+      "slug": "procedural-analgesia",
+      "name": "Analgésie des soins",
+      "atc": "",
+      "summary": "Prévention de la douleur des gestes courts (ponctions, pansements, sutures) chez l'adulte et l'enfant."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "paracetamol",
+      "name": "Paracétamol",
+      "brands": ["Doliprane", "Dafalgan", "Efferalgan"],
+      "classSlug": "non-opioid-analgesics",
+      "hint": "Douleurs légères à modérées, fièvre",
+      "tier": 1,
+      "services": [
+        "emergency",
+        "intensive-care",
+        "neuro-icu",
+        "anesthesia",
+        "orthopedic-surgery",
+        "geriatrics",
+        "pediatrics",
+        "oncology",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "nefopam",
+      "name": "Néfopam",
+      "brands": ["Acupan"],
+      "classSlug": "non-opioid-analgesics",
+      "hint": "Douleurs aiguës, notamment postopératoires",
+      "tier": 1,
+      "services": ["emergency", "anesthesia", "orthopedic-surgery", "intensive-care"]
+    },
+    {
+      "slug": "ibuprofen",
+      "name": "Ibuprofène",
+      "brands": ["Advil", "Nurofen", "Spedifen"],
+      "classSlug": "nsaids",
+      "hint": "Douleurs, fièvre, inflammation",
+      "tier": 1,
+      "services": ["emergency", "pediatrics", "orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "ketoprofen",
+      "name": "Kétoprofène",
+      "brands": ["Profénid", "Bi-Profénid"],
+      "classSlug": "nsaids",
+      "hint": "Douleurs aiguës, postopératoires, colique néphrétique, rhumatismes",
+      "tier": 1,
+      "services": ["emergency", "anesthesia", "orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "diclofenac",
+      "name": "Diclofénac",
+      "brands": ["Voltarène"],
+      "classSlug": "nsaids",
+      "hint": "Douleurs, rhumatismes, traumatologie (aussi en gel)",
+      "tier": 1,
+      "services": ["orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "naproxen",
+      "name": "Naproxène",
+      "brands": ["Apranax", "Naprosyne"],
+      "classSlug": "nsaids",
+      "hint": "Douleurs, rhumatismes, règles douloureuses",
+      "tier": 2,
+      "services": ["orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "celecoxib",
+      "name": "Célécoxib",
+      "brands": ["Celebrex"],
+      "classSlug": "nsaids",
+      "hint": "Arthrose, polyarthrite rhumatoïde, spondylarthrite",
+      "tier": 2,
+      "services": ["orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "piroxicam",
+      "name": "Piroxicam",
+      "brands": ["Feldène"],
+      "classSlug": "nsaids",
+      "hint": "Arthrose, rhumatismes (2e intention)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "mefenamic-acid",
+      "name": "Acide méfénamique",
+      "brands": ["Ponstyl"],
+      "classSlug": "nsaids",
+      "hint": "Règles douloureuses, douleurs légères à modérées",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "parecoxib",
+      "name": "Parécoxib",
+      "brands": ["Dynastat"],
+      "classSlug": "nsaids",
+      "hint": "Douleur postopératoire (IV/IM)",
+      "tier": 3,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "tramadol",
+      "name": "Tramadol",
+      "brands": ["Topalgic", "Contramal", "Zamudol"],
+      "classSlug": "weak-opioids",
+      "hint": "Douleurs modérées à intenses",
+      "tier": 1,
+      "services": ["emergency", "anesthesia", "orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "paracetamol-tramadol",
+      "name": "Paracétamol + tramadol",
+      "brands": ["Ixprim", "Zaldiar"],
+      "classSlug": "weak-opioids",
+      "hint": "Douleurs modérées à intenses",
+      "tier": 2,
+      "services": ["orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "paracetamol-codeine",
+      "name": "Paracétamol + codéine",
+      "brands": ["Dafalgan Codéiné", "Codoliprane"],
+      "classSlug": "weak-opioids",
+      "hint": "Douleurs modérées à intenses (contre-indiqué avant 12 ans)",
+      "tier": 1,
+      "services": ["emergency", "orthopedic-surgery", "community-pharmacy"]
+    },
+    {
+      "slug": "paracetamol-opium",
+      "name": "Paracétamol + opium",
+      "brands": ["Lamaline"],
+      "classSlug": "weak-opioids",
+      "hint": "Douleurs modérées à intenses",
+      "tier": 2,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "morphine",
+      "name": "Morphine",
+      "brands": ["Skenan", "Actiskenan", "Oramorph"],
+      "classSlug": "strong-opioids",
+      "hint": "Douleurs intenses, dyspnée en soins palliatifs",
+      "tier": 1,
+      "services": [
+        "emergency",
+        "intensive-care",
+        "anesthesia",
+        "orthopedic-surgery",
+        "geriatrics",
+        "oncology",
+        "pediatrics",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "oxycodone",
+      "name": "Oxycodone",
+      "brands": ["Oxycontin", "Oxynorm"],
+      "classSlug": "strong-opioids",
+      "hint": "Douleurs intenses, notamment postopératoires et cancéreuses",
+      "tier": 1,
+      "services": ["anesthesia", "orthopedic-surgery", "oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "hydromorphone",
+      "name": "Hydromorphone",
+      "brands": ["Sophidone"],
+      "classSlug": "strong-opioids",
+      "hint": "Douleurs intenses cancéreuses",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "tapentadol",
+      "name": "Tapentadol",
+      "brands": ["Palexia"],
+      "classSlug": "strong-opioids",
+      "hint": "Douleurs chroniques sévères",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "nalbuphine",
+      "name": "Nalbuphine",
+      "brands": [],
+      "classSlug": "strong-opioids",
+      "hint": "Douleurs aiguës intenses (agoniste-antagoniste), urgences, pédiatrie",
+      "tier": 2,
+      "services": ["emergency", "pediatrics", "anesthesia"]
+    },
+    {
+      "slug": "naloxone",
+      "name": "Naloxone",
+      "brands": ["Prenoxad", "Nyxoid"],
+      "classSlug": "opioid-antagonists",
+      "hint": "Surdosage aux opioïdes, dépression respiratoire",
+      "tier": 1,
+      "services": [
+        "emergency",
+        "intensive-care",
+        "anesthesia",
+        "orthopedic-surgery",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "pregabalin",
+      "name": "Prégabaline",
+      "brands": ["Lyrica"],
+      "classSlug": "gabapentinoids",
+      "hint": "Douleurs neuropathiques, anxiété généralisée, épilepsie",
+      "tier": 1,
+      "services": ["community-pharmacy", "orthopedic-surgery", "oncology"]
+    },
+    {
+      "slug": "gabapentin",
+      "name": "Gabapentine",
+      "brands": ["Neurontin"],
+      "classSlug": "gabapentinoids",
+      "hint": "Douleurs neuropathiques, épilepsie",
+      "tier": 2,
+      "services": ["community-pharmacy", "oncology"]
+    },
+    {
+      "slug": "capsaicin-patch",
+      "name": "Capsaïcine (patch)",
+      "brands": ["Qutenza"],
+      "classSlug": "topical-neuropathic",
+      "hint": "Douleurs neuropathiques périphériques localisées (hôpital)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "lidocaine-patch",
+      "name": "Lidocaïne (emplâtre)",
+      "brands": ["Versatis"],
+      "classSlug": "topical-neuropathic",
+      "hint": "Douleurs post-zostériennes",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "baclofen",
+      "name": "Baclofène",
+      "brands": ["Liorésal", "Baclocur"],
+      "classSlug": "muscle-relaxants",
+      "hint": "Spasticité, réduction de la consommation d'alcool",
+      "tier": 2,
+      "services": ["community-pharmacy", "psychiatry"]
+    },
+    {
+      "slug": "thiocolchicoside",
+      "name": "Thiocolchicoside",
+      "brands": ["Miorel"],
+      "classSlug": "muscle-relaxants",
+      "hint": "Contractures musculaires douloureuses du rachis (traitement court)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "methocarbamol",
+      "name": "Méthocarbamol",
+      "brands": ["Lumirelax"],
+      "classSlug": "muscle-relaxants",
+      "hint": "Contractures musculaires douloureuses",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "nitrous-oxide-oxygen",
+      "name": "Protoxyde d’azote + oxygène (MEOPA)",
+      "brands": ["Kalinox", "Entonox", "Oxynox"],
+      "classSlug": "procedural-analgesia",
+      "hint": "Analgésie des soins douloureux de courte durée, adulte et enfant",
+      "tier": 1,
+      "services": ["emergency", "pediatrics", "orthopedic-surgery", "geriatrics"]
+    },
+    {
+      "slug": "lidocaine-prilocaine",
+      "name": "Lidocaïne + prilocaïne",
+      "brands": ["Emla"],
+      "classSlug": "procedural-analgesia",
+      "hint": "Anesthésie cutanée avant ponction ou injection",
+      "tier": 1,
+      "services": ["pediatrics", "emergency", "community-pharmacy", "oncology"]
+    }
+  ]
+}

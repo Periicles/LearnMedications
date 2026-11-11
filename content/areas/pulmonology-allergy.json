@@ -1,0 +1,320 @@
+{
+  "area": {
+    "slug": "pulmonology-allergy",
+    "name": "Pneumologie et allergie",
+    "icon": "🫁"
+  },
+  "classes": [
+    {
+      "slug": "short-acting-beta2-agonists",
+      "name": "Bêta-2 mimétiques de courte durée d'action",
+      "atc": "R03AC",
+      "summary": "Bronchodilatateurs d'action rapide : traitement de la crise d'asthme et des exacerbations de BPCO."
+    },
+    {
+      "slug": "long-acting-beta2-agonists",
+      "name": "Bêta-2 mimétiques de longue durée d'action",
+      "atc": "R03AC",
+      "summary": "Bronchodilatateurs de fond (12 h ou plus) ; dans l'asthme, toujours associés à un corticoïde inhalé."
+    },
+    {
+      "slug": "inhaled-anticholinergics",
+      "name": "Anticholinergiques inhalés",
+      "atc": "R03BB",
+      "summary": "Bronchodilatateurs atropiniques : traitement de fond de la BPCO, ou en nébulisation dans les crises."
+    },
+    {
+      "slug": "inhaled-corticosteroids",
+      "name": "Corticoïdes inhalés",
+      "atc": "R03BA",
+      "summary": "Anti-inflammatoires de fond de l'asthme ; rincer la bouche après usage pour éviter la candidose."
+    },
+    {
+      "slug": "inhaled-combinations",
+      "name": "Associations fixes inhalées",
+      "atc": "R03AL",
+      "summary": "Plusieurs principes actifs (corticoïde, bêta-2 longue durée, anticholinergique) dans un seul inhalateur."
+    },
+    {
+      "slug": "leukotriene-antagonists",
+      "name": "Antileucotriènes",
+      "atc": "R03DC",
+      "summary": "Anti-inflammatoires oraux d'appoint de l'asthme et de l'asthme d'effort."
+    },
+    {
+      "slug": "asthma-biologics",
+      "name": "Biothérapies de l'asthme sévère",
+      "atc": "R03DX",
+      "summary": "Anticorps monoclonaux injectables réservés à l'asthme sévère non contrôlé (allergique ou éosinophilique)."
+    },
+    {
+      "slug": "h1-antihistamines-1st-gen",
+      "name": "Antihistaminiques H1 de 1re génération",
+      "atc": "R06A",
+      "summary": "Antiallergiques sédatifs et atropiniques : somnolence, prudence chez le sujet âgé."
+    },
+    {
+      "slug": "h1-antihistamines-2nd-gen",
+      "name": "Antihistaminiques H1 de 2e génération",
+      "atc": "R06AX",
+      "summary": "Antiallergiques peu sédatifs : rhinite allergique, urticaire, conjonctivite allergique."
+    },
+    {
+      "slug": "antitussives",
+      "name": "Antitussifs",
+      "atc": "R05D",
+      "summary": "Calment la toux sèche non productive ; à éviter en cas de toux grasse."
+    },
+    {
+      "slug": "mucolytics",
+      "name": "Mucolytiques",
+      "atc": "R05CB",
+      "summary": "Fluidifient les sécrétions bronchiques ; contre-indiqués chez le nourrisson de moins de 2 ans."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "salbutamol",
+      "name": "Salbutamol",
+      "brands": ["Ventoline", "Airomir"],
+      "classSlug": "short-acting-beta2-agonists",
+      "hint": "Crise d'asthme, exacerbation de BPCO (inhalé ou nébulisé)",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "pediatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "terbutaline",
+      "name": "Terbutaline",
+      "brands": ["Bricanyl"],
+      "classSlug": "short-acting-beta2-agonists",
+      "hint": "Crise d'asthme, bronchospasme (inhalé, nébulisé ou injectable)",
+      "tier": 2,
+      "services": ["emergency", "pediatrics"]
+    },
+    {
+      "slug": "formoterol",
+      "name": "Formotérol",
+      "brands": ["Foradil"],
+      "classSlug": "long-acting-beta2-agonists",
+      "hint": "Traitement de fond de l'asthme (avec corticoïde) et de la BPCO",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "salmeterol",
+      "name": "Salmétérol",
+      "brands": ["Serevent"],
+      "classSlug": "long-acting-beta2-agonists",
+      "hint": "Traitement de fond de l'asthme (avec corticoïde) et de la BPCO",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "ipratropium",
+      "name": "Ipratropium",
+      "brands": ["Atrovent"],
+      "classSlug": "inhaled-anticholinergics",
+      "hint": "Asthme aigu grave et exacerbation de BPCO (nébulisation)",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "pediatrics"]
+    },
+    {
+      "slug": "tiotropium",
+      "name": "Tiotropium",
+      "brands": ["Spiriva"],
+      "classSlug": "inhaled-anticholinergics",
+      "hint": "Traitement de fond de la BPCO",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "budesonide-inhaled",
+      "name": "Budésonide",
+      "brands": ["Pulmicort"],
+      "classSlug": "inhaled-corticosteroids",
+      "hint": "Asthme (fond), laryngite de l'enfant en nébulisation",
+      "tier": 2,
+      "services": ["pediatrics", "emergency"]
+    },
+    {
+      "slug": "beclometasone-inhaled",
+      "name": "Béclométasone",
+      "brands": ["Qvar"],
+      "classSlug": "inhaled-corticosteroids",
+      "hint": "Traitement de fond de l'asthme",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "fluticasone-inhaled",
+      "name": "Fluticasone",
+      "brands": ["Flixotide"],
+      "classSlug": "inhaled-corticosteroids",
+      "hint": "Traitement de fond de l'asthme",
+      "tier": 2,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "budesonide-formoterol",
+      "name": "Budésonide + formotérol",
+      "brands": ["Symbicort"],
+      "classSlug": "inhaled-combinations",
+      "hint": "Asthme (fond et crise), BPCO",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "fluticasone-salmeterol",
+      "name": "Fluticasone + salmétérol",
+      "brands": ["Seretide"],
+      "classSlug": "inhaled-combinations",
+      "hint": "Asthme, BPCO",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "beclometasone-formoterol",
+      "name": "Béclométasone + formotérol",
+      "brands": ["Innovair"],
+      "classSlug": "inhaled-combinations",
+      "hint": "Asthme, BPCO",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "beclometasone-formoterol-glycopyrronium",
+      "name": "Béclométasone + formotérol + glycopyrronium",
+      "brands": ["Trimbow"],
+      "classSlug": "inhaled-combinations",
+      "hint": "BPCO avec exacerbations fréquentes (trithérapie inhalée)",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "montelukast",
+      "name": "Montélukast",
+      "brands": ["Singulair"],
+      "classSlug": "leukotriene-antagonists",
+      "hint": "Asthme (traitement additionnel), asthme d'effort",
+      "tier": 2,
+      "services": ["pediatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "omalizumab",
+      "name": "Omalizumab",
+      "brands": ["Xolair"],
+      "classSlug": "asthma-biologics",
+      "hint": "Asthme allergique sévère, urticaire chronique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "mepolizumab",
+      "name": "Mépolizumab",
+      "brands": ["Nucala"],
+      "classSlug": "asthma-biologics",
+      "hint": "Asthme sévère à éosinophiles",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "dexchlorpheniramine",
+      "name": "Dexchlorphéniramine",
+      "brands": ["Polaramine"],
+      "classSlug": "h1-antihistamines-1st-gen",
+      "hint": "Réactions allergiques aiguës, urticaire, prurit (oral ou injectable)",
+      "tier": 2,
+      "services": ["emergency", "oncology"]
+    },
+    {
+      "slug": "promethazine",
+      "name": "Prométhazine",
+      "brands": ["Phénergan"],
+      "classSlug": "h1-antihistamines-1st-gen",
+      "hint": "Allergies, insomnie occasionnelle",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "cetirizine",
+      "name": "Cétirizine",
+      "brands": ["Zyrtec"],
+      "classSlug": "h1-antihistamines-2nd-gen",
+      "hint": "Rhinite allergique, urticaire",
+      "tier": 1,
+      "services": ["community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "levocetirizine",
+      "name": "Lévocétirizine",
+      "brands": ["Xyzall"],
+      "classSlug": "h1-antihistamines-2nd-gen",
+      "hint": "Rhinite allergique, urticaire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "desloratadine",
+      "name": "Desloratadine",
+      "brands": ["Aerius"],
+      "classSlug": "h1-antihistamines-2nd-gen",
+      "hint": "Rhinite allergique, urticaire",
+      "tier": 1,
+      "services": ["community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "loratadine",
+      "name": "Loratadine",
+      "brands": ["Clarityne"],
+      "classSlug": "h1-antihistamines-2nd-gen",
+      "hint": "Rhinite allergique, urticaire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "bilastine",
+      "name": "Bilastine",
+      "brands": ["Inorial"],
+      "classSlug": "h1-antihistamines-2nd-gen",
+      "hint": "Rhinite allergique, urticaire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "dextromethorphan",
+      "name": "Dextrométhorphane",
+      "brands": ["Tussidane"],
+      "classSlug": "antitussives",
+      "hint": "Toux sèche",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "oxomemazine",
+      "name": "Oxomémazine",
+      "brands": ["Toplexil"],
+      "classSlug": "antitussives",
+      "hint": "Toux sèche, notamment nocturne",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "acetylcysteine",
+      "name": "Acétylcystéine",
+      "brands": ["Mucomyst", "Fluimucil"],
+      "classSlug": "mucolytics",
+      "hint": "Toux grasse, encombrement bronchique",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "carbocisteine",
+      "name": "Carbocistéine",
+      "brands": ["Bronchokod"],
+      "classSlug": "mucolytics",
+      "hint": "Toux grasse, encombrement bronchique",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "area": {
+    "slug": "anesthesia-icu",
+    "name": "Anesthésie et réanimation",
+    "icon": "🚨"
+  },
+  "classes": [
+    {
+      "slug": "iv-hypnotics",
+      "name": "Hypnotiques et sédatifs intraveineux",
+      "atc": "N01AX",
+      "summary": "Induction et entretien de l'anesthésie générale, sédation en réanimation et intubation en urgence."
+    },
+    {
+      "slug": "halogenated-anesthetics",
+      "name": "Anesthésiques halogénés",
+      "atc": "N01AB",
+      "summary": "Gaz anesthésiques inhalés pour l'entretien (et l'induction au masque) de l'anesthésie générale."
+    },
+    {
+      "slug": "anesthesia-opioids",
+      "name": "Morphiniques de l’anesthésie",
+      "atc": "N01AH",
+      "summary": "Opioïdes puissants et d'action rapide pour l'analgésie peropératoire et la sédation-analgésie en réanimation."
+    },
+    {
+      "slug": "depolarizing-nmb",
+      "name": "Curares dépolarisants",
+      "atc": "M03AB",
+      "summary": "Curare d'action très rapide et brève, utilisé pour l'intubation en séquence rapide (estomac plein)."
+    },
+    {
+      "slug": "non-depolarizing-nmb",
+      "name": "Curares non dépolarisants",
+      "atc": "M03AC",
+      "summary": "Bloquent la transmission neuromusculaire pour l'intubation, la chirurgie ou la ventilation difficile en réanimation."
+    },
+    {
+      "slug": "reversal-agents",
+      "name": "Antagonistes et antidotes de l’anesthésie",
+      "atc": "V03AB",
+      "summary": "Décurarisation et antagonisation des benzodiazépines en fin d'anesthésie ou en cas de surdosage."
+    },
+    {
+      "slug": "local-anesthetics",
+      "name": "Anesthésiques locaux",
+      "atc": "N01B",
+      "summary": "Bloquent la conduction nerveuse : infiltration, anesthésie locorégionale, péridurale, rachianesthésie."
+    },
+    {
+      "slug": "vasopressors",
+      "name": "Vasopresseurs",
+      "atc": "C01CA",
+      "summary": "Augmentent la pression artérielle par vasoconstriction : états de choc, hypotension peranesthésique, arrêt cardiaque."
+    },
+    {
+      "slug": "inotropes",
+      "name": "Inotropes",
+      "atc": "C01C",
+      "summary": "Augmentent la contractilité ou la fréquence cardiaque : choc cardiogénique, bas débit, bradycardie."
+    },
+    {
+      "slug": "emergency-drugs",
+      "name": "Médicaments de l'urgence vitale",
+      "atc": "",
+      "summary": "Médicaments du chariot d'urgence pour les bradycardies et tachycardies graves."
+    },
+    {
+      "slug": "crystalloids",
+      "name": "Cristalloïdes",
+      "atc": "B05BB",
+      "summary": "Solutés de remplissage et d'entretien contenant eau et électrolytes, 1re intention du remplissage vasculaire."
+    },
+    {
+      "slug": "colloids",
+      "name": "Colloïdes et albumine",
+      "atc": "B05AA",
+      "summary": "Solutés de remplissage à fort pouvoir d'expansion volémique, d'origine naturelle ou synthétique."
+    },
+    {
+      "slug": "perioperative-antiemetics",
+      "name": "Antiémétiques périopératoires",
+      "atc": "A04A",
+      "summary": "Prévention et traitement des nausées et vomissements postopératoires."
+    },
+    {
+      "slug": "malignant-hyperthermia",
+      "name": "Traitement de l'hyperthermie maligne",
+      "atc": "M03CA",
+      "summary": "Myorelaxant d'action directe, seul antidote de l'hyperthermie maligne peranesthésique."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "propofol",
+      "name": "Propofol",
+      "brands": ["Diprivan"],
+      "classSlug": "iv-hypnotics",
+      "hint": "Induction et entretien de l'anesthésie, sédation en réanimation",
+      "tier": 1,
+      "services": ["anesthesia", "intensive-care", "neuro-icu", "emergency", "orthopedic-surgery"]
+    },
+    {
+      "slug": "ketamine",
+      "name": "Kétamine",
+      "brands": [],
+      "classSlug": "iv-hypnotics",
+      "hint": "Induction en urgence, analgésie, sédation procédurale",
+      "tier": 2,
+      "services": ["anesthesia", "emergency", "intensive-care", "orthopedic-surgery", "pediatrics"]
+    },
+    {
+      "slug": "etomidate",
+      "name": "Étomidate",
+      "brands": ["Hypnomidate"],
+      "classSlug": "iv-hypnotics",
+      "hint": "Induction en séquence rapide, patient instable",
+      "tier": 2,
+      "services": ["anesthesia", "emergency", "intensive-care"]
+    },
+    {
+      "slug": "thiopental",
+      "name": "Thiopental",
+      "brands": [],
+      "classSlug": "iv-hypnotics",
+      "hint": "Induction anesthésique, état de mal épileptique réfractaire, HTIC",
+      "tier": 3,
+      "services": ["neuro-icu", "anesthesia"]
+    },
+    {
+      "slug": "midazolam",
+      "name": "Midazolam",
+      "brands": ["Buccolam"],
+      "classSlug": "iv-hypnotics",
+      "hint": "Sédation, prémédication, crise convulsive prolongée",
+      "tier": 1,
+      "services": [
+        "anesthesia",
+        "intensive-care",
+        "neuro-icu",
+        "emergency",
+        "pediatrics",
+        "oncology"
+      ]
+    },
+    {
+      "slug": "dexmedetomidine",
+      "name": "Dexmédétomidine",
+      "brands": ["Dexdor"],
+      "classSlug": "iv-hypnotics",
+      "hint": "Sédation légère en réanimation",
+      "tier": 3,
+      "services": ["intensive-care", "neuro-icu", "anesthesia"]
+    },
+    {
+      "slug": "sevoflurane",
+      "name": "Sévoflurane",
+      "brands": ["Sevorane"],
+      "classSlug": "halogenated-anesthetics",
+      "hint": "Induction au masque et entretien de l'anesthésie",
+      "tier": 2,
+      "services": ["anesthesia", "pediatrics"]
+    },
+    {
+      "slug": "desflurane",
+      "name": "Desflurane",
+      "brands": ["Suprane"],
+      "classSlug": "halogenated-anesthetics",
+      "hint": "Entretien de l'anesthésie",
+      "tier": 3,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "isoflurane",
+      "name": "Isoflurane",
+      "brands": [],
+      "classSlug": "halogenated-anesthetics",
+      "hint": "Entretien de l'anesthésie, sédation inhalée en réanimation",
+      "tier": 3,
+      "services": ["anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "sufentanil",
+      "name": "Sufentanil",
+      "brands": [],
+      "classSlug": "anesthesia-opioids",
+      "hint": "Analgésie peropératoire, sédation-analgésie en réanimation",
+      "tier": 2,
+      "services": ["anesthesia", "intensive-care", "neuro-icu"]
+    },
+    {
+      "slug": "remifentanil",
+      "name": "Rémifentanil",
+      "brands": ["Ultiva"],
+      "classSlug": "anesthesia-opioids",
+      "hint": "Analgésie peropératoire (perfusion continue)",
+      "tier": 3,
+      "services": ["anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "fentanyl",
+      "name": "Fentanyl",
+      "brands": ["Durogesic", "Abstral", "Instanyl"],
+      "classSlug": "anesthesia-opioids",
+      "hint": "Analgésie peropératoire, douleurs chroniques (patch), accès douloureux",
+      "tier": 2,
+      "services": ["anesthesia", "emergency", "intensive-care", "oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "alfentanil",
+      "name": "Alfentanil",
+      "brands": ["Rapifen"],
+      "classSlug": "anesthesia-opioids",
+      "hint": "Analgésie peropératoire brève",
+      "tier": 3,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "suxamethonium",
+      "name": "Suxaméthonium",
+      "brands": ["Célocurine"],
+      "classSlug": "depolarizing-nmb",
+      "hint": "Intubation en séquence rapide",
+      "tier": 2,
+      "services": ["anesthesia", "emergency", "intensive-care"]
+    },
+    {
+      "slug": "rocuronium",
+      "name": "Rocuronium",
+      "brands": ["Esmeron"],
+      "classSlug": "non-depolarizing-nmb",
+      "hint": "Intubation (dont séquence rapide), curarisation peropératoire",
+      "tier": 2,
+      "services": ["anesthesia", "emergency", "intensive-care"]
+    },
+    {
+      "slug": "atracurium",
+      "name": "Atracurium",
+      "brands": ["Tracrium"],
+      "classSlug": "non-depolarizing-nmb",
+      "hint": "Curarisation peropératoire",
+      "tier": 3,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "cisatracurium",
+      "name": "Cisatracurium",
+      "brands": ["Nimbex"],
+      "classSlug": "non-depolarizing-nmb",
+      "hint": "Curarisation au bloc et en réanimation (SDRA)",
+      "tier": 2,
+      "services": ["anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "sugammadex",
+      "name": "Sugammadex",
+      "brands": ["Bridion"],
+      "classSlug": "reversal-agents",
+      "hint": "Décurarisation après rocuronium ou vécuronium",
+      "tier": 2,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "neostigmine",
+      "name": "Néostigmine",
+      "brands": [],
+      "classSlug": "reversal-agents",
+      "hint": "Décurarisation (avec atropine), myasthénie",
+      "tier": 3,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "flumazenil",
+      "name": "Flumazénil",
+      "brands": [],
+      "classSlug": "reversal-agents",
+      "hint": "Antagonisation des benzodiazépines",
+      "tier": 2,
+      "services": ["emergency", "anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "lidocaine",
+      "name": "Lidocaïne",
+      "brands": ["Xylocaïne"],
+      "classSlug": "local-anesthetics",
+      "hint": "Anesthésie locale, locorégionale, antiarythmique",
+      "tier": 1,
+      "services": ["anesthesia", "emergency", "orthopedic-surgery", "pediatrics", "intensive-care"]
+    },
+    {
+      "slug": "ropivacaine",
+      "name": "Ropivacaïne",
+      "brands": ["Naropéine"],
+      "classSlug": "local-anesthetics",
+      "hint": "Blocs nerveux, péridurale, infiltration",
+      "tier": 2,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "bupivacaine",
+      "name": "Bupivacaïne",
+      "brands": [],
+      "classSlug": "local-anesthetics",
+      "hint": "Rachianesthésie, blocs nerveux, infiltration",
+      "tier": 2,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "levobupivacaine",
+      "name": "Lévobupivacaïne",
+      "brands": ["Chirocaïne"],
+      "classSlug": "local-anesthetics",
+      "hint": "Blocs nerveux, péridurale, infiltration",
+      "tier": 3,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "mepivacaine",
+      "name": "Mépivacaïne",
+      "brands": ["Carbocaïne"],
+      "classSlug": "local-anesthetics",
+      "hint": "Anesthésie locale et locorégionale, soins dentaires",
+      "tier": 3,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "norepinephrine",
+      "name": "Noradrénaline",
+      "brands": [],
+      "classSlug": "vasopressors",
+      "hint": "États de choc (septique notamment), hypotension sévère",
+      "tier": 1,
+      "services": ["intensive-care", "neuro-icu", "emergency", "anesthesia"]
+    },
+    {
+      "slug": "epinephrine",
+      "name": "Adrénaline",
+      "brands": ["Anapen", "Epipen", "Jext"],
+      "classSlug": "vasopressors",
+      "hint": "Arrêt cardiaque, choc anaphylactique, choc",
+      "tier": 1,
+      "services": [
+        "emergency",
+        "intensive-care",
+        "neuro-icu",
+        "anesthesia",
+        "pediatrics",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "ephedrine",
+      "name": "Éphédrine",
+      "brands": [],
+      "classSlug": "vasopressors",
+      "hint": "Hypotension peranesthésique",
+      "tier": 2,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "phenylephrine",
+      "name": "Phényléphrine",
+      "brands": [],
+      "classSlug": "vasopressors",
+      "hint": "Hypotension peranesthésique (rachianesthésie, césarienne)",
+      "tier": 2,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "vasopressin",
+      "name": "Vasopressine",
+      "brands": ["Reverpleg"],
+      "classSlug": "vasopressors",
+      "hint": "Choc septique réfractaire à la noradrénaline",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "dobutamine",
+      "name": "Dobutamine",
+      "brands": [],
+      "classSlug": "inotropes",
+      "hint": "Choc cardiogénique, bas débit cardiaque",
+      "tier": 2,
+      "services": ["intensive-care", "emergency"]
+    },
+    {
+      "slug": "dopamine",
+      "name": "Dopamine",
+      "brands": [],
+      "classSlug": "inotropes",
+      "hint": "États de choc, bas débit cardiaque",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "milrinone",
+      "name": "Milrinone",
+      "brands": ["Corotrope"],
+      "classSlug": "inotropes",
+      "hint": "Insuffisance cardiaque aiguë sévère, vasospasme cérébral",
+      "tier": 3,
+      "services": ["intensive-care", "neuro-icu"]
+    },
+    {
+      "slug": "isoprenaline",
+      "name": "Isoprénaline",
+      "brands": ["Isuprel"],
+      "classSlug": "inotropes",
+      "hint": "Bradycardie sévère, bloc auriculoventriculaire",
+      "tier": 3,
+      "services": ["emergency", "intensive-care"]
+    },
+    {
+      "slug": "levosimendan",
+      "name": "Lévosimendan",
+      "brands": [],
+      "classSlug": "inotropes",
+      "hint": "Insuffisance cardiaque aiguë décompensée sévère",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "atropine",
+      "name": "Atropine",
+      "brands": [],
+      "classSlug": "emergency-drugs",
+      "hint": "Bradycardie, prémédication, intoxication aux organophosphorés",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "anesthesia", "pediatrics"]
+    },
+    {
+      "slug": "sodium-chloride-isotonic",
+      "name": "Chlorure de sodium 0,9 %",
+      "brands": [],
+      "classSlug": "crystalloids",
+      "hint": "Remplissage vasculaire, hydratation, dilution des médicaments",
+      "tier": 1,
+      "services": [
+        "emergency",
+        "intensive-care",
+        "neuro-icu",
+        "anesthesia",
+        "orthopedic-surgery",
+        "geriatrics",
+        "pediatrics",
+        "oncology"
+      ]
+    },
+    {
+      "slug": "ringer-lactate",
+      "name": "Ringer lactate",
+      "brands": [],
+      "classSlug": "crystalloids",
+      "hint": "Remplissage vasculaire, compensation des pertes peropératoires",
+      "tier": 1,
+      "services": ["anesthesia", "emergency", "intensive-care", "orthopedic-surgery"]
+    },
+    {
+      "slug": "glucose-5",
+      "name": "Glucose 5 %",
+      "brands": [],
+      "classSlug": "crystalloids",
+      "hint": "Apport hydrique et glucidique, dilution des médicaments",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "geriatrics", "pediatrics", "oncology"]
+    },
+    {
+      "slug": "sodium-bicarbonate",
+      "name": "Bicarbonate de sodium",
+      "brands": [],
+      "classSlug": "crystalloids",
+      "hint": "Acidose métabolique sévère, hyperkaliémie, intoxications",
+      "tier": 2,
+      "services": ["intensive-care", "emergency"]
+    },
+    {
+      "slug": "albumin",
+      "name": "Albumine humaine",
+      "brands": ["Vialebex", "Albunorm"],
+      "classSlug": "colloids",
+      "hint": "Remplissage, hypoalbuminémie, ponction d’ascite, cirrhose",
+      "tier": 2,
+      "services": ["intensive-care", "anesthesia"]
+    },
+    {
+      "slug": "modified-fluid-gelatin",
+      "name": "Gélatine fluide modifiée",
+      "brands": ["Gélofusine", "Plasmion"],
+      "classSlug": "colloids",
+      "hint": "Remplissage vasculaire (hypovolémie)",
+      "tier": 3,
+      "services": ["anesthesia", "emergency", "intensive-care"]
+    },
+    {
+      "slug": "ondansetron",
+      "name": "Ondansétron",
+      "brands": ["Zophren"],
+      "classSlug": "perioperative-antiemetics",
+      "hint": "Nausées et vomissements postopératoires et chimio-induits",
+      "tier": 1,
+      "services": ["anesthesia", "orthopedic-surgery", "oncology", "pediatrics"]
+    },
+    {
+      "slug": "droperidol",
+      "name": "Dropéridol",
+      "brands": ["Droleptan"],
+      "classSlug": "perioperative-antiemetics",
+      "hint": "Prévention des nausées et vomissements postopératoires, PCA morphine",
+      "tier": 2,
+      "services": ["anesthesia", "orthopedic-surgery"]
+    },
+    {
+      "slug": "dantrolene",
+      "name": "Dantrolène",
+      "brands": ["Dantrium"],
+      "classSlug": "malignant-hyperthermia",
+      "hint": "Hyperthermie maligne peranesthésique, spasticité (oral)",
+      "tier": 3,
+      "services": ["anesthesia"]
+    }
+  ]
+}

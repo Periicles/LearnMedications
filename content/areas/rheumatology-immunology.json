@@ -1,0 +1,575 @@
+{
+  "area": {
+    "slug": "rheumatology-immunology",
+    "name": "Rhumatologie, immunologie et oncologie",
+    "icon": "🦴"
+  },
+  "classes": [
+    {
+      "slug": "antigout-agents",
+      "name": "Antigoutteux et hypo-uricémiants",
+      "atc": "M04A",
+      "summary": "Traitent la crise de goutte (colchicine) ou abaissent l'uricémie au long cours et en prévention de la lyse tumorale."
+    },
+    {
+      "slug": "bisphosphonates",
+      "name": "Bisphosphonates",
+      "atc": "M05BA",
+      "summary": "Freinent la résorption osseuse : ostéoporose, métastases osseuses, hypercalcémie."
+    },
+    {
+      "slug": "other-osteoporosis-agents",
+      "name": "Autres anti-ostéoporotiques",
+      "atc": "M05BX",
+      "summary": "Biothérapies de l'ostéoporose sévère : anti-résorptif (dénosumab) ou ostéoformateur (tériparatide)."
+    },
+    {
+      "slug": "conventional-dmards",
+      "name": "Traitements de fond conventionnels",
+      "atc": "L04AX",
+      "summary": "Traitements de fond des rhumatismes inflammatoires et maladies auto-immunes, efficaces en quelques semaines."
+    },
+    {
+      "slug": "immunosuppressants",
+      "name": "Immunosuppresseurs",
+      "atc": "L04A",
+      "summary": "Préviennent le rejet de greffe et traitent les maladies auto-immunes ; risque infectieux, dosages sanguins."
+    },
+    {
+      "slug": "anti-tnf",
+      "name": "Anti-TNF alpha",
+      "atc": "L04AB",
+      "summary": "Biothérapies des rhumatismes inflammatoires, MICI et psoriasis ; dépistage de la tuberculose avant traitement."
+    },
+    {
+      "slug": "other-biologics",
+      "name": "Autres biothérapies immunologiques",
+      "atc": "L04AC",
+      "summary": "Anticorps ciblant des interleukines (IL-6, IL-17...) dans les rhumatismes inflammatoires et le psoriasis."
+    },
+    {
+      "slug": "jak-inhibitors",
+      "name": "Inhibiteurs de JAK",
+      "atc": "L04AF",
+      "summary": "Immunomodulateurs oraux des rhumatismes inflammatoires ; risque infectieux et thromboembolique."
+    },
+    {
+      "slug": "alkylating-agents",
+      "name": "Agents alkylants",
+      "atc": "L01A",
+      "summary": "Chimiothérapies qui lient l'ADN et bloquent la division cellulaire ; toxicité hématologique."
+    },
+    {
+      "slug": "platinum-compounds",
+      "name": "Sels de platine",
+      "atc": "L01XA",
+      "summary": "Chimiothérapies majeures des tumeurs solides ; toxicités rénale, neurologique et émétisante."
+    },
+    {
+      "slug": "antimetabolites",
+      "name": "Antimétabolites",
+      "atc": "L01B",
+      "summary": "Chimiothérapies qui imitent les bases de l'ADN pour bloquer sa synthèse (cancers digestifs, hémopathies...)."
+    },
+    {
+      "slug": "taxanes",
+      "name": "Taxanes",
+      "atc": "L01CD",
+      "summary": "Poisons du fuseau : cancers du sein, du poumon, de la prostate ; neuropathie et réactions allergiques."
+    },
+    {
+      "slug": "anthracyclines",
+      "name": "Anthracyclines",
+      "atc": "L01DB",
+      "summary": "Chimiothérapies intercalantes de l'ADN ; cardiotoxicité cumulative et produits très nécrosants si extravasation."
+    },
+    {
+      "slug": "breast-cancer-hormone-therapy",
+      "name": "Hormonothérapies du cancer du sein",
+      "atc": "L02B",
+      "summary": "Bloquent l'effet ou la production des estrogènes dans les cancers du sein hormonosensibles."
+    },
+    {
+      "slug": "prostate-cancer-hormone-therapy",
+      "name": "Hormonothérapies du cancer de la prostate",
+      "atc": "L02",
+      "summary": "Suppriment la production ou l'action des androgènes dans le cancer de la prostate."
+    },
+    {
+      "slug": "targeted-monoclonal-antibodies",
+      "name": "Anticorps monoclonaux anticancéreux",
+      "atc": "L01F",
+      "summary": "Anticorps dirigés contre une cible tumorale (HER2, CD20, VEGF) ; réactions à la perfusion."
+    },
+    {
+      "slug": "tyrosine-kinase-inhibitors",
+      "name": "Inhibiteurs de tyrosine kinase",
+      "atc": "L01E",
+      "summary": "Thérapies ciblées orales bloquant une enzyme anormalement activée dans certaines tumeurs."
+    },
+    {
+      "slug": "immune-checkpoint-inhibitors",
+      "name": "Inhibiteurs de points de contrôle immunitaire",
+      "atc": "L01FF",
+      "summary": "Immunothérapies anti-PD-1/PD-L1 qui relancent l'immunité antitumorale ; effets auto-immuns."
+    },
+    {
+      "slug": "g-csf",
+      "name": "Facteurs de croissance granulocytaires (G-CSF)",
+      "atc": "L03AA",
+      "summary": "Stimulent la production de polynucléaires pour prévenir ou raccourcir la neutropénie post-chimiothérapie."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "allopurinol",
+      "name": "Allopurinol",
+      "brands": ["Zyloric"],
+      "classSlug": "antigout-agents",
+      "hint": "Traitement de fond de la goutte, hyperuricémie",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy", "oncology"]
+    },
+    {
+      "slug": "febuxostat",
+      "name": "Fébuxostat",
+      "brands": ["Adenuric"],
+      "classSlug": "antigout-agents",
+      "hint": "Traitement de fond de la goutte",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "colchicine",
+      "name": "Colchicine",
+      "brands": ["Colchicine Opocalcium"],
+      "classSlug": "antigout-agents",
+      "hint": "Crise de goutte, péricardite, maladie périodique",
+      "tier": 1,
+      "services": ["geriatrics", "emergency", "community-pharmacy"]
+    },
+    {
+      "slug": "rasburicase",
+      "name": "Rasburicase",
+      "brands": ["Fasturtec"],
+      "classSlug": "antigout-agents",
+      "hint": "Prévention et traitement du syndrome de lyse tumorale",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "alendronic-acid",
+      "name": "Acide alendronique",
+      "brands": ["Fosamax"],
+      "classSlug": "bisphosphonates",
+      "hint": "Ostéoporose (prise à jeun, rester debout 30 min)",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "risedronate",
+      "name": "Risédronate",
+      "brands": ["Actonel"],
+      "classSlug": "bisphosphonates",
+      "hint": "Ostéoporose",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "zoledronic-acid",
+      "name": "Acide zolédronique",
+      "brands": ["Aclasta", "Zometa"],
+      "classSlug": "bisphosphonates",
+      "hint": "Ostéoporose (perfusion annuelle), métastases osseuses, hypercalcémie",
+      "tier": 2,
+      "services": ["geriatrics", "oncology", "orthopedic-surgery"]
+    },
+    {
+      "slug": "denosumab",
+      "name": "Dénosumab",
+      "brands": ["Prolia", "Xgeva"],
+      "classSlug": "other-osteoporosis-agents",
+      "hint": "Ostéoporose, métastases osseuses",
+      "tier": 2,
+      "services": ["geriatrics", "oncology"]
+    },
+    {
+      "slug": "teriparatide",
+      "name": "Tériparatide",
+      "brands": ["Forsteo"],
+      "classSlug": "other-osteoporosis-agents",
+      "hint": "Ostéoporose sévère avec fractures vertébrales",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "methotrexate",
+      "name": "Méthotrexate",
+      "brands": ["Novatrex", "Imeth", "Metoject"],
+      "classSlug": "conventional-dmards",
+      "hint": "Polyarthrite rhumatoïde, psoriasis, certains cancers (1 prise/semaine)",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "hydroxychloroquine",
+      "name": "Hydroxychloroquine",
+      "brands": ["Plaquenil"],
+      "classSlug": "conventional-dmards",
+      "hint": "Lupus, polyarthrite rhumatoïde",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "leflunomide",
+      "name": "Léflunomide",
+      "brands": ["Arava"],
+      "classSlug": "conventional-dmards",
+      "hint": "Polyarthrite rhumatoïde, rhumatisme psoriasique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "azathioprine",
+      "name": "Azathioprine",
+      "brands": ["Imurel"],
+      "classSlug": "immunosuppressants",
+      "hint": "Maladies auto-immunes, MICI, prévention du rejet de greffe",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "ciclosporin",
+      "name": "Ciclosporine",
+      "brands": ["Néoral", "Sandimmun"],
+      "classSlug": "immunosuppressants",
+      "hint": "Prévention du rejet de greffe, maladies auto-immunes sévères",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "tacrolimus",
+      "name": "Tacrolimus",
+      "brands": ["Prograf", "Advagraf"],
+      "classSlug": "immunosuppressants",
+      "hint": "Prévention du rejet de greffe",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "mycophenolate-mofetil",
+      "name": "Mycophénolate mofétil",
+      "brands": ["Cellcept"],
+      "classSlug": "immunosuppressants",
+      "hint": "Prévention du rejet de greffe, lupus",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "adalimumab",
+      "name": "Adalimumab",
+      "brands": ["Humira", "Hyrimoz", "Amgevita"],
+      "classSlug": "anti-tnf",
+      "hint": "Polyarthrite rhumatoïde, spondyloarthrite, Crohn, psoriasis",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "infliximab",
+      "name": "Infliximab",
+      "brands": ["Remicade", "Inflectra", "Remsima"],
+      "classSlug": "anti-tnf",
+      "hint": "Crohn, rectocolite hémorragique, rhumatismes inflammatoires",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "etanercept",
+      "name": "Étanercept",
+      "brands": ["Enbrel", "Benepali"],
+      "classSlug": "anti-tnf",
+      "hint": "Polyarthrite rhumatoïde, spondyloarthrite, psoriasis",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "tocilizumab",
+      "name": "Tocilizumab",
+      "brands": ["RoActemra"],
+      "classSlug": "other-biologics",
+      "hint": "Polyarthrite rhumatoïde, artérite à cellules géantes (anti-IL-6)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "secukinumab",
+      "name": "Sécukinumab",
+      "brands": ["Cosentyx"],
+      "classSlug": "other-biologics",
+      "hint": "Psoriasis, rhumatisme psoriasique, spondyloarthrite (anti-IL-17)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "baricitinib",
+      "name": "Baricitinib",
+      "brands": ["Olumiant"],
+      "classSlug": "jak-inhibitors",
+      "hint": "Polyarthrite rhumatoïde, dermatite atopique, pelade",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "upadacitinib",
+      "name": "Upadacitinib",
+      "brands": ["Rinvoq"],
+      "classSlug": "jak-inhibitors",
+      "hint": "Rhumatismes inflammatoires, MICI, dermatite atopique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "cyclophosphamide",
+      "name": "Cyclophosphamide",
+      "brands": ["Endoxan"],
+      "classSlug": "alkylating-agents",
+      "hint": "Cancers du sein, lymphomes, vascularites et lupus sévères",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "temozolomide",
+      "name": "Témozolomide",
+      "brands": ["Temodal"],
+      "classSlug": "alkylating-agents",
+      "hint": "Glioblastome et autres gliomes",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "cisplatin",
+      "name": "Cisplatine",
+      "brands": [],
+      "classSlug": "platinum-compounds",
+      "hint": "Cancers ORL, pulmonaires, testiculaires, gynécologiques",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "carboplatin",
+      "name": "Carboplatine",
+      "brands": [],
+      "classSlug": "platinum-compounds",
+      "hint": "Cancers de l'ovaire, du poumon",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "oxaliplatin",
+      "name": "Oxaliplatine",
+      "brands": ["Eloxatine"],
+      "classSlug": "platinum-compounds",
+      "hint": "Cancers colorectaux et digestifs (protocole FOLFOX)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "fluorouracil",
+      "name": "Fluorouracile",
+      "brands": [],
+      "classSlug": "antimetabolites",
+      "hint": "Cancers digestifs, ORL, du sein (5-FU)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "capecitabine",
+      "name": "Capécitabine",
+      "brands": ["Xeloda"],
+      "classSlug": "antimetabolites",
+      "hint": "Cancers colorectaux et du sein (voie orale)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "gemcitabine",
+      "name": "Gemcitabine",
+      "brands": ["Gemzar"],
+      "classSlug": "antimetabolites",
+      "hint": "Cancers du pancréas, du poumon, de la vessie",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "paclitaxel",
+      "name": "Paclitaxel",
+      "brands": [],
+      "classSlug": "taxanes",
+      "hint": "Cancers du sein, de l'ovaire, du poumon",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "docetaxel",
+      "name": "Docétaxel",
+      "brands": ["Taxotere"],
+      "classSlug": "taxanes",
+      "hint": "Cancers du sein, de la prostate, du poumon",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "doxorubicin",
+      "name": "Doxorubicine",
+      "brands": ["Adriblastine"],
+      "classSlug": "anthracyclines",
+      "hint": "Cancers du sein, lymphomes, sarcomes",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "epirubicin",
+      "name": "Épirubicine",
+      "brands": ["Farmorubicine"],
+      "classSlug": "anthracyclines",
+      "hint": "Cancer du sein",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "tamoxifen",
+      "name": "Tamoxifène",
+      "brands": [],
+      "classSlug": "breast-cancer-hormone-therapy",
+      "hint": "Cancer du sein hormonosensible (notamment avant la ménopause)",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "letrozole",
+      "name": "Létrozole",
+      "brands": ["Femara"],
+      "classSlug": "breast-cancer-hormone-therapy",
+      "hint": "Cancer du sein hormonosensible après la ménopause",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "anastrozole",
+      "name": "Anastrozole",
+      "brands": ["Arimidex"],
+      "classSlug": "breast-cancer-hormone-therapy",
+      "hint": "Cancer du sein hormonosensible après la ménopause",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "leuprorelin",
+      "name": "Leuproréline",
+      "brands": ["Eligard", "Enantone"],
+      "classSlug": "prostate-cancer-hormone-therapy",
+      "hint": "Cancer de la prostate, endométriose, puberté précoce",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "triptorelin",
+      "name": "Triptoréline",
+      "brands": ["Décapeptyl"],
+      "classSlug": "prostate-cancer-hormone-therapy",
+      "hint": "Cancer de la prostate, endométriose, PMA",
+      "tier": 2,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "abiraterone",
+      "name": "Abiratérone",
+      "brands": ["Zytiga"],
+      "classSlug": "prostate-cancer-hormone-therapy",
+      "hint": "Cancer de la prostate métastatique (avec prednisone)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "trastuzumab",
+      "name": "Trastuzumab",
+      "brands": ["Herceptin"],
+      "classSlug": "targeted-monoclonal-antibodies",
+      "hint": "Cancer du sein et de l'estomac HER2+",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "rituximab",
+      "name": "Rituximab",
+      "brands": ["Mabthera", "Truxima"],
+      "classSlug": "targeted-monoclonal-antibodies",
+      "hint": "Lymphomes, leucémie lymphoïde chronique, polyarthrite rhumatoïde",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "bevacizumab",
+      "name": "Bévacizumab",
+      "brands": ["Avastin"],
+      "classSlug": "targeted-monoclonal-antibodies",
+      "hint": "Cancers colorectal, pulmonaire, ovarien (anti-VEGF)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "imatinib",
+      "name": "Imatinib",
+      "brands": ["Glivec"],
+      "classSlug": "tyrosine-kinase-inhibitors",
+      "hint": "Leucémie myéloïde chronique, tumeurs stromales digestives (GIST)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "osimertinib",
+      "name": "Osimertinib",
+      "brands": ["Tagrisso"],
+      "classSlug": "tyrosine-kinase-inhibitors",
+      "hint": "Cancer bronchique non à petites cellules muté EGFR",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "pembrolizumab",
+      "name": "Pembrolizumab",
+      "brands": ["Keytruda"],
+      "classSlug": "immune-checkpoint-inhibitors",
+      "hint": "Mélanome, cancers du poumon, ORL, rein et autres (anti-PD-1)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "nivolumab",
+      "name": "Nivolumab",
+      "brands": ["Opdivo"],
+      "classSlug": "immune-checkpoint-inhibitors",
+      "hint": "Mélanome, cancers du poumon, du rein et autres (anti-PD-1)",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "filgrastim",
+      "name": "Filgrastim",
+      "brands": ["Neupogen", "Zarzio", "Nivestim"],
+      "classSlug": "g-csf",
+      "hint": "Prévention de la neutropénie après chimiothérapie",
+      "tier": 3,
+      "services": ["oncology", "community-pharmacy"]
+    },
+    {
+      "slug": "pegfilgrastim",
+      "name": "Pegfilgrastim",
+      "brands": ["Neulasta"],
+      "classSlug": "g-csf",
+      "hint": "Prévention de la neutropénie après chimiothérapie (1 injection/cycle)",
+      "tier": 3,
+      "services": ["oncology"]
+    }
+  ]
+}

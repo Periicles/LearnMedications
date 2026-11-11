@@ -1,0 +1,671 @@
+{
+  "area": {
+    "slug": "psychiatry",
+    "name": "Psychiatrie",
+    "icon": "💭"
+  },
+  "classes": [
+    {
+      "slug": "ssri",
+      "name": "Inhibiteurs sélectifs de la recapture de la sérotonine (ISRS)",
+      "atc": "N06AB",
+      "summary": "Antidépresseurs de 1re intention : dépression, troubles anxieux, TOC. Effet après 2 à 4 semaines."
+    },
+    {
+      "slug": "snri",
+      "name": "Inhibiteurs de la recapture de la sérotonine et de la noradrénaline (IRSNa)",
+      "atc": "N06AX",
+      "summary": "Antidépresseurs à double action, utilisés aussi dans l'anxiété généralisée et certaines douleurs neuropathiques."
+    },
+    {
+      "slug": "tricyclic-antidepressants",
+      "name": "Antidépresseurs tricycliques",
+      "atc": "N06AA",
+      "summary": "Anciens antidépresseurs efficaces mais anticholinergiques et cardiotoxiques en surdosage ; aussi douleurs neuropathiques."
+    },
+    {
+      "slug": "other-antidepressants",
+      "name": "Autres antidépresseurs",
+      "atc": "N06AX",
+      "summary": "Antidépresseurs aux mécanismes variés (noradrénergiques, mélatoninergiques, IMAO, multimodaux)."
+    },
+    {
+      "slug": "benzodiazepine-anxiolytics",
+      "name": "Benzodiazépines anxiolytiques",
+      "atc": "N05BA",
+      "summary": "Anxiolytiques rapides, aussi sédatifs et anticonvulsivants ; risque de dépendance, durée de prescription limitée."
+    },
+    {
+      "slug": "other-anxiolytics",
+      "name": "Anxiolytiques non benzodiazépiniques",
+      "atc": "N05B",
+      "summary": "Anxiolytiques sans risque majeur de dépendance : antihistaminiques, buspirone, étifoxine."
+    },
+    {
+      "slug": "hypnotics",
+      "name": "Hypnotiques",
+      "atc": "N05C",
+      "summary": "Traitement court de l'insomnie : apparentés aux benzodiazépines (Z-drugs), benzodiazépines hypnotiques, mélatonine."
+    },
+    {
+      "slug": "first-generation-antipsychotics",
+      "name": "Antipsychotiques de 1re génération",
+      "atc": "N05A",
+      "summary": "Neuroleptiques classiques : psychoses, agitation ; risque élevé d'effets extrapyramidaux."
+    },
+    {
+      "slug": "second-generation-antipsychotics",
+      "name": "Antipsychotiques de 2e génération",
+      "atc": "N05A",
+      "summary": "Antipsychotiques atypiques : schizophrénie, trouble bipolaire ; moins d'effets extrapyramidaux, risque métabolique."
+    },
+    {
+      "slug": "mood-stabilizers",
+      "name": "Thymorégulateurs",
+      "atc": "N05AN",
+      "summary": "Stabilisent l'humeur et préviennent les rechutes du trouble bipolaire ; surveillance des taux sanguins pour le lithium."
+    },
+    {
+      "slug": "psychostimulants",
+      "name": "Psychostimulants",
+      "atc": "N06BA",
+      "summary": "Stimulants de l'éveil et de l'attention : TDAH, narcolepsie. Stupéfiants ou assimilés."
+    },
+    {
+      "slug": "opioid-substitution",
+      "name": "Traitements de substitution aux opioïdes",
+      "atc": "N07BC",
+      "summary": "Opioïdes de longue durée d'action qui remplacent l'héroïne ou les opioïdes détournés dans la dépendance."
+    },
+    {
+      "slug": "alcohol-dependence",
+      "name": "Traitements de la dépendance à l'alcool",
+      "atc": "N07BB",
+      "summary": "Aident au maintien de l'abstinence ou à la réduction de la consommation d'alcool."
+    },
+    {
+      "slug": "smoking-cessation",
+      "name": "Aides au sevrage tabagique",
+      "atc": "N07BA",
+      "summary": "Substituts nicotiniques et médicaments qui réduisent l'envie de fumer et les symptômes de sevrage."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "sertraline",
+      "name": "Sertraline",
+      "brands": ["Zoloft"],
+      "classSlug": "ssri",
+      "hint": "Dépression, troubles anxieux, TOC, stress post-traumatique",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "escitalopram",
+      "name": "Escitalopram",
+      "brands": ["Seroplex"],
+      "classSlug": "ssri",
+      "hint": "Dépression, troubles anxieux",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "fluoxetine",
+      "name": "Fluoxétine",
+      "brands": ["Prozac"],
+      "classSlug": "ssri",
+      "hint": "Dépression, TOC, boulimie",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "paroxetine",
+      "name": "Paroxétine",
+      "brands": ["Deroxat", "Divarius"],
+      "classSlug": "ssri",
+      "hint": "Dépression, troubles anxieux, TOC",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "citalopram",
+      "name": "Citalopram",
+      "brands": ["Seropram"],
+      "classSlug": "ssri",
+      "hint": "Dépression, trouble panique",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "fluvoxamine",
+      "name": "Fluvoxamine",
+      "brands": ["Floxyfral"],
+      "classSlug": "ssri",
+      "hint": "Dépression, TOC",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "venlafaxine",
+      "name": "Venlafaxine",
+      "brands": ["Effexor"],
+      "classSlug": "snri",
+      "hint": "Dépression, troubles anxieux",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "duloxetine",
+      "name": "Duloxétine",
+      "brands": ["Cymbalta"],
+      "classSlug": "snri",
+      "hint": "Dépression, anxiété généralisée, douleur neuropathique diabétique",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "milnacipran",
+      "name": "Milnacipran",
+      "brands": [],
+      "classSlug": "snri",
+      "hint": "Dépression",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "amitriptyline",
+      "name": "Amitriptyline",
+      "brands": ["Laroxyl"],
+      "classSlug": "tricyclic-antidepressants",
+      "hint": "Dépression, douleurs neuropathiques, prévention de la migraine",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy", "oncology"]
+    },
+    {
+      "slug": "clomipramine",
+      "name": "Clomipramine",
+      "brands": ["Anafranil"],
+      "classSlug": "tricyclic-antidepressants",
+      "hint": "Dépression, TOC, douleurs neuropathiques",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "imipramine",
+      "name": "Imipramine",
+      "brands": ["Tofranil"],
+      "classSlug": "tricyclic-antidepressants",
+      "hint": "Dépression, énurésie de l'enfant",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "mirtazapine",
+      "name": "Mirtazapine",
+      "brands": ["Norset"],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression, notamment avec insomnie",
+      "tier": 1,
+      "services": ["psychiatry", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "mianserin",
+      "name": "Miansérine",
+      "brands": [],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression",
+      "tier": 3,
+      "services": ["psychiatry", "geriatrics"]
+    },
+    {
+      "slug": "agomelatine",
+      "name": "Agomélatine",
+      "brands": ["Valdoxan"],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression (surveillance hépatique)",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "vortioxetine",
+      "name": "Vortioxétine",
+      "brands": ["Brintellix"],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "tianeptine",
+      "name": "Tianeptine",
+      "brands": ["Stablon"],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression (ordonnance sécurisée)",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "moclobemide",
+      "name": "Moclobémide",
+      "brands": ["Moclamine"],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression (IMAO-A sélectif réversible)",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "esketamine",
+      "name": "Eskétamine",
+      "brands": ["Spravato"],
+      "classSlug": "other-antidepressants",
+      "hint": "Dépression résistante (spray nasal, en milieu hospitalier)",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "alprazolam",
+      "name": "Alprazolam",
+      "brands": ["Xanax"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété, trouble panique",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "bromazepam",
+      "name": "Bromazépam",
+      "brands": ["Lexomil"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "diazepam",
+      "name": "Diazépam",
+      "brands": ["Valium"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété, sevrage alcoolique, convulsions",
+      "tier": 1,
+      "services": ["psychiatry", "emergency", "community-pharmacy"]
+    },
+    {
+      "slug": "oxazepam",
+      "name": "Oxazépam",
+      "brands": ["Seresta"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété, sevrage alcoolique (sujet âgé, insuffisant hépatique)",
+      "tier": 1,
+      "services": ["psychiatry", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "lorazepam",
+      "name": "Lorazépam",
+      "brands": ["Témesta"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété",
+      "tier": 2,
+      "services": ["psychiatry", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "prazepam",
+      "name": "Prazépam",
+      "brands": ["Lysanxia"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "clorazepate",
+      "name": "Clorazépate dipotassique",
+      "brands": ["Tranxène"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété, agitation, sevrage alcoolique",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "ethyl-loflazepate",
+      "name": "Loflazépate d’éthyle",
+      "brands": ["Victan"],
+      "classSlug": "benzodiazepine-anxiolytics",
+      "hint": "Anxiété",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "hydroxyzine",
+      "name": "Hydroxyzine",
+      "brands": ["Atarax"],
+      "classSlug": "other-anxiolytics",
+      "hint": "Anxiété, prémédication, prurit",
+      "tier": 1,
+      "services": ["psychiatry", "emergency", "anesthesia", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "etifoxine",
+      "name": "Étifoxine",
+      "brands": ["Stresam"],
+      "classSlug": "other-anxiolytics",
+      "hint": "Manifestations psychosomatiques de l'anxiété",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "buspirone",
+      "name": "Buspirone",
+      "brands": [],
+      "classSlug": "other-anxiolytics",
+      "hint": "Anxiété généralisée",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "zolpidem",
+      "name": "Zolpidem",
+      "brands": ["Stilnox"],
+      "classSlug": "hypnotics",
+      "hint": "Insomnie occasionnelle ou transitoire",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "zopiclone",
+      "name": "Zopiclone",
+      "brands": ["Imovane"],
+      "classSlug": "hypnotics",
+      "hint": "Insomnie occasionnelle ou transitoire",
+      "tier": 1,
+      "services": ["psychiatry", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "lormetazepam",
+      "name": "Lormétazépam",
+      "brands": [],
+      "classSlug": "hypnotics",
+      "hint": "Insomnie",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "loprazolam",
+      "name": "Loprazolam",
+      "brands": ["Havlane"],
+      "classSlug": "hypnotics",
+      "hint": "Insomnie",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "melatonin",
+      "name": "Mélatonine",
+      "brands": ["Circadin", "Slenyto"],
+      "classSlug": "hypnotics",
+      "hint": "Insomnie du sujet de plus de 55 ans, troubles du sommeil de l'enfant",
+      "tier": 2,
+      "services": ["geriatrics", "pediatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "haloperidol",
+      "name": "Halopéridol",
+      "brands": ["Haldol"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Psychoses, agitation, delirium, nausées en soins palliatifs",
+      "tier": 1,
+      "services": ["psychiatry", "emergency", "intensive-care", "geriatrics", "oncology"]
+    },
+    {
+      "slug": "chlorpromazine",
+      "name": "Chlorpromazine",
+      "brands": ["Largactil"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Psychoses, agitation",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "loxapine",
+      "name": "Loxapine",
+      "brands": ["Loxapac"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Agitation, psychoses",
+      "tier": 2,
+      "services": ["psychiatry", "emergency"]
+    },
+    {
+      "slug": "cyamemazine",
+      "name": "Cyamémazine",
+      "brands": ["Tercian"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Anxiété et agitation (psychoses), sevrage benzodiazépines",
+      "tier": 1,
+      "services": ["psychiatry", "emergency"]
+    },
+    {
+      "slug": "levomepromazine",
+      "name": "Lévomépromazine",
+      "brands": ["Nozinan"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Agitation, psychoses",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "tiapride",
+      "name": "Tiapride",
+      "brands": ["Tiapridal"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Agitation du sujet âgé, sevrage alcoolique",
+      "tier": 2,
+      "services": ["geriatrics", "psychiatry"]
+    },
+    {
+      "slug": "sulpiride",
+      "name": "Sulpiride",
+      "brands": ["Dogmatil"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Psychoses, anxiété",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "zuclopenthixol",
+      "name": "Zuclopenthixol",
+      "brands": ["Clopixol"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Schizophrénie, agitation (forme retard possible)",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "pipamperone",
+      "name": "Pipampérone",
+      "brands": ["Dipipéron"],
+      "classSlug": "first-generation-antipsychotics",
+      "hint": "Agitation, agressivité",
+      "tier": 3,
+      "services": ["psychiatry", "geriatrics"]
+    },
+    {
+      "slug": "olanzapine",
+      "name": "Olanzapine",
+      "brands": ["Zyprexa"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie, épisode maniaque, agitation",
+      "tier": 1,
+      "services": ["psychiatry", "emergency"]
+    },
+    {
+      "slug": "risperidone",
+      "name": "Rispéridone",
+      "brands": ["Risperdal"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie, manie, agressivité (démence, enfant)",
+      "tier": 1,
+      "services": ["psychiatry", "geriatrics"]
+    },
+    {
+      "slug": "aripiprazole",
+      "name": "Aripiprazole",
+      "brands": ["Abilify"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie, trouble bipolaire (forme retard possible)",
+      "tier": 1,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "quetiapine",
+      "name": "Quétiapine",
+      "brands": ["Xeroquel"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie, trouble bipolaire, dépression (adjuvant)",
+      "tier": 1,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "clozapine",
+      "name": "Clozapine",
+      "brands": ["Leponex"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie résistante (surveillance NFS)",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "amisulpride",
+      "name": "Amisulpride",
+      "brands": ["Solian"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "paliperidone",
+      "name": "Palipéridone",
+      "brands": ["Xeplion", "Trevicta"],
+      "classSlug": "second-generation-antipsychotics",
+      "hint": "Schizophrénie (injection retard mensuelle ou trimestrielle)",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "lithium",
+      "name": "Lithium",
+      "brands": ["Téralithe"],
+      "classSlug": "mood-stabilizers",
+      "hint": "Trouble bipolaire (traitement et prévention)",
+      "tier": 1,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "methylphenidate",
+      "name": "Méthylphénidate",
+      "brands": ["Ritaline", "Concerta", "Quasym"],
+      "classSlug": "psychostimulants",
+      "hint": "TDAH de l'enfant et de l'adulte, narcolepsie",
+      "tier": 2,
+      "services": ["pediatrics", "psychiatry"]
+    },
+    {
+      "slug": "modafinil",
+      "name": "Modafinil",
+      "brands": ["Modiodal"],
+      "classSlug": "psychostimulants",
+      "hint": "Narcolepsie",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "methadone",
+      "name": "Méthadone",
+      "brands": [],
+      "classSlug": "opioid-substitution",
+      "hint": "Substitution de la dépendance aux opioïdes",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "buprenorphine",
+      "name": "Buprénorphine",
+      "brands": ["Subutex", "Orobupré", "Temgesic"],
+      "classSlug": "opioid-substitution",
+      "hint": "Substitution aux opioïdes (haut dosage), douleur (faible dosage)",
+      "tier": 1,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "buprenorphine-naloxone",
+      "name": "Buprénorphine + naloxone",
+      "brands": ["Suboxone"],
+      "classSlug": "opioid-substitution",
+      "hint": "Substitution aux opioïdes (limite le détournement IV)",
+      "tier": 2,
+      "services": ["psychiatry", "community-pharmacy"]
+    },
+    {
+      "slug": "acamprosate",
+      "name": "Acamprosate",
+      "brands": ["Aotal"],
+      "classSlug": "alcohol-dependence",
+      "hint": "Maintien de l'abstinence alcoolique",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "naltrexone",
+      "name": "Naltrexone",
+      "brands": [],
+      "classSlug": "alcohol-dependence",
+      "hint": "Maintien de l'abstinence alcoolique",
+      "tier": 2,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "nalmefene",
+      "name": "Nalméfène",
+      "brands": ["Selincro"],
+      "classSlug": "alcohol-dependence",
+      "hint": "Réduction de la consommation d'alcool",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "disulfiram",
+      "name": "Disulfirame",
+      "brands": ["Espéral"],
+      "classSlug": "alcohol-dependence",
+      "hint": "Maintien de l'abstinence (effet antabuse)",
+      "tier": 3,
+      "services": ["psychiatry"]
+    },
+    {
+      "slug": "nicotine",
+      "name": "Nicotine",
+      "brands": ["Nicorette", "Nicopatchlib", "NiQuitin"],
+      "classSlug": "smoking-cessation",
+      "hint": "Sevrage tabagique (patchs, gommes, pastilles, inhaleur)",
+      "tier": 1,
+      "services": ["community-pharmacy", "psychiatry"]
+    },
+    {
+      "slug": "varenicline",
+      "name": "Varénicline",
+      "brands": [],
+      "classSlug": "smoking-cessation",
+      "hint": "Sevrage tabagique",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "bupropion",
+      "name": "Bupropion",
+      "brands": ["Zyban"],
+      "classSlug": "smoking-cessation",
+      "hint": "Sevrage tabagique",
+      "tier": 3,
+      "services": []
+    }
+  ]
+}
