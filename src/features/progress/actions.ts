@@ -1,6 +1,8 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { getSessionStats, getUnlockedAchievements } from "@/features/achievements/lib/queries";
+import { findSessionBadges } from "@/features/achievements/lib/session-badges";
 import { requireUser } from "@/features/auth/lib/session";
 import { outcomeFromRecords } from "@/features/quiz/lib/session";
 import { sessionInputSchema } from "@/schemas/progress";
@@ -20,10 +22,12 @@ export async function completeSession(rawInput: SessionInput): Promise<SessionRe
   const parsed = sessionInputSchema.safeParse(rawInput);
   if (!parsed.success) return null;
 
-  const [profile, masteryRows, completions] = await Promise.all([
+  const [profile, masteryRows, completions, sessions, unlocked] = await Promise.all([
     getProfile(user.id),
     getMasteryRows(user.id),
     getCompletions(user.id),
+    getSessionStats(),
+    getUnlockedAchievements(user.id),
   ]);
   const records = acceptRecords(parsed.data, completions);
   if (!profile || records.length === 0) return null;
@@ -34,6 +38,19 @@ export async function completeSession(rawInput: SessionInput): Promise<SessionRe
   const xpGained = computeSessionXp(outcome, parsed.data.mode);
   const streak = nextStreak(profile, today);
   const known = new Map(masteryRows.map((mastery) => [mastery.substanceSlug, mastery]));
+  const updatedMastery = applyRecords(records, known, moment);
+  const badges = findSessionBadges({
+    input: parsed.data,
+    outcome,
+    totalXp: profile.totalXp + xpGained,
+    streak,
+    completions,
+    knownMastery: masteryRows,
+    updatedMastery,
+    sessions,
+    friendCount: 0,
+    ownedKeys: [...unlocked.keys()],
+  });
 
   const totalXp = await saveSession({
     userId: user.id,
@@ -43,8 +60,8 @@ export async function completeSession(rawInput: SessionInput): Promise<SessionRe
     xpGained,
     today,
     streak,
-    mastery: applyRecords(records, known, moment),
-    badgeKeys: [],
+    mastery: updatedMastery,
+    badgeKeys: badges.map((badge) => badge.key),
   });
   if (totalXp === null) return null;
 
@@ -57,6 +74,6 @@ export async function completeSession(rawInput: SessionInput): Promise<SessionRe
     leveledUp: level > levelFromXp(profile.totalXp),
     streak,
     streakExtended: profile.lastActiveOn !== today,
-    badges: [],
+    badges: badges.map((badge) => ({ key: badge.key, title: badge.title, icon: badge.icon })),
   };
 }

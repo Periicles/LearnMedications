@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { SessionStats } from "./achievements";
 import type { Collection, Lesson } from "./content";
 import type { AnswerRecord, LessonPlan, PlanMode, SessionOutcome } from "./quiz";
 
@@ -156,4 +157,17 @@ export interface LessonRouteParams {
 
 export interface LessonScreenProps {
   params: Promise<LessonRouteParams>;
+}
+
+export interface BadgeContext {
+  input: SessionInput;
+  outcome: SessionOutcome;
+  totalXp: number;
+  streak: number;
+  completions: CompletionMap;
+  knownMastery: Mastery[];
+  updatedMastery: Mastery[];
+  sessions: SessionStats;
+  friendCount: number;
+  ownedKeys: string[];
 }
