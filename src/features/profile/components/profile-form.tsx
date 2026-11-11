@@ -21,13 +21,13 @@ export function ProfileForm({ username, avatar }: ProfileFormProps) {
         <TextField
           label="Pseudo"
           name="username"
-          defaultValue={username}
+          defaultValue={state.values?.username ?? username}
           autoCapitalize="none"
           autoComplete="username"
           required
           error={state.fieldErrors?.username}
         />
-        <AvatarPicker selected={avatar} />
+        <AvatarPicker selected={state.values?.avatar ?? avatar} />
         <SubmitButton>Enregistrer</SubmitButton>
       </form>
     </Card>

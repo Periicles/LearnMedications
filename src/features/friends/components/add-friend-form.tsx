@@ -22,6 +22,7 @@ export function AddFriendForm() {
           autoCapitalize="none"
           autoComplete="off"
           required
+          defaultValue={state.values?.username}
           error={state.fieldErrors?.username}
         />
         <SubmitButton pendingLabel="Envoi…">Envoyer la demande</SubmitButton>

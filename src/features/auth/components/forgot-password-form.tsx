@@ -21,6 +21,7 @@ export function ForgotPasswordForm() {
         autoComplete="email"
         inputMode="email"
         required
+        defaultValue={state.values?.email}
         error={state.fieldErrors?.email}
       />
       <SubmitButton>Envoyer le lien</SubmitButton>

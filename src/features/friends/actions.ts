@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { ROUTES } from "@/constants/routes";
 import { requireUser } from "@/features/auth/lib/session";
-import { formError, formSuccess, validationError } from "@/lib/forms";
+import { formError, formSuccess, pickValues, validationError } from "@/lib/forms";
 import { createServerSupabase } from "@/lib/supabase/server";
 import { friendIdSchema, friendRequestSchema } from "@/schemas/social";
 import type { FormState } from "@/types/auth";
@@ -18,8 +18,9 @@ function pairFilter(firstId: string, secondId: string): string {
 
 export async function sendFriendRequest(_state: FormState, formData: FormData): Promise<FormState> {
   const user = await requireUser();
+  const values = pickValues(formData, ["username"]);
   const parsed = friendRequestSchema.safeParse(Object.fromEntries(formData));
-  if (!parsed.success) return validationError(parsed.error);
+  if (!parsed.success) return validationError(parsed.error, values);
 
   const supabase = await createServerSupabase();
   const target = await supabase
@@ -27,7 +28,7 @@ export async function sendFriendRequest(_state: FormState, formData: FormData): 
     .select("id")
     .eq("username", parsed.data.username)
     .maybeSingle<Record<"id", string>>();
-  if (!target.data) return formError("Aucun utilisateur ne porte ce pseudo.");
+  if (!target.data) return formError("Aucun utilisateur ne porte ce pseudo.", values);
   if (target.data.id === user.id) return formError("Vous ne pouvez pas vous ajouter vous-même.");
 
   const existing = await supabase

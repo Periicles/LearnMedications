@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/constants/routes";
 import { getSiteUrl } from "@/lib/env";
-import { formError, formSuccess, validationError } from "@/lib/forms";
+import { fieldError, formError, formSuccess, pickValues, validationError } from "@/lib/forms";
 import { createServerSupabase } from "@/lib/supabase/server";
 import {
   forgotPasswordSchema,
@@ -15,23 +15,25 @@ import type { FormState } from "@/types/auth";
 import { describeAuthError } from "./lib/errors";
 
 export async function login(_state: FormState, formData: FormData): Promise<FormState> {
+  const values = pickValues(formData, ["email"]);
   const parsed = loginSchema.safeParse(Object.fromEntries(formData));
-  if (!parsed.success) return validationError(parsed.error);
+  if (!parsed.success) return validationError(parsed.error, values);
   const supabase = await createServerSupabase();
   const { error } = await supabase.auth.signInWithPassword(parsed.data);
-  if (error) return formError(describeAuthError(error.code));
+  if (error) return formError(describeAuthError(error.code), values);
   redirect(ROUTES.learn);
 }
 
 export async function signup(_state: FormState, formData: FormData): Promise<FormState> {
+  const values = pickValues(formData, ["username", "email"]);
   const parsed = signupSchema.safeParse(Object.fromEntries(formData));
-  if (!parsed.success) return validationError(parsed.error);
+  if (!parsed.success) return validationError(parsed.error, values);
   const { username, email, password } = parsed.data;
   const supabase = await createServerSupabase();
 
   const availability = await supabase.rpc("is_username_available", { wanted: username });
   if (availability.data === false) {
-    return { status: "error", fieldErrors: { username: "Ce pseudo est déjà pris." } };
+    return fieldError("username", "Ce pseudo est déjà pris.", values);
   }
 
   const { data, error } = await supabase.auth.signUp({
@@ -39,7 +41,7 @@ export async function signup(_state: FormState, formData: FormData): Promise<For
     password,
     options: { data: { username }, emailRedirectTo: `${getSiteUrl()}/auth/confirm` },
   });
-  if (error) return formError(describeAuthError(error.code));
+  if (error) return formError(describeAuthError(error.code), values);
   if (data.session) redirect(ROUTES.learn);
   return formSuccess("Compte créé ! Cliquez sur le lien reçu par e-mail pour l'activer.");
 }
@@ -48,12 +50,13 @@ export async function requestPasswordReset(
   _state: FormState,
   formData: FormData,
 ): Promise<FormState> {
+  const values = pickValues(formData, ["email"]);
   const parsed = forgotPasswordSchema.safeParse(Object.fromEntries(formData));
-  if (!parsed.success) return validationError(parsed.error);
+  if (!parsed.success) return validationError(parsed.error, values);
   const supabase = await createServerSupabase();
   const redirectTo = `${getSiteUrl()}/auth/confirm?next=${ROUTES.resetPassword}`;
   const { error } = await supabase.auth.resetPasswordForEmail(parsed.data.email, { redirectTo });
-  if (error) return formError(describeAuthError(error.code));
+  if (error) return formError(describeAuthError(error.code), values);
   return formSuccess("Si un compte existe pour cette adresse, un e-mail vient d'être envoyé.");
 }
 
