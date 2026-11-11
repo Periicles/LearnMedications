@@ -13,7 +13,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepare": "husky"
+    "prepare": "husky",
+    "content:check-bdpm": "tsx scripts/check-bdpm.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
