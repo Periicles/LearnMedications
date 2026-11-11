@@ -1,0 +1,302 @@
+{
+  "area": {
+    "slug": "urology-gynecology",
+    "name": "Urologie et gynécologie",
+    "icon": "🚻"
+  },
+  "classes": [
+    {
+      "slug": "alpha-blockers-bph",
+      "name": "Alphabloquants urologiques",
+      "atc": "G04CA",
+      "summary": "Relâchent le col vésical et la prostate pour faciliter la miction dans l'hypertrophie bénigne de la prostate."
+    },
+    {
+      "slug": "5-alpha-reductase-inhibitors",
+      "name": "Inhibiteurs de la 5-alpha-réductase",
+      "atc": "G04CB",
+      "summary": "Réduisent le volume de la prostate en bloquant la conversion de la testostérone ; effet en plusieurs mois."
+    },
+    {
+      "slug": "overactive-bladder-antimuscarinics",
+      "name": "Anticholinergiques de l'hyperactivité vésicale",
+      "atc": "G04BD",
+      "summary": "Diminuent les contractions de la vessie (urgenturie, incontinence) ; effets atropiniques, prudence chez l'âgé."
+    },
+    {
+      "slug": "pde5-inhibitors",
+      "name": "Inhibiteurs de la phosphodiestérase de type 5",
+      "atc": "G04BE",
+      "summary": "Facilitent l'érection ; contre-indiqués avec les dérivés nitrés (risque d'hypotension sévère)."
+    },
+    {
+      "slug": "combined-hormonal-contraceptives",
+      "name": "Contraceptifs estroprogestatifs",
+      "atc": "G03AA",
+      "summary": "Pilules associant un estrogène et un progestatif pour bloquer l'ovulation ; risque thromboembolique."
+    },
+    {
+      "slug": "progestin-only-contraceptives",
+      "name": "Contraceptifs progestatifs",
+      "atc": "G03AC",
+      "summary": "Contraception sans estrogène (pilule, implant, stérilet hormonal), possible en cas de risque vasculaire."
+    },
+    {
+      "slug": "emergency-contraception",
+      "name": "Contraception d'urgence",
+      "atc": "G03AD",
+      "summary": "Pilules à prendre le plus tôt possible après un rapport non ou mal protégé."
+    },
+    {
+      "slug": "uterotonics",
+      "name": "Utérotoniques",
+      "atc": "G02A",
+      "summary": "Font contracter l'utérus : déclenchement ou direction du travail, prévention et traitement de l'hémorragie du post-partum."
+    },
+    {
+      "slug": "antiprogestogens",
+      "name": "Antiprogestérones",
+      "atc": "G03XB",
+      "summary": "Bloquent l'action de la progestérone : interruption volontaire de grossesse médicamenteuse."
+    },
+    {
+      "slug": "tocolytics",
+      "name": "Tocolytiques",
+      "atc": "G02CX",
+      "summary": "Inhibent les contractions utérines en cas de menace d'accouchement prématuré."
+    },
+    {
+      "slug": "estrogens-progesterone",
+      "name": "Estrogènes et progestérone naturels",
+      "atc": "G03",
+      "summary": "Hormones naturelles pour le traitement hormonal de la ménopause, l'insuffisance lutéale et la PMA."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "tamsulosin",
+      "name": "Tamsulosine",
+      "brands": ["Omix", "Mecir"],
+      "classSlug": "alpha-blockers-bph",
+      "hint": "Hypertrophie bénigne de la prostate, colique néphrétique",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "alfuzosin",
+      "name": "Alfuzosine",
+      "brands": ["Xatral"],
+      "classSlug": "alpha-blockers-bph",
+      "hint": "Hypertrophie bénigne de la prostate, rétention aiguë d'urine",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "silodosin",
+      "name": "Silodosine",
+      "brands": ["Silodyx", "Urorec"],
+      "classSlug": "alpha-blockers-bph",
+      "hint": "Hypertrophie bénigne de la prostate",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "finasteride",
+      "name": "Finastéride",
+      "brands": ["Chibro-Proscar"],
+      "classSlug": "5-alpha-reductase-inhibitors",
+      "hint": "Hypertrophie bénigne de la prostate",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "dutasteride",
+      "name": "Dutastéride",
+      "brands": ["Avodart"],
+      "classSlug": "5-alpha-reductase-inhibitors",
+      "hint": "Hypertrophie bénigne de la prostate",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "oxybutynin",
+      "name": "Oxybutynine",
+      "brands": ["Ditropan", "Driptane"],
+      "classSlug": "overactive-bladder-antimuscarinics",
+      "hint": "Hyperactivité vésicale, incontinence par urgenturie",
+      "tier": 2,
+      "services": ["geriatrics", "pediatrics"]
+    },
+    {
+      "slug": "solifenacin",
+      "name": "Solifénacine",
+      "brands": ["Vesicare"],
+      "classSlug": "overactive-bladder-antimuscarinics",
+      "hint": "Hyperactivité vésicale, incontinence par urgenturie",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "trospium",
+      "name": "Trospium",
+      "brands": ["Ceris"],
+      "classSlug": "overactive-bladder-antimuscarinics",
+      "hint": "Hyperactivité vésicale (passe peu la barrière cérébrale)",
+      "tier": 3,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "sildenafil",
+      "name": "Sildénafil",
+      "brands": ["Viagra"],
+      "classSlug": "pde5-inhibitors",
+      "hint": "Dysfonction érectile, hypertension artérielle pulmonaire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "tadalafil",
+      "name": "Tadalafil",
+      "brands": ["Cialis"],
+      "classSlug": "pde5-inhibitors",
+      "hint": "Dysfonction érectile, hypertrophie bénigne de la prostate",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "levonorgestrel-ethinylestradiol",
+      "name": "Lévonorgestrel + éthinylestradiol",
+      "brands": ["Minidril", "Leeloo", "Trinordiol"],
+      "classSlug": "combined-hormonal-contraceptives",
+      "hint": "Contraception orale (pilule de 2e génération)",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "drospirenone-ethinylestradiol",
+      "name": "Drospirénone + éthinylestradiol",
+      "brands": ["Jasmine", "Yaz"],
+      "classSlug": "combined-hormonal-contraceptives",
+      "hint": "Contraception orale (pilule de 4e génération)",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "desogestrel",
+      "name": "Désogestrel",
+      "brands": ["Cerazette", "Optimizette"],
+      "classSlug": "progestin-only-contraceptives",
+      "hint": "Contraception orale progestative continue",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "etonogestrel-implant",
+      "name": "Étonogestrel (implant)",
+      "brands": ["Nexplanon"],
+      "classSlug": "progestin-only-contraceptives",
+      "hint": "Contraception par implant sous-cutané (3 ans)",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "levonorgestrel-iud",
+      "name": "Lévonorgestrel (dispositif intra-utérin)",
+      "brands": ["Mirena", "Kyleena", "Jaydess"],
+      "classSlug": "progestin-only-contraceptives",
+      "hint": "Contraception intra-utérine, règles abondantes",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "levonorgestrel-emergency",
+      "name": "Lévonorgestrel (contraception d'urgence)",
+      "brands": ["Norlevo"],
+      "classSlug": "emergency-contraception",
+      "hint": "Contraception d'urgence jusqu'à 72 h après le rapport",
+      "tier": 1,
+      "services": ["community-pharmacy", "emergency"]
+    },
+    {
+      "slug": "ulipristal",
+      "name": "Ulipristal",
+      "brands": ["EllaOne"],
+      "classSlug": "emergency-contraception",
+      "hint": "Contraception d'urgence jusqu'à 120 h après le rapport",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "oxytocin",
+      "name": "Oxytocine",
+      "brands": ["Syntocinon"],
+      "classSlug": "uterotonics",
+      "hint": "Direction du travail, prévention de l'hémorragie du post-partum",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "carbetocin",
+      "name": "Carbétocine",
+      "brands": ["Pabal"],
+      "classSlug": "uterotonics",
+      "hint": "Prévention de l'hémorragie du post-partum après césarienne",
+      "tier": 3,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "sulprostone",
+      "name": "Sulprostone",
+      "brands": ["Nalador"],
+      "classSlug": "uterotonics",
+      "hint": "Hémorragie du post-partum résistante à l'oxytocine",
+      "tier": 3,
+      "services": ["anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "misoprostol",
+      "name": "Misoprostol",
+      "brands": ["Gymiso", "Misoone"],
+      "classSlug": "uterotonics",
+      "hint": "IVG médicamenteuse (après mifépristone), fausse couche",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "mifepristone",
+      "name": "Mifépristone",
+      "brands": ["Mifégyne"],
+      "classSlug": "antiprogestogens",
+      "hint": "IVG médicamenteuse, interruption médicale de grossesse",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "atosiban",
+      "name": "Atosiban",
+      "brands": ["Tractocile"],
+      "classSlug": "tocolytics",
+      "hint": "Menace d'accouchement prématuré",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "estradiol",
+      "name": "Estradiol",
+      "brands": ["Provames", "Oestrodose"],
+      "classSlug": "estrogens-progesterone",
+      "hint": "Traitement hormonal de la ménopause",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "progesterone",
+      "name": "Progestérone",
+      "brands": ["Utrogestan"],
+      "classSlug": "estrogens-progesterone",
+      "hint": "Ménopause (avec estrogène), insuffisance lutéale, PMA",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    }
+  ]
+}

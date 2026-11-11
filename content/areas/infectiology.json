@@ -1,0 +1,705 @@
+{
+  "area": {
+    "slug": "infectiology",
+    "name": "Infectiologie",
+    "icon": "🦠"
+  },
+  "classes": [
+    {
+      "slug": "penicillins",
+      "name": "Pénicillines",
+      "atc": "J01C",
+      "summary": "Bêtalactamines de référence, actives sur streptocoques, pneumocoques et (pénicillines M) staphylocoques sensibles."
+    },
+    {
+      "slug": "penicillins-beta-lactamase-inhibitors",
+      "name": "Pénicillines + inhibiteur de bêtalactamases",
+      "atc": "J01CR",
+      "summary": "Pénicilline associée à un inhibiteur qui la protège des bêtalactamases bactériennes : spectre élargi."
+    },
+    {
+      "slug": "cephalosporins-1st-2nd-gen",
+      "name": "Céphalosporines de 1re et 2e génération",
+      "atc": "J01D",
+      "summary": "Bêtalactamines surtout actives sur les cocci Gram+, très utilisées en antibioprophylaxie chirurgicale."
+    },
+    {
+      "slug": "cephalosporins-3rd-gen",
+      "name": "Céphalosporines de 3e génération et plus",
+      "atc": "J01DD",
+      "summary": "Bêtalactamines à large spectre (Gram-) pour infections sévères : méningites, pneumonies, pyélonéphrites."
+    },
+    {
+      "slug": "carbapenems",
+      "name": "Carbapénèmes",
+      "atc": "J01DH",
+      "summary": "Bêtalactamines au spectre le plus large, réservées aux infections graves à bactéries multirésistantes."
+    },
+    {
+      "slug": "anti-mrsa",
+      "name": "Glycopeptides et autres anti-SARM",
+      "atc": "J01X",
+      "summary": "Antibiotiques actifs sur les staphylocoques résistants à la méticilline (SARM) et autres Gram+ résistants."
+    },
+    {
+      "slug": "aminoglycosides",
+      "name": "Aminosides",
+      "atc": "J01GB",
+      "summary": "Antibiotiques bactéricides injectables, en association courte ; surveillance rénale et auditive."
+    },
+    {
+      "slug": "macrolides",
+      "name": "Macrolides et apparentés",
+      "atc": "J01F",
+      "summary": "Macrolides, lincosamides et synergistines : infections respiratoires, ORL, cutanées, alternative en cas d'allergie."
+    },
+    {
+      "slug": "fluoroquinolones",
+      "name": "Fluoroquinolones",
+      "atc": "J01MA",
+      "summary": "Antibiotiques à large spectre (urinaire, respiratoire) ; risque de tendinopathie, usage à limiter."
+    },
+    {
+      "slug": "tetracyclines",
+      "name": "Tétracyclines",
+      "atc": "J01AA",
+      "summary": "Antibiotiques bactériostatiques : germes intracellulaires, acné, maladie de Lyme, prévention du paludisme."
+    },
+    {
+      "slug": "nitroimidazoles",
+      "name": "Nitro-imidazolés",
+      "atc": "J01XD",
+      "summary": "Actifs sur les bactéries anaérobies et certains parasites (amibes, trichomonas) ; effet antabuse avec l'alcool."
+    },
+    {
+      "slug": "sulfonamides",
+      "name": "Sulfamides antibactériens",
+      "atc": "J01E",
+      "summary": "Inhibiteurs de la synthèse des folates : infections urinaires, pneumocystose, toxoplasmose."
+    },
+    {
+      "slug": "urinary-antibiotics",
+      "name": "Antibiotiques urinaires",
+      "atc": "",
+      "summary": "Antibiotiques concentrés dans les urines, utilisés en première intention dans la cystite."
+    },
+    {
+      "slug": "antituberculosis",
+      "name": "Antituberculeux",
+      "atc": "J04A",
+      "summary": "Antibiotiques associés pendant plusieurs mois pour traiter la tuberculose ; toxicité hépatique à surveiller."
+    },
+    {
+      "slug": "azole-antifungals",
+      "name": "Antifongiques azolés",
+      "atc": "J02AC",
+      "summary": "Antifongiques systémiques actifs sur levures et/ou moisissures ; nombreuses interactions médicamenteuses."
+    },
+    {
+      "slug": "echinocandins",
+      "name": "Échinocandines",
+      "atc": "J02AX",
+      "summary": "Antifongiques injectables de référence des candidoses invasives en réanimation."
+    },
+    {
+      "slug": "polyene-antifungals",
+      "name": "Polyènes",
+      "atc": "",
+      "summary": "Antifongiques à très large spectre : amphotéricine B en IV, nystatine en local digestif."
+    },
+    {
+      "slug": "anti-herpesvirus",
+      "name": "Antiviraux anti-Herpesviridae",
+      "atc": "J05AB",
+      "summary": "Antiviraux actifs sur les virus herpès simplex, varicelle-zona et cytomégalovirus."
+    },
+    {
+      "slug": "respiratory-antivirals",
+      "name": "Antiviraux de la grippe et de la COVID-19",
+      "atc": "J05A",
+      "summary": "Antiviraux à débuter précocement pour réduire la durée ou la gravité de la grippe ou de la COVID-19."
+    },
+    {
+      "slug": "hiv-antiretrovirals",
+      "name": "Antirétroviraux (VIH)",
+      "atc": "J05AR",
+      "summary": "Associations d'antiviraux pour traiter l'infection par le VIH ou la prévenir (PrEP)."
+    },
+    {
+      "slug": "hepatitis-antivirals",
+      "name": "Antiviraux des hépatites",
+      "atc": "J05A",
+      "summary": "Antiviraux contre les hépatites B (traitement suppressif) et C (traitement curatif de 8 à 12 semaines)."
+    },
+    {
+      "slug": "antimalarials",
+      "name": "Antipaludiques",
+      "atc": "P01B",
+      "summary": "Médicaments de prévention (voyageur) et de traitement du paludisme, dont l'accès grave."
+    },
+    {
+      "slug": "antiparasitics",
+      "name": "Anthelminthiques et antiscabieux",
+      "atc": "P02",
+      "summary": "Traitement des vers intestinaux (oxyures, ascaris...) et de la gale."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "amoxicillin",
+      "name": "Amoxicilline",
+      "brands": ["Clamoxyl"],
+      "classSlug": "penicillins",
+      "hint": "Angine, otite, pneumonie, sinusite",
+      "tier": 1,
+      "services": ["emergency", "pediatrics", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "cloxacillin",
+      "name": "Cloxacilline",
+      "brands": ["Orbénine"],
+      "classSlug": "penicillins",
+      "hint": "Infections à staphylocoque sensible à la méticilline",
+      "tier": 2,
+      "services": ["orthopedic-surgery"]
+    },
+    {
+      "slug": "benzathine-benzylpenicillin",
+      "name": "Benzathine benzylpénicilline",
+      "brands": ["Extencilline"],
+      "classSlug": "penicillins",
+      "hint": "Syphilis, prévention du rhumatisme articulaire aigu",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "amoxicillin-clavulanic-acid",
+      "name": "Amoxicilline + acide clavulanique",
+      "brands": ["Augmentin"],
+      "classSlug": "penicillins-beta-lactamase-inhibitors",
+      "hint": "Pneumonie, sinusite, morsures, infections abdominales",
+      "tier": 1,
+      "services": [
+        "emergency",
+        "intensive-care",
+        "geriatrics",
+        "pediatrics",
+        "orthopedic-surgery",
+        "community-pharmacy"
+      ]
+    },
+    {
+      "slug": "piperacillin-tazobactam",
+      "name": "Pipéracilline + tazobactam",
+      "brands": ["Tazocilline"],
+      "classSlug": "penicillins-beta-lactamase-inhibitors",
+      "hint": "Infections nosocomiales graves, neutropénie fébrile",
+      "tier": 2,
+      "services": ["intensive-care", "neuro-icu", "emergency", "oncology"]
+    },
+    {
+      "slug": "cefazolin",
+      "name": "Céfazoline",
+      "brands": [],
+      "classSlug": "cephalosporins-1st-2nd-gen",
+      "hint": "Antibioprophylaxie chirurgicale, infections à staphylocoque",
+      "tier": 2,
+      "services": ["anesthesia", "orthopedic-surgery", "neuro-icu"]
+    },
+    {
+      "slug": "cefuroxime",
+      "name": "Céfuroxime",
+      "brands": ["Zinnat"],
+      "classSlug": "cephalosporins-1st-2nd-gen",
+      "hint": "Antibioprophylaxie chirurgicale, infections ORL",
+      "tier": 2,
+      "services": ["anesthesia"]
+    },
+    {
+      "slug": "ceftriaxone",
+      "name": "Ceftriaxone",
+      "brands": ["Rocéphine"],
+      "classSlug": "cephalosporins-3rd-gen",
+      "hint": "Méningite, pneumonie, pyélonéphrite, infections sévères",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "neuro-icu", "geriatrics", "pediatrics"]
+    },
+    {
+      "slug": "cefotaxime",
+      "name": "Céfotaxime",
+      "brands": [],
+      "classSlug": "cephalosporins-3rd-gen",
+      "hint": "Méningite, infections sévères (enfant notamment)",
+      "tier": 2,
+      "services": ["intensive-care", "neuro-icu", "pediatrics"]
+    },
+    {
+      "slug": "cefepime",
+      "name": "Céfépime",
+      "brands": ["Axépim"],
+      "classSlug": "cephalosporins-3rd-gen",
+      "hint": "Infections nosocomiales, neutropénie fébrile",
+      "tier": 3,
+      "services": ["intensive-care", "oncology"]
+    },
+    {
+      "slug": "cefpodoxime",
+      "name": "Cefpodoxime",
+      "brands": ["Orelox"],
+      "classSlug": "cephalosporins-3rd-gen",
+      "hint": "Infections ORL et respiratoires (voie orale)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "cefixime",
+      "name": "Céfixime",
+      "brands": ["Oroken"],
+      "classSlug": "cephalosporins-3rd-gen",
+      "hint": "Relais oral des infections urinaires de l'enfant",
+      "tier": 3,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "meropenem",
+      "name": "Méropénem",
+      "brands": ["Meronem"],
+      "classSlug": "carbapenems",
+      "hint": "Infections graves à bactéries multirésistantes (BLSE)",
+      "tier": 2,
+      "services": ["intensive-care", "neuro-icu", "oncology"]
+    },
+    {
+      "slug": "imipenem-cilastatin",
+      "name": "Imipénem + cilastatine",
+      "brands": ["Tienam"],
+      "classSlug": "carbapenems",
+      "hint": "Infections graves à bactéries multirésistantes",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "vancomycin",
+      "name": "Vancomycine",
+      "brands": [],
+      "classSlug": "anti-mrsa",
+      "hint": "Infections à SARM, infections sur matériel, C. difficile (oral)",
+      "tier": 2,
+      "services": ["intensive-care", "neuro-icu", "orthopedic-surgery", "oncology"]
+    },
+    {
+      "slug": "linezolid",
+      "name": "Linézolide",
+      "brands": ["Zyvoxid"],
+      "classSlug": "anti-mrsa",
+      "hint": "Pneumonies et infections cutanées à SARM",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "daptomycin",
+      "name": "Daptomycine",
+      "brands": ["Cubicin"],
+      "classSlug": "anti-mrsa",
+      "hint": "Bactériémie et endocardite à staphylocoque, infections ostéoarticulaires",
+      "tier": 3,
+      "services": ["orthopedic-surgery", "intensive-care"]
+    },
+    {
+      "slug": "gentamicin",
+      "name": "Gentamicine",
+      "brands": [],
+      "classSlug": "aminoglycosides",
+      "hint": "Infections sévères, endocardite (en association)",
+      "tier": 2,
+      "services": ["intensive-care", "emergency", "pediatrics"]
+    },
+    {
+      "slug": "amikacin",
+      "name": "Amikacine",
+      "brands": [],
+      "classSlug": "aminoglycosides",
+      "hint": "Sepsis grave, neutropénie fébrile (en association)",
+      "tier": 2,
+      "services": ["intensive-care", "oncology"]
+    },
+    {
+      "slug": "azithromycin",
+      "name": "Azithromycine",
+      "brands": ["Zithromax"],
+      "classSlug": "macrolides",
+      "hint": "Infections respiratoires, IST (chlamydia), coqueluche",
+      "tier": 1,
+      "services": ["community-pharmacy", "pediatrics"]
+    },
+    {
+      "slug": "clarithromycin",
+      "name": "Clarithromycine",
+      "brands": ["Zeclar"],
+      "classSlug": "macrolides",
+      "hint": "Infections respiratoires, éradication d'Helicobacter pylori",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "clindamycin",
+      "name": "Clindamycine",
+      "brands": ["Dalacine"],
+      "classSlug": "macrolides",
+      "hint": "Infections cutanées et osseuses, prophylaxie si allergie",
+      "tier": 2,
+      "services": ["orthopedic-surgery", "anesthesia"]
+    },
+    {
+      "slug": "pristinamycin",
+      "name": "Pristinamycine",
+      "brands": ["Pyostacine"],
+      "classSlug": "macrolides",
+      "hint": "Infections cutanées, pneumonie (alternative en cas d'allergie)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "ciprofloxacin",
+      "name": "Ciprofloxacine",
+      "brands": ["Ciflox"],
+      "classSlug": "fluoroquinolones",
+      "hint": "Pyélonéphrite, prostatite, infections digestives",
+      "tier": 2,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "ofloxacin",
+      "name": "Ofloxacine",
+      "brands": ["Oflocet"],
+      "classSlug": "fluoroquinolones",
+      "hint": "Infections urinaires et génitales, infections ostéoarticulaires",
+      "tier": 2,
+      "services": ["orthopedic-surgery"]
+    },
+    {
+      "slug": "levofloxacin",
+      "name": "Lévofloxacine",
+      "brands": ["Tavanic"],
+      "classSlug": "fluoroquinolones",
+      "hint": "Pneumonie, légionellose",
+      "tier": 2,
+      "services": ["emergency", "intensive-care"]
+    },
+    {
+      "slug": "doxycycline",
+      "name": "Doxycycline",
+      "brands": ["Tolexine", "Doxypalu"],
+      "classSlug": "tetracyclines",
+      "hint": "Maladie de Lyme, IST, acné, prévention du paludisme",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "lymecycline",
+      "name": "Lymécycline",
+      "brands": ["Tetralysal"],
+      "classSlug": "tetracyclines",
+      "hint": "Acné inflammatoire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "metronidazole",
+      "name": "Métronidazole",
+      "brands": ["Flagyl"],
+      "classSlug": "nitroimidazoles",
+      "hint": "Infections à anaérobies, vaginose, C. difficile, amibiase",
+      "tier": 1,
+      "services": ["intensive-care", "emergency", "community-pharmacy"]
+    },
+    {
+      "slug": "spiramycin-metronidazole",
+      "name": "Spiramycine + métronidazole",
+      "brands": ["Rodogyl"],
+      "classSlug": "nitroimidazoles",
+      "hint": "Infections dentaires et stomatologiques",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "cotrimoxazole",
+      "name": "Sulfaméthoxazole + triméthoprime",
+      "brands": ["Bactrim"],
+      "classSlug": "sulfonamides",
+      "hint": "Infections urinaires, prévention et traitement de la pneumocystose",
+      "tier": 2,
+      "services": ["oncology", "intensive-care"]
+    },
+    {
+      "slug": "sulfadiazine",
+      "name": "Sulfadiazine",
+      "brands": ["Adiazine"],
+      "classSlug": "sulfonamides",
+      "hint": "Toxoplasmose cérébrale ou congénitale",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "fosfomycin-trometamol",
+      "name": "Fosfomycine trométamol",
+      "brands": ["Monuril"],
+      "classSlug": "urinary-antibiotics",
+      "hint": "Cystite aiguë simple (dose unique)",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "nitrofurantoin",
+      "name": "Nitrofurantoïne",
+      "brands": ["Furadantine"],
+      "classSlug": "urinary-antibiotics",
+      "hint": "Cystite à risque de complication, cystite de la femme enceinte",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "pivmecillinam",
+      "name": "Pivmécillinam",
+      "brands": ["Selexid"],
+      "classSlug": "urinary-antibiotics",
+      "hint": "Cystite aiguë simple",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "rifampicin",
+      "name": "Rifampicine",
+      "brands": ["Rifadine"],
+      "classSlug": "antituberculosis",
+      "hint": "Tuberculose, infections sur prothèse à staphylocoque",
+      "tier": 2,
+      "services": ["orthopedic-surgery"]
+    },
+    {
+      "slug": "isoniazid",
+      "name": "Isoniazide",
+      "brands": ["Rimifon"],
+      "classSlug": "antituberculosis",
+      "hint": "Tuberculose (traitement et infection latente)",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "pyrazinamide",
+      "name": "Pyrazinamide",
+      "brands": ["Pirilène"],
+      "classSlug": "antituberculosis",
+      "hint": "Tuberculose (2 premiers mois)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "ethambutol",
+      "name": "Éthambutol",
+      "brands": ["Myambutol"],
+      "classSlug": "antituberculosis",
+      "hint": "Tuberculose (surveillance ophtalmologique)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "fluconazole",
+      "name": "Fluconazole",
+      "brands": ["Triflucan"],
+      "classSlug": "azole-antifungals",
+      "hint": "Candidoses (muqueuses, invasives), cryptococcose",
+      "tier": 2,
+      "services": ["intensive-care", "oncology"]
+    },
+    {
+      "slug": "voriconazole",
+      "name": "Voriconazole",
+      "brands": ["Vfend"],
+      "classSlug": "azole-antifungals",
+      "hint": "Aspergillose invasive",
+      "tier": 3,
+      "services": ["oncology", "intensive-care"]
+    },
+    {
+      "slug": "posaconazole",
+      "name": "Posaconazole",
+      "brands": ["Noxafil"],
+      "classSlug": "azole-antifungals",
+      "hint": "Prophylaxie antifongique en hématologie, mucormycose",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "caspofungin",
+      "name": "Caspofungine",
+      "brands": [],
+      "classSlug": "echinocandins",
+      "hint": "Candidose invasive, aspergillose en échec",
+      "tier": 3,
+      "services": ["intensive-care", "oncology"]
+    },
+    {
+      "slug": "micafungin",
+      "name": "Micafungine",
+      "brands": ["Mycamine"],
+      "classSlug": "echinocandins",
+      "hint": "Candidose invasive",
+      "tier": 3,
+      "services": ["intensive-care"]
+    },
+    {
+      "slug": "amphotericin-b",
+      "name": "Amphotéricine B",
+      "brands": ["AmBisome", "Fungizone"],
+      "classSlug": "polyene-antifungals",
+      "hint": "Infections fongiques invasives graves, leishmaniose viscérale",
+      "tier": 3,
+      "services": ["oncology", "intensive-care"]
+    },
+    {
+      "slug": "nystatin",
+      "name": "Nystatine",
+      "brands": ["Mycostatine"],
+      "classSlug": "polyene-antifungals",
+      "hint": "Candidose buccale et digestive",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "aciclovir",
+      "name": "Aciclovir",
+      "brands": ["Zovirax"],
+      "classSlug": "anti-herpesvirus",
+      "hint": "Herpès, zona, encéphalite herpétique (IV)",
+      "tier": 1,
+      "services": ["emergency", "neuro-icu", "intensive-care", "oncology"]
+    },
+    {
+      "slug": "valaciclovir",
+      "name": "Valaciclovir",
+      "brands": ["Zelitrex"],
+      "classSlug": "anti-herpesvirus",
+      "hint": "Herpès, zona, prévention du CMV après greffe",
+      "tier": 2,
+      "services": ["community-pharmacy", "oncology"]
+    },
+    {
+      "slug": "ganciclovir",
+      "name": "Ganciclovir",
+      "brands": ["Cymevan"],
+      "classSlug": "anti-herpesvirus",
+      "hint": "Infections à cytomégalovirus (CMV) de l'immunodéprimé",
+      "tier": 3,
+      "services": ["oncology"]
+    },
+    {
+      "slug": "oseltamivir",
+      "name": "Oseltamivir",
+      "brands": ["Tamiflu"],
+      "classSlug": "respiratory-antivirals",
+      "hint": "Grippe (traitement précoce et prophylaxie)",
+      "tier": 2,
+      "services": ["geriatrics", "intensive-care", "community-pharmacy"]
+    },
+    {
+      "slug": "nirmatrelvir-ritonavir",
+      "name": "Nirmatrelvir + ritonavir",
+      "brands": ["Paxlovid"],
+      "classSlug": "respiratory-antivirals",
+      "hint": "COVID-19 chez le patient à risque de forme grave",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "emtricitabine-tenofovir-disoproxil",
+      "name": "Emtricitabine + ténofovir disoproxil",
+      "brands": ["Truvada"],
+      "classSlug": "hiv-antiretrovirals",
+      "hint": "Prophylaxie pré-exposition du VIH (PrEP), traitement du VIH",
+      "tier": 3,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "bictegravir-emtricitabine-tenofovir-alafenamide",
+      "name": "Bictégravir + emtricitabine + ténofovir alafénamide",
+      "brands": ["Biktarvy"],
+      "classSlug": "hiv-antiretrovirals",
+      "hint": "Infection par le VIH (comprimé unique quotidien)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "sofosbuvir-velpatasvir",
+      "name": "Sofosbuvir + velpatasvir",
+      "brands": ["Epclusa"],
+      "classSlug": "hepatitis-antivirals",
+      "hint": "Hépatite C chronique (tous génotypes)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "entecavir",
+      "name": "Entécavir",
+      "brands": ["Baraclude"],
+      "classSlug": "hepatitis-antivirals",
+      "hint": "Hépatite B chronique",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "atovaquone-proguanil",
+      "name": "Atovaquone + proguanil",
+      "brands": ["Malarone"],
+      "classSlug": "antimalarials",
+      "hint": "Prévention et traitement du paludisme non compliqué",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "artesunate",
+      "name": "Artésunate",
+      "brands": [],
+      "classSlug": "antimalarials",
+      "hint": "Paludisme grave (IV)",
+      "tier": 3,
+      "services": ["intensive-care", "emergency"]
+    },
+    {
+      "slug": "ivermectin",
+      "name": "Ivermectine",
+      "brands": ["Stromectol"],
+      "classSlug": "antiparasitics",
+      "hint": "Gale, anguillulose",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "permethrin",
+      "name": "Perméthrine",
+      "brands": ["Topiscab"],
+      "classSlug": "antiparasitics",
+      "hint": "Gale (application cutanée)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "albendazole",
+      "name": "Albendazole",
+      "brands": ["Zentel", "Eskazole"],
+      "classSlug": "antiparasitics",
+      "hint": "Vers intestinaux, échinococcose",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "flubendazole",
+      "name": "Flubendazole",
+      "brands": ["Fluvermal"],
+      "classSlug": "antiparasitics",
+      "hint": "Oxyurose et autres vers intestinaux",
+      "tier": 2,
+      "services": ["pediatrics", "community-pharmacy"]
+    }
+  ]
+}

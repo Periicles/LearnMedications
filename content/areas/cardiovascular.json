@@ -1,0 +1,629 @@
+{
+  "area": {
+    "slug": "cardiovascular",
+    "name": "Cardiologie",
+    "icon": "🫀"
+  },
+  "classes": [
+    {
+      "slug": "beta-blockers",
+      "name": "Bêtabloquants",
+      "atc": "C07",
+      "summary": "Ralentissent le cœur et baissent la tension : HTA, angor, insuffisance cardiaque, troubles du rythme."
+    },
+    {
+      "slug": "ace-inhibitors",
+      "name": "Inhibiteurs de l'enzyme de conversion (IEC)",
+      "atc": "C09A",
+      "summary": "Bloquent la formation d'angiotensine II : HTA, insuffisance cardiaque, protection rénale. Risque de toux."
+    },
+    {
+      "slug": "sartans",
+      "name": "Antagonistes des récepteurs de l'angiotensine II (ARA II / sartans)",
+      "atc": "C09C",
+      "summary": "Bloquent les récepteurs de l'angiotensine II : mêmes indications que les IEC, sans toux."
+    },
+    {
+      "slug": "dihydropyridines",
+      "name": "Inhibiteurs calciques dihydropyridines",
+      "atc": "C08CA",
+      "summary": "Vasodilatateurs artériels : HTA et angor. Effets indésirables fréquents : œdèmes des chevilles, céphalées."
+    },
+    {
+      "slug": "non-dihydropyridine-ccb",
+      "name": "Inhibiteurs calciques non dihydropyridines (bradycardisants)",
+      "atc": "C08D",
+      "summary": "Ralentissent le cœur et dilatent les artères : angor, HTA, contrôle de la fréquence des tachycardies."
+    },
+    {
+      "slug": "loop-diuretics",
+      "name": "Diurétiques de l'anse",
+      "atc": "C03C",
+      "summary": "Diurétiques puissants et rapides : œdème pulmonaire, insuffisance cardiaque, rétention hydrosodée."
+    },
+    {
+      "slug": "thiazide-diuretics",
+      "name": "Diurétiques thiazidiques et apparentés",
+      "atc": "C03A",
+      "summary": "Diurétiques modérés utilisés surtout dans l'HTA, souvent associés. Risque d'hypokaliémie."
+    },
+    {
+      "slug": "potassium-sparing-diuretics",
+      "name": "Diurétiques épargneurs de potassium (antialdostérones)",
+      "atc": "C03D",
+      "summary": "Bloquent l'aldostérone : insuffisance cardiaque, hyperaldostéronisme, ascite. Risque d'hyperkaliémie."
+    },
+    {
+      "slug": "nitrates",
+      "name": "Dérivés nitrés et apparentés",
+      "atc": "C01DA",
+      "summary": "Vasodilatateurs veineux et coronaires : crise d'angor, œdème aigu pulmonaire. Risque d'hypotension."
+    },
+    {
+      "slug": "antiarrhythmics-class-1c",
+      "name": "Antiarythmiques de classe Ic",
+      "atc": "C01BC",
+      "summary": "Bloqueurs des canaux sodiques : fibrillation atriale sur cœur sain. Contre-indiqués après infarctus."
+    },
+    {
+      "slug": "antiarrhythmics-class-3",
+      "name": "Antiarythmiques de classe III",
+      "atc": "C01BD",
+      "summary": "Allongent la repolarisation : fibrillation atriale, tachycardies ventriculaires. Surveillance ECG (QT)."
+    },
+    {
+      "slug": "other-antiarrhythmics",
+      "name": "Autres antiarythmiques",
+      "atc": "C01EB",
+      "summary": "Adénosine : bloque brièvement la conduction auriculoventriculaire pour réduire une tachycardie jonctionnelle."
+    },
+    {
+      "slug": "cardiac-glycosides",
+      "name": "Digitaliques",
+      "atc": "C01AA",
+      "summary": "Renforcent la contraction et ralentissent le cœur : fibrillation atriale, insuffisance cardiaque. Marge étroite."
+    },
+    {
+      "slug": "statins",
+      "name": "Statines (inhibiteurs de l'HMG-CoA réductase)",
+      "atc": "C10AA",
+      "summary": "Baissent le LDL-cholestérol et le risque cardiovasculaire. Effet indésirable à surveiller : douleurs musculaires."
+    },
+    {
+      "slug": "fibrates",
+      "name": "Fibrates",
+      "atc": "C10AB",
+      "summary": "Baissent surtout les triglycérides : hypertriglycéridémies sévères ou dyslipidémies mixtes."
+    },
+    {
+      "slug": "other-lipid-lowering",
+      "name": "Autres hypolipémiants (ézétimibe, anti-PCSK9)",
+      "atc": "C10AX",
+      "summary": "Baissent le LDL-cholestérol en complément ou à la place des statines, notamment en cas d'intolérance."
+    },
+    {
+      "slug": "central-antihypertensives",
+      "name": "Antihypertenseurs centraux",
+      "atc": "C02A",
+      "summary": "Diminuent le tonus sympathique au niveau cérébral : HTA en seconde intention, HTA de la grossesse."
+    },
+    {
+      "slug": "alpha-blockers",
+      "name": "Alphabloquants (antihypertenseurs)",
+      "atc": "C02CA",
+      "summary": "Bloquent les récepteurs alpha-1 des vaisseaux : HTA, urgences hypertensives. Risque d'hypotension orthostatique."
+    },
+    {
+      "slug": "heart-failure-drugs",
+      "name": "Autres traitements de l'insuffisance cardiaque",
+      "atc": "",
+      "summary": "Molécules spécifiques de l'insuffisance cardiaque à fraction d'éjection réduite, en plus du traitement de base."
+    }
+  ],
+  "substances": [
+    {
+      "slug": "bisoprolol",
+      "name": "Bisoprolol",
+      "brands": ["Cardensiel", "Detensiel"],
+      "classSlug": "beta-blockers",
+      "hint": "Insuffisance cardiaque, hypertension artérielle, angor",
+      "tier": 1,
+      "services": ["geriatrics", "intensive-care", "community-pharmacy"]
+    },
+    {
+      "slug": "atenolol",
+      "name": "Aténolol",
+      "brands": ["Ténormine"],
+      "classSlug": "beta-blockers",
+      "hint": "Hypertension artérielle, angor, troubles du rythme",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "metoprolol",
+      "name": "Métoprolol",
+      "brands": ["Lopressor", "Seloken", "Selozok"],
+      "classSlug": "beta-blockers",
+      "hint": "Hypertension artérielle, angor, insuffisance cardiaque",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "nebivolol",
+      "name": "Nébivolol",
+      "brands": ["Témérit", "Nebilox"],
+      "classSlug": "beta-blockers",
+      "hint": "Hypertension artérielle, insuffisance cardiaque du sujet âgé",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "propranolol",
+      "name": "Propranolol",
+      "brands": ["Hémangiol"],
+      "classSlug": "beta-blockers",
+      "hint": "HTA portale, migraine, tremblement, anxiété somatique, hémangiome",
+      "tier": 2,
+      "services": ["psychiatry", "pediatrics"]
+    },
+    {
+      "slug": "carvedilol",
+      "name": "Carvédilol",
+      "brands": ["Kredex"],
+      "classSlug": "beta-blockers",
+      "hint": "Insuffisance cardiaque chronique",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "celiprolol",
+      "name": "Céliprolol",
+      "brands": ["Célectol"],
+      "classSlug": "beta-blockers",
+      "hint": "Hypertension artérielle",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "esmolol",
+      "name": "Esmolol",
+      "brands": ["Brevibloc"],
+      "classSlug": "beta-blockers",
+      "hint": "Tachycardie et HTA péri-opératoires (IV, action très courte)",
+      "tier": 3,
+      "services": ["anesthesia", "intensive-care"]
+    },
+    {
+      "slug": "ramipril",
+      "name": "Ramipril",
+      "brands": ["Triatec"],
+      "classSlug": "ace-inhibitors",
+      "hint": "HTA, insuffisance cardiaque, post-infarctus",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "perindopril",
+      "name": "Périndopril",
+      "brands": ["Coversyl"],
+      "classSlug": "ace-inhibitors",
+      "hint": "HTA, insuffisance cardiaque, maladie coronaire stable",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "enalapril",
+      "name": "Énalapril",
+      "brands": ["Renitec"],
+      "classSlug": "ace-inhibitors",
+      "hint": "Hypertension artérielle, insuffisance cardiaque",
+      "tier": 2,
+      "services": ["pediatrics"]
+    },
+    {
+      "slug": "captopril",
+      "name": "Captopril",
+      "brands": [],
+      "classSlug": "ace-inhibitors",
+      "hint": "Hypertension artérielle, insuffisance cardiaque",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "valsartan",
+      "name": "Valsartan",
+      "brands": ["Tareg", "Nisis"],
+      "classSlug": "sartans",
+      "hint": "HTA, insuffisance cardiaque, post-infarctus",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "losartan",
+      "name": "Losartan",
+      "brands": ["Cozaar"],
+      "classSlug": "sartans",
+      "hint": "Hypertension artérielle, néphropathie diabétique",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "irbesartan",
+      "name": "Irbésartan",
+      "brands": ["Aprovel"],
+      "classSlug": "sartans",
+      "hint": "Hypertension artérielle, néphropathie diabétique",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "candesartan",
+      "name": "Candésartan",
+      "brands": ["Atacand", "Kenzen"],
+      "classSlug": "sartans",
+      "hint": "Hypertension artérielle, insuffisance cardiaque",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "olmesartan",
+      "name": "Olmésartan",
+      "brands": ["Alteis", "Olmetec"],
+      "classSlug": "sartans",
+      "hint": "Hypertension artérielle",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "telmisartan",
+      "name": "Telmisartan",
+      "brands": ["Micardis", "Pritor"],
+      "classSlug": "sartans",
+      "hint": "Hypertension artérielle, prévention cardiovasculaire",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "amlodipine",
+      "name": "Amlodipine",
+      "brands": ["Amlor"],
+      "classSlug": "dihydropyridines",
+      "hint": "Hypertension artérielle, angor",
+      "tier": 1,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "nicardipine",
+      "name": "Nicardipine",
+      "brands": ["Loxen"],
+      "classSlug": "dihydropyridines",
+      "hint": "Urgence hypertensive (IV), HTA de la grossesse, AVC hémorragique",
+      "tier": 2,
+      "services": ["emergency", "intensive-care", "neuro-icu", "anesthesia"]
+    },
+    {
+      "slug": "nifedipine",
+      "name": "Nifédipine",
+      "brands": [],
+      "classSlug": "dihydropyridines",
+      "hint": "Hypertension artérielle, angor, menace d'accouchement prématuré",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "lercanidipine",
+      "name": "Lercanidipine",
+      "brands": ["Lercan", "Zanidip"],
+      "classSlug": "dihydropyridines",
+      "hint": "Hypertension artérielle",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "verapamil",
+      "name": "Vérapamil",
+      "brands": ["Isoptine"],
+      "classSlug": "non-dihydropyridine-ccb",
+      "hint": "Angor, HTA, tachycardies supraventriculaires",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "diltiazem",
+      "name": "Diltiazem",
+      "brands": ["Tildiem", "Mono-Tildiem"],
+      "classSlug": "non-dihydropyridine-ccb",
+      "hint": "Angor, hypertension artérielle",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "furosemide",
+      "name": "Furosémide",
+      "brands": ["Lasilix"],
+      "classSlug": "loop-diuretics",
+      "hint": "Œdème aigu pulmonaire, insuffisance cardiaque, œdèmes",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "bumetanide",
+      "name": "Bumétanide",
+      "brands": ["Burinex"],
+      "classSlug": "loop-diuretics",
+      "hint": "Œdèmes d'origine cardiaque, rénale ou hépatique",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "hydrochlorothiazide",
+      "name": "Hydrochlorothiazide",
+      "brands": ["Esidrex"],
+      "classSlug": "thiazide-diuretics",
+      "hint": "HTA (souvent associé à un IEC ou un sartan)",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "indapamide",
+      "name": "Indapamide",
+      "brands": ["Fludex"],
+      "classSlug": "thiazide-diuretics",
+      "hint": "Hypertension artérielle",
+      "tier": 2,
+      "services": ["geriatrics", "community-pharmacy"]
+    },
+    {
+      "slug": "spironolactone",
+      "name": "Spironolactone",
+      "brands": ["Aldactone"],
+      "classSlug": "potassium-sparing-diuretics",
+      "hint": "Insuffisance cardiaque, ascite cirrhotique, hyperaldostéronisme",
+      "tier": 1,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "eplerenone",
+      "name": "Éplérénone",
+      "brands": ["Inspra"],
+      "classSlug": "potassium-sparing-diuretics",
+      "hint": "Insuffisance cardiaque, post-infarctus",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "glyceryl-trinitrate",
+      "name": "Trinitrine",
+      "brands": ["Natispray", "Nitriderm"],
+      "classSlug": "nitrates",
+      "hint": "Crise d'angor, œdème aigu pulmonaire, prévention de l'angor",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "community-pharmacy"]
+    },
+    {
+      "slug": "isosorbide-dinitrate",
+      "name": "Isosorbide dinitrate",
+      "brands": ["Risordan", "Isocard"],
+      "classSlug": "nitrates",
+      "hint": "Œdème aigu pulmonaire (IV), angor",
+      "tier": 2,
+      "services": ["emergency", "intensive-care"]
+    },
+    {
+      "slug": "molsidomine",
+      "name": "Molsidomine",
+      "brands": ["Corvasal"],
+      "classSlug": "nitrates",
+      "hint": "Traitement de fond de l'angor",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "flecainide",
+      "name": "Flécaïnide",
+      "brands": ["Flécaïne"],
+      "classSlug": "antiarrhythmics-class-1c",
+      "hint": "Fibrillation atriale sur cœur sain",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "propafenone",
+      "name": "Propafénone",
+      "brands": ["Rythmol"],
+      "classSlug": "antiarrhythmics-class-1c",
+      "hint": "Troubles du rythme supraventriculaires et ventriculaires",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "amiodarone",
+      "name": "Amiodarone",
+      "brands": ["Cordarone"],
+      "classSlug": "antiarrhythmics-class-3",
+      "hint": "Fibrillation atriale, tachycardie ventriculaire, arrêt cardiaque",
+      "tier": 1,
+      "services": ["emergency", "intensive-care", "geriatrics"]
+    },
+    {
+      "slug": "dronedarone",
+      "name": "Dronédarone",
+      "brands": ["Multaq"],
+      "classSlug": "antiarrhythmics-class-3",
+      "hint": "Maintien du rythme sinusal après fibrillation atriale",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "sotalol",
+      "name": "Sotalol",
+      "brands": ["Sotalex"],
+      "classSlug": "antiarrhythmics-class-3",
+      "hint": "Troubles du rythme ventriculaires et supraventriculaires",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "adenosine",
+      "name": "Adénosine",
+      "brands": ["Krenosin"],
+      "classSlug": "other-antiarrhythmics",
+      "hint": "Réduction des tachycardies jonctionnelles (bolus IV)",
+      "tier": 2,
+      "services": ["emergency", "intensive-care"]
+    },
+    {
+      "slug": "digoxin",
+      "name": "Digoxine",
+      "brands": [],
+      "classSlug": "cardiac-glycosides",
+      "hint": "Fibrillation atriale (contrôle de la fréquence), insuffisance cardiaque",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "atorvastatin",
+      "name": "Atorvastatine",
+      "brands": ["Tahor"],
+      "classSlug": "statins",
+      "hint": "Hypercholestérolémie, prévention cardiovasculaire",
+      "tier": 1,
+      "services": ["community-pharmacy", "geriatrics"]
+    },
+    {
+      "slug": "rosuvastatin",
+      "name": "Rosuvastatine",
+      "brands": ["Crestor"],
+      "classSlug": "statins",
+      "hint": "Hypercholestérolémie, prévention cardiovasculaire",
+      "tier": 1,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "simvastatin",
+      "name": "Simvastatine",
+      "brands": ["Zocor"],
+      "classSlug": "statins",
+      "hint": "Hypercholestérolémie, prévention cardiovasculaire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "pravastatin",
+      "name": "Pravastatine",
+      "brands": ["Vasten"],
+      "classSlug": "statins",
+      "hint": "Hypercholestérolémie, prévention cardiovasculaire",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "fenofibrate",
+      "name": "Fénofibrate",
+      "brands": ["Lipanthyl"],
+      "classSlug": "fibrates",
+      "hint": "Hypertriglycéridémie, dyslipidémie mixte",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "ciprofibrate",
+      "name": "Ciprofibrate",
+      "brands": ["Lipanor"],
+      "classSlug": "fibrates",
+      "hint": "Hypertriglycéridémie, dyslipidémie mixte",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "ezetimibe",
+      "name": "Ézétimibe",
+      "brands": ["Ezetrol"],
+      "classSlug": "other-lipid-lowering",
+      "hint": "Hypercholestérolémie, en association ou si statine non tolérée",
+      "tier": 2,
+      "services": ["community-pharmacy"]
+    },
+    {
+      "slug": "evolocumab",
+      "name": "Évolocumab",
+      "brands": ["Repatha"],
+      "classSlug": "other-lipid-lowering",
+      "hint": "Hypercholestérolémie sévère (anti-PCSK9 injectable)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "alirocumab",
+      "name": "Alirocumab",
+      "brands": ["Praluent"],
+      "classSlug": "other-lipid-lowering",
+      "hint": "Hypercholestérolémie sévère (anti-PCSK9 injectable)",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "rilmenidine",
+      "name": "Rilménidine",
+      "brands": ["Hyperium"],
+      "classSlug": "central-antihypertensives",
+      "hint": "Hypertension artérielle",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "clonidine",
+      "name": "Clonidine",
+      "brands": ["Catapressan"],
+      "classSlug": "central-antihypertensives",
+      "hint": "HTA, sédation en réanimation, sevrage",
+      "tier": 2,
+      "services": ["intensive-care", "anesthesia"]
+    },
+    {
+      "slug": "methyldopa",
+      "name": "Méthyldopa",
+      "brands": ["Aldomet"],
+      "classSlug": "central-antihypertensives",
+      "hint": "Hypertension artérielle de la grossesse",
+      "tier": 2,
+      "services": []
+    },
+    {
+      "slug": "urapidil",
+      "name": "Urapidil",
+      "brands": ["Eupressyl", "Médiatensyl"],
+      "classSlug": "alpha-blockers",
+      "hint": "Urgence hypertensive (IV), hypertension artérielle",
+      "tier": 2,
+      "services": ["emergency", "intensive-care", "neuro-icu", "anesthesia"]
+    },
+    {
+      "slug": "prazosin",
+      "name": "Prazosine",
+      "brands": ["Alpress"],
+      "classSlug": "alpha-blockers",
+      "hint": "Hypertension artérielle, phéochromocytome",
+      "tier": 3,
+      "services": []
+    },
+    {
+      "slug": "sacubitril-valsartan",
+      "name": "Sacubitril + valsartan",
+      "brands": ["Entresto"],
+      "classSlug": "heart-failure-drugs",
+      "hint": "Insuffisance cardiaque à fraction d'éjection réduite",
+      "tier": 2,
+      "services": ["geriatrics"]
+    },
+    {
+      "slug": "ivabradine",
+      "name": "Ivabradine",
+      "brands": ["Procoralan"],
+      "classSlug": "heart-failure-drugs",
+      "hint": "Insuffisance cardiaque, angor stable (ralentit le nœud sinusal)",
+      "tier": 2,
+      "services": []
+    }
+  ]
+}
