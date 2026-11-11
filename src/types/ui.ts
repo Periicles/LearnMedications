@@ -87,8 +87,11 @@ export interface NavItem {
 }
 
 export interface NavLinkProps {
-  item: NavItem;
+  href: string;
+  label: string;
   layout: "sidebar" | "tabbar";
+  /** Icon rendered by the server parent, since components cannot cross the client boundary. */
+  children: ReactNode;
 }
 
 export interface FeatureItem {

@@ -10,14 +10,13 @@ const LAYOUT_CLASSES = {
   tabbar: "flex-1 flex-col gap-0.5 rounded-xl border-2 px-0.5 py-1.5 text-[0.625rem]",
 };
 
-export function NavLink({ item, layout }: NavLinkProps) {
+export function NavLink({ href, label, layout, children }: NavLinkProps) {
   const pathname = usePathname();
-  const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
-  const Icon = item.icon;
+  const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <Link
-      href={item.href}
+      href={href}
       aria-current={isActive ? "page" : undefined}
       className={mergeClasses(
         "flex min-w-0 items-center font-extrabold transition-colors",
@@ -27,8 +26,8 @@ export function NavLink({ item, layout }: NavLinkProps) {
           : "text-ink-soft hover:bg-surface-muted border-transparent",
       )}
     >
-      <Icon className={layout === "sidebar" ? "size-6" : "size-5"} aria-hidden="true" />
-      <span className="max-w-full truncate">{item.label}</span>
+      {children}
+      <span className="max-w-full truncate">{label}</span>
     </Link>
   );
 }
