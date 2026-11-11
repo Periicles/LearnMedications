@@ -18,6 +18,11 @@ describe("catalog", () => {
     expect(catalog.collections.some((collection) => collection.kind === "area")).toBe(true);
   });
 
+  it("gives every collection a unique slug", () => {
+    const slugs = catalog.collections.map((collection) => collection.slug);
+    expect(new Set(slugs).size).toBe(slugs.length);
+  });
+
   it("gives every lesson a unique key inside its collection", () => {
     for (const collection of catalog.collections) {
       const keys = collection.lessons.map((lesson) => lesson.key);
