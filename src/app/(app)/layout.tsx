@@ -1,9 +1,8 @@
-import { Suspense } from "react";
 import { AppShell } from "@/components/layout/app-shell";
 import { TopBar } from "@/components/layout/top-bar";
 import { StatusBar } from "@/features/progress/components/status-bar";
-import { PageSkeleton } from "@/components/layout/page-skeleton";
 
+/** Each route has its own `loading.tsx`, so navigations show the shell and a skeleton instantly. */
 export default function AppLayout({ children }: LayoutProps<"/">) {
   return (
     <AppShell
@@ -13,7 +12,7 @@ export default function AppLayout({ children }: LayoutProps<"/">) {
         </TopBar>
       }
     >
-      <Suspense fallback={<PageSkeleton />}>{children}</Suspense>
+      {children}
     </AppShell>
   );
 }
