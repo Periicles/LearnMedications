@@ -11,6 +11,7 @@ export async function StatusBar() {
   const profile = user ? await getProfile(user.id) : null;
   if (!profile) return null;
   const today = toLocalDay(new Date());
+  const dayLabel = visibleStreak(profile, today) > 1 ? "jours" : "jour";
 
   return (
     <ul className="flex items-center gap-4 text-sm font-extrabold" aria-label="Votre progression">
@@ -20,7 +21,7 @@ export async function StatusBar() {
       >
         <Flame className="mr-1 inline size-5" aria-hidden="true" />
         {visibleStreak(profile, today)}
-        <span className="sr-only"> jours de série</span>
+        <span className="sr-only"> {dayLabel} de série</span>
       </li>
       <li className="text-accent-strong dark:text-accent" title="Points d'expérience">
         <Zap className="mr-1 inline size-5" aria-hidden="true" />
