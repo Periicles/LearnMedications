@@ -14,7 +14,9 @@ export function hasBackend(): boolean {
 }
 
 export const E2E_PORT = 3100;
-export const BASE_URL = `http://localhost:${E2E_PORT}`;
+/** Set E2E_BASE_URL to test a deployed site instead of a local production build. */
+export const REMOTE_URL = process.env.E2E_BASE_URL?.replace(/\/$/, "");
+export const BASE_URL = REMOTE_URL ?? `http://localhost:${E2E_PORT}`;
 export const USERS_FILE = "e2e/.auth/users.json";
 export const TEST_PASSWORD = "E2e-password-2026";
 
