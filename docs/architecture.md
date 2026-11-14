@@ -2,7 +2,7 @@
 
 ## Overview
 
-LearnMedications is a Next.js App Router application. Pages are Server Components that read
+Pharmalingo is a Next.js App Router application. Pages are Server Components that read
 the signed-in user's data from Supabase; interactivity (the lesson player, forms, search) lives
 in small Client Components. Learning content is static JSON shipped with the code; only user
 data lives in the database.

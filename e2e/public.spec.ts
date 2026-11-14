@@ -55,7 +55,7 @@ test.describe("public pages", () => {
     test.skip(!hasBackend(), "Needs the Supabase backend.");
     await page.goto("/signup");
     await page.getByLabel("Pseudo").fill(member.username);
-    await page.getByLabel("Adresse e-mail").fill("e2e-unused@learnmedications.test");
+    await page.getByLabel("Adresse e-mail").fill("e2e-unused@pharmalingo.test");
     await page.getByLabel("Mot de passe").fill("E2e-password-2026");
     await page.getByRole("button", { name: "Créer mon compte" }).click();
     await expect(content.getByText("Ce pseudo est déjà pris.")).toBeVisible();

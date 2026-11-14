@@ -1,4 +1,4 @@
-export const APP_NAME = "LearnMedications";
+export const APP_NAME = "Pharmalingo";
 export const APP_TAGLINE = "Apprenez les médicaments, une leçon à la fois.";
 export const APP_DESCRIPTION =
   "Molécules, noms commerciaux et familles : mémorisez les médicaments avec des leçons courtes et ludiques.";

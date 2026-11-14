@@ -49,7 +49,7 @@ npm run test:e2e -- --project="iPhone 16 Pro"   # a single device
 To test a deployed site instead of a local build, set its address:
 
 ```bash
-E2E_BASE_URL=https://learn-medications.vercel.app npm run test:e2e
+E2E_BASE_URL=https://pharmalingo.vercel.app npm run test:e2e
 ```
 
 Emulation checks layout and behaviour; it does not replace a final check on a real phone.
@@ -63,6 +63,6 @@ Without them only the public flows run.
 - A setup step creates one confirmed member per device through the admin API (no e-mail is
   sent) and signs it in once; a teardown step deletes them. Specs create and delete the extra
   accounts they need.
-- Test accounts use `e2e-…@learnmedications.test` addresses and `e2e_…` usernames.
+- Test accounts use `e2e-…@pharmalingo.test` addresses and `e2e_…` usernames.
 - Supabase limits sign-ins per IP address. The suite signs in about twenty times per run;
   running it several times in a row may hit the limit.
