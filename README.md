@@ -1,4 +1,4 @@
-# LearnMedications
+# Pharmalingo
 
 A Duolingo-style web app to learn medications: the **molecule** (INN/DCI), its **brand names**
 and its **pharmacological family**. It targets healthcare staff, students and curious people

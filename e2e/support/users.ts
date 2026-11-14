@@ -17,7 +17,7 @@ export function adminClient() {
 export async function createTestUser(label: string): Promise<TestUser> {
   const suffix = randomBytes(4).toString("hex");
   const username = `e2e_${label}_${suffix}`.slice(0, 20);
-  const email = `e2e-${label}-${suffix}@learnmedications.test`;
+  const email = `e2e-${label}-${suffix}@pharmalingo.test`;
   const { data, error } = await adminClient().auth.admin.createUser({
     email,
     password: TEST_PASSWORD,

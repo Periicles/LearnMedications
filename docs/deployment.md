@@ -39,7 +39,7 @@ quality checks.
 ## 4. Custom domain (OVH)
 
 To serve the app on a subdomain of `paulragueneau.com`, for example
-`medications.paulragueneau.com`:
+`pharmalingo.paulragueneau.com`:
 
 1. In Vercel, **Project → Settings → Domains**, add the subdomain.
 2. In the OVH manager, **Web Cloud → Domain names → paulragueneau.com → DNS zone**, add a
